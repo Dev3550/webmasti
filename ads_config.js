@@ -8,14 +8,16 @@ window.WEBMASTI_ADS = {
   // 2. Direct Ad Link (Optional: Direct Smartlink URL from Monetag / Adsterra for opening ad in new tab on episode click)
   directAdLink: "",
 
-  // 3. Top Header Banner Ad HTML Code
+  // 3. Top Header Banner / Native Ad HTML Code
   topBannerCode: `
-    <!-- Paste Top Banner Ad Snippet Here -->
+    <script async="async" data-cfasync="false" src="https://pl31272345.profitableratecpmnetwork.com/24aa9ede5467ca88bbfe69436b7de303/invoke.js"></script>
+    <div id="container-24aa9ede5467ca88bbfe69436b7de303"></div>
   `,
 
   // 4. In-Modal Player Banner Ad HTML Code
   playerBannerCode: `
-    <!-- Paste Video Player Ad Snippet Here -->
+    <script async="async" data-cfasync="false" src="https://pl31272345.profitableratecpmnetwork.com/24aa9ede5467ca88bbfe69436b7de303/invoke.js"></script>
+    <div id="container-24aa9ede5467ca88bbfe69436b7de303"></div>
   `,
 
   // 5. Push Ad Script
