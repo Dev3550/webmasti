@@ -59,34 +59,30 @@ async function loadCatalog() {
   }
 }
 
-// Render Dynamic Category Pills from Scraped Catalog
+// Render Dynamic Category Pills from Scraped Catalog (OTT Platforms ONLY - No Cast/Actress Names)
 function renderCategoryPills() {
-  const popularPlatforms = ['ULLU', 'Atrangii', 'Rabbit', 'Kooku', 'PrimeShots', 'ALTT', 'MoodX', 'Azmaal'];
+  const allowedPlatforms = [
+    'ULLU', 'Atrangii', 'Rabbit', 'Kooku', 'PrimeShots', 
+    'ALTT', 'MoodX', 'Jugnu', 'Fliz', 'CinemaDosti', 
+    'Voovi', 'Hunter', 'Hotshots', 'Chikooflix', 'Nuefliks'
+  ];
+
   const categoriesSet = new Set();
-  
   catalogData.forEach(item => {
     (item.categories || []).forEach(cat => {
-      if (cat && cat.length < 25) categoriesSet.add(cat.trim());
+      if (cat) categoriesSet.add(cat.trim());
     });
   });
 
-  const presentPlatforms = popularPlatforms.filter(p => 
-    Array.from(categoriesSet).some(c => c.toLowerCase() === p.toLowerCase())
+  // Filter ONLY matching OTT platform names from the catalog
+  const foundPlatforms = allowedPlatforms.filter(plat => 
+    Array.from(categoriesSet).some(c => c.toLowerCase() === plat.toLowerCase())
   );
 
   let pillsHTML = `<button class="pill active" data-cat="all">🔥 All WebSeries</button>`;
   
-  presentPlatforms.forEach(plat => {
+  foundPlatforms.forEach(plat => {
     pillsHTML += `<button class="pill" data-cat="${plat}">${plat}</button>`;
-  });
-
-  // Add top tags/models
-  let addedCount = 0;
-  Array.from(categoriesSet).forEach(cat => {
-    if (!presentPlatforms.includes(cat) && !cat.toLowerCase().includes('episode') && addedCount < 12) {
-      pillsHTML += `<button class="pill" data-cat="${cat}">${cat}</button>`;
-      addedCount++;
-    }
   });
 
   categoryPills.innerHTML = pillsHTML;
