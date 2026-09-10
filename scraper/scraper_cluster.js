@@ -88,9 +88,12 @@ async function worker(id, queue) {
         continue;
       }
       const item = await parseDetailPage(html, url);
-      // Replace any existing entry with same id
-      catalog = catalog.filter(i => i.id !== item.id);
-      catalog.unshift(item);
+      // Only add items that actually contain playable episodes or video URLs
+      if ((item.episodes && item.episodes.length > 0) || (item.video_urls && item.video_urls.length > 0) || (item.total_episodes && item.total_episodes > 0)) {
+        // Replace any existing entry with same id
+        catalog = catalog.filter(i => i.id !== item.id);
+        catalog.unshift(item);
+      }
       scrapedUrls.add(url);
       if (scrapedUrls.size % 10 === 0) {
         saveProgress();

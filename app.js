@@ -50,19 +50,21 @@ async function loadCatalog() {
     if (!res.ok) throw new Error('Catalog JSON not found');
     const rawData = await res.json();
 
-    // Sanitize every single item to ensure 100% WebMasti branding everywhere
-    catalogData = rawData.map(item => ({
-      ...item,
-      title: cleanTextBranding(item.title),
-      description: cleanTextBranding(item.description),
-      categories: (item.categories || [])
-        .map(cleanTextBranding)
-        .filter(c => c && !['Home', 'Episodes', 'Model', 'OTT', 'UffMaal', 'HMaal', 'NewMaal', 'WebMasti'].includes(c)),
-      episodes: (item.episodes || []).map(ep => ({
-        ...ep,
-        title: cleanTextBranding(ep.title)
-      }))
-    }));
+    // Sanitize every single item to ensure 100% WebMasti branding everywhere & filter out empty 0-episode items
+    catalogData = rawData
+      .filter(item => (item.episodes && item.episodes.length > 0) || (item.video_urls && item.video_urls.length > 0) || (item.total_episodes && item.total_episodes > 0))
+      .map(item => ({
+        ...item,
+        title: cleanTextBranding(item.title),
+        description: cleanTextBranding(item.description),
+        categories: (item.categories || [])
+          .map(cleanTextBranding)
+          .filter(c => c && !['Home', 'Episodes', 'Model', 'OTT', 'UffMaal', 'HMaal', 'NewMaal', 'WebMasti'].includes(c)),
+        episodes: (item.episodes || []).map(ep => ({
+          ...ep,
+          title: cleanTextBranding(ep.title)
+        }))
+      }));
 
     filteredData = [...catalogData];
     
