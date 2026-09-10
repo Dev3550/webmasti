@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebMasti - Watch Exclusive Web Series & Movies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-masti">Web</span><span class="logo-accent">Masti</span>
+        <span class="badge-vip">HD STREAM</span>
+      </div>
+
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search series, cast, category...">
+      </div>
+
+      <div class="nav-actions">
+        <span class="live-counter" id="itemCount">Loading catalog...</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="heroBanner">
+    <div class="hero-backdrop" id="heroBackdrop"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🔥 TRENDING NOW ON WEBMASTI</div>
+      <h1 class="hero-title" id="heroTitle">WebMasti Originals</h1>
+      <p class="hero-desc" id="heroDesc">Stream high quality original series with zero ads, high speed video player and direct episode access.</p>
+      <div class="hero-meta" id="heroMeta">
+        <span class="meta-tag" id="heroEpisodes">Full Series</span>
+        <span class="meta-tag" id="heroCat">Exclusive</span>
+      </div>
+      <div class="hero-buttons">
+        <button class="btn-play" id="heroPlayBtn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Watch Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filter Pills -->
+  <div class="category-bar">
+    <div class="category-container" id="categoryPills">
+      <button class="pill active" data-cat="all">All Series</button>
+      <button class="pill" data-cat="ULLU">ULLU</button>
+      <button class="pill" data-cat="Hot">Latest</button>
+    </div>
+  </div>
+
+  <!-- Main Catalog Grid -->
+  <main class="main-content">
+    <h2 class="section-title">Explore WebMasti Catalog</h2>
+    <div class="catalog-grid" id="catalogGrid">
+      <!-- Dynamic Catalog Cards -->
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination-container" id="paginationControls">
+      <!-- Dynamic Pagination Buttons -->
+    </div>
+  </main>
+
+  <!-- Detail & Streaming Modal -->
+  <div class="modal-overlay" id="playerModal">
+    <div class="modal-card">
+      <button class="btn-close" id="closeModal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-poster">
+          <img id="modalCover" src="" alt="Cover">
+        </div>
+        <div class="modal-info">
+          <h2 id="modalTitle">Series Title</h2>
+          <div class="modal-tags" id="modalCategories"></div>
+          <p id="modalDescription" class="modal-desc">Description loading...</p>
+        </div>
+      </div>
+
+      <!-- Video Player Container -->
+      <div class="player-container" id="playerWrapper">
+        <div class="player-watermark">WebMasti HD</div>
+        <video id="mainVideoPlayer" controls controlsList="nodownload" poster="">
+          <source id="videoSource" src="" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="player-status" id="playerStatus">Click an episode below to play</div>
+      </div>
+
+      <!-- Episodes Selector -->
+      <div class="episodes-section">
+        <h3 class="episodes-title">Episodes (<span id="epCount">0</span>)</h3>
+        <div class="episodes-grid" id="episodesGrid">
+          <!-- Dynamic Episode Buttons -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 <strong>WebMasti</strong>. All rights reserved. Direct ad-free video streaming.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
