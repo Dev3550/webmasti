@@ -6,7 +6,7 @@ window.WEBMASTI_ADS = {
   popunderScript: "https://pl31272333.profitableratecpmnetwork.com/a5/90/cc/a590cc8c91c5d6cc7ee4c0122f3b2bc1.js", 
 
   // 2. Direct Ad Link (Optional: Direct Smartlink URL from Monetag / Adsterra for opening ad in new tab on episode click)
-  directAdLink: "",
+  directAdLink: "https://www.profitableratecpmnetwork.com/b4eakvw57?key=a496ce996af212b180f35b5c908cf551",
 
   // 3. Top Header Banner / Native Ad HTML Code
   topBannerCode: `
@@ -20,8 +20,8 @@ window.WEBMASTI_ADS = {
     <div id="container-24aa9ede5467ca88bbfe69436b7de303"></div>
   `,
 
-  // 5. Push Ad Script
-  pushAdScript: "",
+  // 5. Push / Social Bar Ad Script
+  pushAdScript: "https://pl31272460.profitableratecpmnetwork.com/2d/a0/4e/2da04e784cf609feb34466e3fd84e3e6.js",
 
   // Enable/Disable Ads
   enabled: true
