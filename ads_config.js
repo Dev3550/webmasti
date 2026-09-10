@@ -27,16 +27,27 @@ window.WEBMASTI_ADS = {
   enabled: true
 };
 
+// 45-Second Cooldown timer so users are not annoyed by constant popups
+let lastAdTriggerTime = 0;
+const AD_COOLDOWN_MS = 45000;
+
 // Helper function to trigger popunder / click ad on user action or episode switch
 window.triggerAdOnClick = function() {
   if (!window.WEBMASTI_ADS || !window.WEBMASTI_ADS.enabled) return;
+
+  const now = Date.now();
+  if (now - lastAdTriggerTime < AD_COOLDOWN_MS) {
+    return; // Skip popup ad during cooldown for smooth UX
+  }
   
   // If direct ad link is provided, open ad in background new tab
   if (window.WEBMASTI_ADS.directAdLink && window.WEBMASTI_ADS.directAdLink.trim().length > 5) {
     try {
       window.open(window.WEBMASTI_ADS.directAdLink, '_blank');
+      lastAdTriggerTime = now;
     } catch (e) {
       console.log('Ad open blocked by browser pop-up setting');
     }
   }
 };
+

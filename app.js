@@ -304,8 +304,24 @@ function playEpisodeAtIndex(idx, isManualClick) {
 
   if (ep.video_url) {
     playVideo(ep.video_url, ep.title);
+    preloadNextEpisode(idx);
   } else {
     playerStatus.innerText = '⚠️ Video link missing for this episode';
+  }
+}
+
+// Preload next episode stream for smooth zero-wait playback
+function preloadNextEpisode(currentIdx) {
+  if (currentEpisodesList && currentEpisodesList[currentIdx + 1] && currentEpisodesList[currentIdx + 1].video_url) {
+    const nextUrl = currentEpisodesList[currentIdx + 1].video_url;
+    const existing = document.querySelector(`link[href="${nextUrl}"]`);
+    if (!existing) {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'fetch';
+      link.href = nextUrl;
+      document.head.appendChild(link);
+    }
   }
 }
 
