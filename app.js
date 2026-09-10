@@ -134,7 +134,7 @@ function renderGrid() {
       </div>
     `;
 
-    card.onclick = () => openModal(item);
+    card.onclick = () => handleCardClick(item);
     catalogGrid.appendChild(card);
   });
 
@@ -196,6 +196,18 @@ function renderPagination(totalPages) {
 }
 
 
+// Current Active Series & Episode State
+let currentEpisodesList = [];
+let currentEpisodeIndex = 0;
+
+// Card click handler in catalog grid
+function handleCardClick(item) {
+  if (typeof window.triggerAdOnClick === 'function') {
+    window.triggerAdOnClick();
+  }
+  openModal(item);
+}
+
 // Open Detail & Streaming Modal
 function openModal(item) {
   modalCover.src = item.cover_image;
@@ -206,46 +218,69 @@ function openModal(item) {
     .map(c => `<span class="meta-tag">${c}</span>`)
     .join('');
 
-  const episodes = item.episodes || [];
-  epCount.innerText = episodes.length;
+  currentEpisodesList = item.episodes || [];
+  currentEpisodeIndex = 0;
+  epCount.innerText = currentEpisodesList.length;
 
   episodesGrid.innerHTML = '';
   
-  if (episodes.length === 0) {
+  if (currentEpisodesList.length === 0) {
     episodesGrid.innerHTML = `<p style="color:#9ca3af; font-size:0.9rem;">No episodes available for this item.</p>`;
-    // Fallback if video_urls exist directly
     if (item.video_urls && item.video_urls.length > 0) {
       playVideo(item.video_urls[0], 'Full Video');
     }
   } else {
-    episodes.forEach((ep, idx) => {
+    currentEpisodesList.forEach((ep, idx) => {
       const epBtn = document.createElement('button');
       epBtn.className = `btn-ep ${idx === 0 ? 'active' : ''}`;
+      epBtn.setAttribute('data-ep-idx', idx);
       epBtn.innerHTML = `
         <span>${ep.title || 'Episode ' + (idx + 1)}</span>
         <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
       `;
 
       epBtn.onclick = () => {
-        document.querySelectorAll('.btn-ep').forEach(b => b.classList.remove('active'));
-        epBtn.classList.add('active');
-        if (ep.video_url) {
-          playVideo(ep.video_url, ep.title);
-        } else {
-          playerStatus.innerText = '⚠️ Video link missing for this episode';
-        }
+        playEpisodeAtIndex(idx, true);
       };
 
       episodesGrid.appendChild(epBtn);
     });
 
-    // Auto play 1st episode if video link exists
-    if (episodes[0] && episodes[0].video_url) {
-      playVideo(episodes[0].video_url, episodes[0].title);
+    // Start 1st episode
+    if (currentEpisodesList[0] && currentEpisodesList[0].video_url) {
+      playEpisodeAtIndex(0, false);
     }
   }
 
   playerModal.classList.add('active');
+}
+
+// Play Episode at specific Index (Handles Ad trigger & active state)
+function playEpisodeAtIndex(idx, isManualClick) {
+  if (!currentEpisodesList || !currentEpisodesList[idx]) return;
+
+  // Trigger Popunder / Click Ad
+  if (typeof window.triggerAdOnClick === 'function') {
+    window.triggerAdOnClick();
+  }
+
+  currentEpisodeIndex = idx;
+  const ep = currentEpisodesList[idx];
+
+  // Update UI active button
+  document.querySelectorAll('.btn-ep').forEach((btn, bIdx) => {
+    if (bIdx === idx) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  if (ep.video_url) {
+    playVideo(ep.video_url, ep.title);
+  } else {
+    playerStatus.innerText = '⚠️ Video link missing for this episode';
+  }
 }
 
 // Play Direct MP4 Stream Video
@@ -257,6 +292,20 @@ function playVideo(url, label) {
     console.log('Autoplay blocked or stream ready:', e);
   });
 }
+
+// Auto Play Next Episode when video finishes playing (ended event)
+mainVideoPlayer.addEventListener('ended', () => {
+  if (currentEpisodesList && currentEpisodeIndex + 1 < currentEpisodesList.length) {
+    const nextIdx = currentEpisodeIndex + 1;
+    playerStatus.innerText = `⏭️ Auto-playing Episode ${nextIdx + 1}...`;
+    setTimeout(() => {
+      playEpisodeAtIndex(nextIdx, false);
+    }, 1000);
+  } else {
+    playerStatus.innerText = '🎉 Series completed!';
+  }
+});
+
 
 // Close Modal
 closeModal.onclick = () => {
