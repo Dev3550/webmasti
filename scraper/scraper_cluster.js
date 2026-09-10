@@ -51,10 +51,14 @@ async function discoverAllItemUrls() {
       const $ = require('cheerio').load(html);
       // Typical WordPress theme uses article.post or div.item
       const links = [];
-      $('a.post-card-link, article a, .post a, .entry-title a').each((_, el) => {
+      $('a.post-card-link, article a, .post a, .entry-title a, .item a, h2 a, h3 a').each((_, el) => {
         const href = $(el).attr('href');
-        if (href && href.startsWith('http') && !href.includes('/page/') && !href.includes('/ott/') && !href.includes('/model/') && !href.includes('/episodes/') && !href.includes('/privacy-policy/') && !href.includes('/sitemap')) {
-          links.push(href);
+        if (href && href.startsWith('http')) {
+          const u = href.replace(/\/$/, '');
+          const isCategory = u.endsWith('/ott') || u.endsWith('/model') || u.endsWith('/series') || u.endsWith('/privacy-policy') || u.endsWith('/sitemap') || u.includes('/page/') || u.includes('/category/') || u.includes('/tag/');
+          if (!isCategory && u !== 'https://uffmaal.com' && u !== 'https://hmaal.gg' && u !== 'https://newmaal.com') {
+            links.push(href);
+          }
         }
       });
       if (links.length === 0) break;
