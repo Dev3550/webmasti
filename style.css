@@ -108,12 +108,22 @@ body {
   box-shadow: 0 0 15px rgba(255, 0, 85, 0.2);
 }
 
-.live-counter {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.05);
-  padding: 6px 14px;
-  border-radius: 20px;
+/* Ad Banner Container */
+.ad-container {
+  max-width: 1400px;
+  margin: 14px auto;
+  padding: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ad-container iframe, .ad-container img {
+  max-width: 100%;
+  height: auto;
+  border: none;
 }
 
 /* Hero Section */

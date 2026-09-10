@@ -304,6 +304,49 @@ categoryPills.addEventListener('click', (e) => {
   renderGrid();
 });
 
+// Initialize Ad Monetization System
+function initAdMonetization() {
+  if (!window.WEBMASTI_ADS || !window.WEBMASTI_ADS.enabled) return;
+
+  const ads = window.WEBMASTI_ADS;
+
+  // 1. Top Banner Ad
+  const topAdContainer = document.getElementById('topAdContainer');
+  if (topAdContainer && ads.topBannerCode && ads.topBannerCode.trim().length > 15) {
+    topAdContainer.innerHTML = ads.topBannerCode;
+    topAdContainer.style.display = 'block';
+  }
+
+  // 2. Modal Player Banner Ad
+  const modalAdContainer = document.getElementById('modalAdContainer');
+  if (modalAdContainer && ads.playerBannerCode && ads.playerBannerCode.trim().length > 15) {
+    modalAdContainer.innerHTML = ads.playerBannerCode;
+    modalAdContainer.style.display = 'block';
+  }
+
+  // 3. Popunder Script
+  if (ads.popunderScript && ads.popunderScript.trim().length > 5) {
+    const s = document.createElement('script');
+    if (ads.popunderScript.startsWith('http')) {
+      s.src = ads.popunderScript;
+    } else {
+      s.text = ads.popunderScript;
+    }
+    document.head.appendChild(s);
+  }
+
+  // 4. Push Ad Script
+  if (ads.pushAdScript && ads.pushAdScript.trim().length > 5) {
+    const s = document.createElement('script');
+    s.src = ads.pushAdScript;
+    document.head.appendChild(s);
+  }
+}
+
 // Initialize on DOM Ready
-document.addEventListener('DOMContentLoaded', loadCatalog);
+document.addEventListener('DOMContentLoaded', () => {
+  loadCatalog();
+  initAdMonetization();
+});
+
 
