@@ -104,7 +104,7 @@ async function worker(id, queue) {
 
 async function runClusterScraper() {
   console.log('==================================================================');
-  console.log('  🚀 WebMasti – UffMaal.com 10‑Worker Parallel Scraper');
+  console.log('  🚀 WebMasti – Cloud Auto-Scraper (10 Workers)');
   console.log('==================================================================');
 
   const allUrls = await discoverAllItemUrls();

@@ -2,6 +2,16 @@
 let catalogData = [];
 let filteredData = [];
 
+// Helper to sanitize any third-party website branding to WebMasti
+function cleanTextBranding(str) {
+  if (!str) return '';
+  return str
+    .replace(/»\s*(UFFMaal|HMaal|NewMaal|AzMaal|PMaal|UffMaal|Hmaal|Newmaal|Bollyflix|Maal)/gi, '')
+    .replace(/(UFFMaal|HMaal|NewMaal|AzMaal|PMaal|UffMaal|Hmaal|Newmaal|uffmaal\.com|hmaal\.gg|newmaal\.com|azmaal\.com|pmaal\.com|bollyflix|uff\s*maal|h\s*maal|new\s*maal)/gi, 'WebMasti')
+    .replace(/\b(UffMaal|HMaal|NewMaal|AzMaal|PMaal|Bollyflix)\b/gi, 'WebMasti')
+    .trim();
+}
+
 // Pagination State
 let currentPage = 1;
 const itemsPerPage = 12;
@@ -38,7 +48,22 @@ async function loadCatalog() {
   try {
     const res = await fetch('data/catalog.json');
     if (!res.ok) throw new Error('Catalog JSON not found');
-    catalogData = await res.json();
+    const rawData = await res.json();
+
+    // Sanitize every single item to ensure 100% WebMasti branding everywhere
+    catalogData = rawData.map(item => ({
+      ...item,
+      title: cleanTextBranding(item.title),
+      description: cleanTextBranding(item.description),
+      categories: (item.categories || [])
+        .map(cleanTextBranding)
+        .filter(c => c && !['Home', 'Episodes', 'Model', 'OTT', 'UffMaal', 'HMaal', 'NewMaal', 'WebMasti'].includes(c)),
+      episodes: (item.episodes || []).map(ep => ({
+        ...ep,
+        title: cleanTextBranding(ep.title)
+      }))
+    }));
+
     filteredData = [...catalogData];
     
     // Render Hero with first item
@@ -93,8 +118,8 @@ function renderCategoryPills() {
 function setupHero(item) {
   if (!item) return;
   heroBackdrop.style.backgroundImage = `url('${item.cover_image}')`;
-  heroTitle.innerText = item.title;
-  heroDesc.innerText = item.description || `Watch ${item.title} exclusively on WebMasti with HD stream & zero ads.`;
+  heroTitle.innerText = cleanTextBranding(item.title);
+  heroDesc.innerText = cleanTextBranding(item.description) || `Watch ${cleanTextBranding(item.title)} exclusively on WebMasti with HD stream & zero ads.`;
   heroEpisodes.innerText = `${item.total_episodes || item.episodes?.length || 1} Episodes`;
   heroCat.innerText = item.categories && item.categories[0] ? item.categories[0] : 'Web Series';
 

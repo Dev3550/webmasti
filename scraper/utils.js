@@ -68,6 +68,15 @@ async function fetchShortenerMirrors(shortenerUrl) {
   return mirrors;
 }
 
+function cleanBranding(text) {
+  if (!text) return '';
+  return text
+    .replace(/»\s*(UFFMaal|HMaal|NewMaal|AzMaal|PMaal|UffMaal|Hmaal|Newmaal|Bollyflix|Maal)/gi, '')
+    .replace(/(UFFMaal|HMaal|NewMaal|AzMaal|PMaal|UffMaal|Hmaal|Newmaal|uffmaal\.com|hmaal\.gg|newmaal\.com|azmaal\.com|pmaal\.com|bollyflix|uff\s*maal|h\s*maal|new\s*maal)/gi, 'WebMasti')
+    .replace(/\b(UffMaal|HMaal|NewMaal|AzMaal|PMaal|Bollyflix)\b/gi, 'WebMasti')
+    .trim();
+}
+
 /**
  * Parse a series or movie page and return a unified JSON object.
  * Extracts title, cover image, categories, description, and for each episode,
@@ -77,8 +86,9 @@ async function parseDetailPage(html, pageUrl) {
   const $ = cheerio.load(html);
 
   // Title
-  let title = $('h1').first().text().trim();
-  if (!title) title = $('meta[property="og:title"]').attr('content') || '';
+  let rawTitle = $('h1').first().text().trim();
+  if (!rawTitle) rawTitle = $('meta[property="og:title"]').attr('content') || '';
+  const title = cleanBranding(rawTitle);
 
   const slug = pageUrl.split('/').filter(Boolean).pop() || `item-${Date.now()}`;
 
@@ -92,14 +102,14 @@ async function parseDetailPage(html, pageUrl) {
   // Categories / Tags / Cast
   const categories = [];
   $('a[href*="/ott/"], a[href*="/model/"], #breadcrumbs a, .category a').each((_, el) => {
-    const txt = $(el).text().trim();
+    const txt = cleanBranding($(el).text().trim());
     if (txt && !categories.includes(txt) && txt !== 'Home' && txt !== 'Episodes' && txt !== 'Model' && txt !== 'OTT') {
       categories.push(txt);
     }
   });
 
   // Description
-  const description = $('.entry-content p, .post-content p').text().trim();
+  const description = cleanBranding($('.entry-content p, .post-content p').text().trim());
 
   // Find all Episode URLs on the series page
   const episodeLinks = [];
@@ -108,7 +118,7 @@ async function parseDetailPage(html, pageUrl) {
     const txt = $(el).text().trim();
     if (href && !episodeLinks.some(e => e.url === href)) {
       episodeLinks.push({
-        title: txt ? (isNaN(txt) ? txt : `Episode ${txt}`) : `Episode ${episodeLinks.length + 1}`,
+        title: cleanBranding(txt ? (isNaN(txt) ? txt : `Episode ${txt}`) : `Episode ${episodeLinks.length + 1}`),
         url: href
       });
     }
