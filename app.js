@@ -63,8 +63,9 @@ async function loadCatalog() {
 function renderCategoryPills() {
   const allowedPlatforms = [
     'ULLU', 'Atrangii', 'Rabbit', 'Kooku', 'PrimeShots', 
-    'ALTT', 'MoodX', 'Jugnu', 'Fliz', 'CinemaDosti', 
-    'Voovi', 'Hunter', 'Hotshots', 'Chikooflix', 'Nuefliks'
+    'ALTT', 'MoodX', 'Jugnu', 'PrimePlay', 'AKKU', 'Woow', 
+    'HitPrime', 'Makhan', 'BigShots', 'Bulbul Play', 'Fliz', 
+    'CinemaDosti', 'Voovi', 'Hunter', 'Hotshots', 'Chikooflix', 'Nuefliks'
   ];
 
   const categoriesSet = new Set();
