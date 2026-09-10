@@ -3,7 +3,7 @@
 
 window.WEBMASTI_ADS = {
   // 1. Popunder / On-Click Ad Script (Triggers on click & episode switches)
-  popunderScript: "", 
+  popunderScript: "https://quge5.com/88/tag.min.js", 
 
   // 2. Direct Ad Link (Optional: Direct Smartlink URL from Monetag / Adsterra for opening ad in new tab on episode click)
   directAdLink: "",
