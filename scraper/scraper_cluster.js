@@ -90,8 +90,9 @@ async function worker(id, queue) {
       const item = await parseDetailPage(html, url);
       // Only add items that actually contain playable episodes or video URLs
       if ((item.episodes && item.episodes.length > 0) || (item.video_urls && item.video_urls.length > 0) || (item.total_episodes && item.total_episodes > 0)) {
-        // Replace any existing entry with same id
-        catalog = catalog.filter(i => i.id !== item.id);
+        // Strict Deduplication by ID and Title (Case-insensitive)
+        const cleanTitleLower = (item.title || '').toLowerCase().trim();
+        catalog = catalog.filter(i => i.id !== item.id && (i.title || '').toLowerCase().trim() !== cleanTitleLower);
         catalog.unshift(item);
       }
       scrapedUrls.add(url);
