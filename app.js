@@ -10,7 +10,6 @@ const itemsPerPage = 12;
 const catalogGrid = document.getElementById('catalogGrid');
 const paginationControls = document.getElementById('paginationControls');
 const searchInput = document.getElementById('searchInput');
-const itemCount = document.getElementById('itemCount');
 const categoryPills = document.getElementById('categoryPills');
 
 // Hero Elements
@@ -41,8 +40,6 @@ async function loadCatalog() {
     if (!res.ok) throw new Error('Catalog JSON not found');
     catalogData = await res.json();
     filteredData = [...catalogData];
-    
-    itemCount.innerText = `Total Items: ${catalogData.length}`;
     
     // Render Hero with first item
     if (catalogData.length > 0) {
