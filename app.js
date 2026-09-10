@@ -45,7 +45,8 @@ async function loadCatalog() {
     if (catalogData.length > 0) {
       setupHero(catalogData[0]);
     }
-    
+
+    renderCategoryPills();
     currentPage = 1;
     renderGrid();
   } catch (err) {
@@ -56,6 +57,39 @@ async function loadCatalog() {
       </div>
     `;
   }
+}
+
+// Render Dynamic Category Pills from Scraped Catalog
+function renderCategoryPills() {
+  const popularPlatforms = ['ULLU', 'Atrangii', 'Rabbit', 'Kooku', 'PrimeShots', 'ALTT', 'MoodX', 'Azmaal'];
+  const categoriesSet = new Set();
+  
+  catalogData.forEach(item => {
+    (item.categories || []).forEach(cat => {
+      if (cat && cat.length < 25) categoriesSet.add(cat.trim());
+    });
+  });
+
+  const presentPlatforms = popularPlatforms.filter(p => 
+    Array.from(categoriesSet).some(c => c.toLowerCase() === p.toLowerCase())
+  );
+
+  let pillsHTML = `<button class="pill active" data-cat="all">🔥 All WebSeries</button>`;
+  
+  presentPlatforms.forEach(plat => {
+    pillsHTML += `<button class="pill" data-cat="${plat}">${plat}</button>`;
+  });
+
+  // Add top tags/models
+  let addedCount = 0;
+  Array.from(categoriesSet).forEach(cat => {
+    if (!presentPlatforms.includes(cat) && !cat.toLowerCase().includes('episode') && addedCount < 12) {
+      pillsHTML += `<button class="pill" data-cat="${cat}">${cat}</button>`;
+      addedCount++;
+    }
+  });
+
+  categoryPills.innerHTML = pillsHTML;
 }
 
 // Setup Featured Hero
