@@ -1,5 +1,76 @@
 [
   {
+    "id": "khalish",
+    "title": "Khalish",
+    "url": "https://uffmaal.com/khalish/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Khalish.webp",
+    "categories": [
+      "ULLU",
+      "Aaliya Zaaz",
+      "Priya Gamre"
+    ],
+    "description": "",
+    "total_episodes": 9,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/khalish-episode-1/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152601Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7b7d60eded027067826d482256c8748a5c14a15b1506bae6220149b7c84221ac"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/khalish-episode-2/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=58e6b56aabcfc45b914d580fba9ceb7577fc2809ec3ed5b8b6ad2678736928a0"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/khalish-episode-3/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4c1c0a48a60849c884782c27da9f39158e49926076eda69463f3a3ab66f55e9a"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/khalish-episode-4/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152603Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=84755e571f86c7bc66b628347d995ccd6351a880699b4ccc86363bbef7a8fa3f"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/khalish-episode-5/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=80b3c6e4a9ec78bffe908d9e69b26f9111297e5a02058a7a91615922758912e1"
+      },
+      {
+        "title": "Episode 6",
+        "url": "https://uffmaal.com/episode/khalish-episode-6/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dcb97c93eb01f5a68e391522b8221d41bebec7370db2e8b4bb5f6302ac6f3f4d"
+      },
+      {
+        "title": "Episode 7",
+        "url": "https://uffmaal.com/episode/khalish-episode-7/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152605Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=45296a377295dfca059b69371ef6952b3db43ec1a2dce7e4b7ebccc68dccadc5"
+      },
+      {
+        "title": "Episode 8",
+        "url": "https://uffmaal.com/episode/khalish-episode-8/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=73b7db2a42baf53a8661c6ac360592b842c8d153572c58257761ec2b921e94b8"
+      },
+      {
+        "title": "Episode 9",
+        "url": "https://uffmaal.com/episode/khalish-episode-9/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152607Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fb8776d49f04b0631e9a3b12bc79aff84f9d2be88c726fde74df3ceb09b3acfd"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152601Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7b7d60eded027067826d482256c8748a5c14a15b1506bae6220149b7c84221ac",
+      "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=58e6b56aabcfc45b914d580fba9ceb7577fc2809ec3ed5b8b6ad2678736928a0",
+      "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4c1c0a48a60849c884782c27da9f39158e49926076eda69463f3a3ab66f55e9a",
+      "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152603Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=84755e571f86c7bc66b628347d995ccd6351a880699b4ccc86363bbef7a8fa3f",
+      "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=80b3c6e4a9ec78bffe908d9e69b26f9111297e5a02058a7a91615922758912e1",
+      "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dcb97c93eb01f5a68e391522b8221d41bebec7370db2e8b4bb5f6302ac6f3f4d",
+      "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152605Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=45296a377295dfca059b69371ef6952b3db43ec1a2dce7e4b7ebccc68dccadc5",
+      "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152608Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=73b7db2a42baf53a8661c6ac360592b842c8d153572c58257761ec2b921e94b8",
+      "https://cdn.azmaal.com/ULLU/Khalish/Khalish%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T152607Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fb8776d49f04b0631e9a3b12bc79aff84f9d2be88c726fde74df3ceb09b3acfd"
+    ]
+  },
+  {
     "id": "damaadji-lage-raho",
     "title": "Damaadji Lage Raho",
     "url": "https://uffmaal.com/damaadji-lage-raho/",
