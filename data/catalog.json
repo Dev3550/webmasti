@@ -1,5 +1,53 @@
 [
   {
+    "id": "khwaish",
+    "title": "Khwaish",
+    "url": "https://uffmaal.com/khwaish/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Khwaish.webp",
+    "categories": [
+      "BulBul Play",
+      "Babita Dubey",
+      "Malvika Tomar",
+      "Suhana Khan"
+    ],
+    "description": "",
+    "total_episodes": 5,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/khwaish-episode-1/",
+        "video_url": "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=58c4b91b0ea5a9556d4afe37f3926a43cd71647ef19ce8c55faad8ef16e7336b"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/khwaish-episode-2/",
+        "video_url": "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=00e16a2baa6bec38fcc0daf60db72728f4c22ab2e2cdebd7c604d88cbc316f50"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/khwaish-episode-3/",
+        "video_url": "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=97c3cad0e1e7d242b113c384b26a2d92a9375f5dfa5402f4e5d71cc45793cbe7"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/khwaish-episode-4/",
+        "video_url": "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200337Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7c5e5b5c61cbf88f2d586050948c37ccac9a2962cbf94d60a06f7411188464b1"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/khwaish-episode-5/",
+        "video_url": "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=84a9d3934f0c6a07769de54f5c836067999f5577d2d7069032b6ee1c402e4d88"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=58c4b91b0ea5a9556d4afe37f3926a43cd71647ef19ce8c55faad8ef16e7336b",
+      "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=00e16a2baa6bec38fcc0daf60db72728f4c22ab2e2cdebd7c604d88cbc316f50",
+      "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=97c3cad0e1e7d242b113c384b26a2d92a9375f5dfa5402f4e5d71cc45793cbe7",
+      "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200337Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7c5e5b5c61cbf88f2d586050948c37ccac9a2962cbf94d60a06f7411188464b1",
+      "https://cdn.azmaal.com/BulBul%20Play/Khwaish/Khwaish%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260911%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260911T200338Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=84a9d3934f0c6a07769de54f5c836067999f5577d2d7069032b6ee1c402e4d88"
+    ]
+  },
+  {
     "id": "khalish",
     "title": "Khalish",
     "url": "https://uffmaal.com/khalish/",
