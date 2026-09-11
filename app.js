@@ -1,6 +1,10 @@
 // WebMasti App Core JavaScript
 let catalogData = [];
 let filteredData = [];
+let currentActiveItem = null;
+let currentEpisodesList = [];
+let currentEpisodeIndex = 0;
+let autoplayTimer = null;
 
 // Helper to sanitize any third-party website branding to WebMasti
 function cleanTextBranding(str) {
@@ -50,7 +54,6 @@ async function loadCatalog() {
     if (!res.ok) throw new Error('Catalog JSON not found');
     const rawData = await res.json();
 
-    // Sanitize every single item to ensure 100% WebMasti branding everywhere & filter out empty 0-episode items
     catalogData = rawData
       .filter(item => (item.episodes && item.episodes.length > 0) || (item.video_urls && item.video_urls.length > 0) || (item.total_episodes && item.total_episodes > 0))
       .map(item => ({
@@ -68,14 +71,18 @@ async function loadCatalog() {
 
     filteredData = [...catalogData];
     
-    // Render Hero with first item
+    // Setup Featured Hero
     if (catalogData.length > 0) {
       setupHero(catalogData[0]);
     }
 
     renderCategoryPills();
-    currentPage = 1;
     renderGrid();
+    renderContinueWatching();
+
+    // Check URL state for deep-linked series or refresh recovery
+    checkUrlRoute();
+
   } catch (err) {
     console.error('Error loading catalog:', err);
     catalogGrid.innerHTML = `
@@ -86,7 +93,100 @@ async function loadCatalog() {
   }
 }
 
-// Render Dynamic Category Pills from Scraped Catalog (OTT Platforms ONLY - No Cast/Actress Names)
+// Continue Watching (LocalStorage)
+function saveContinueWatching(item, epIdx) {
+  if (!item) return;
+  const record = {
+    id: item.id,
+    title: item.title,
+    cover_image: item.cover_image,
+    epIdx: epIdx || 0,
+    epTitle: (item.episodes && item.episodes[epIdx]) ? item.episodes[epIdx].title : `Episode ${(epIdx || 0) + 1}`,
+    timestamp: Date.now()
+  };
+  localStorage.setItem('webmasti_continue', JSON.stringify(record));
+  renderContinueWatching();
+}
+
+function renderContinueWatching() {
+  const continueSec = document.getElementById('continueWatchingSection');
+  const continueCard = document.getElementById('continueCard');
+  if (!continueSec || !continueCard) return;
+
+  const raw = localStorage.getItem('webmasti_continue');
+  if (!raw) {
+    continueSec.style.display = 'none';
+    return;
+  }
+
+  try {
+    const record = JSON.parse(raw);
+    const item = catalogData.find(i => i.id === record.id);
+    if (!item) {
+      continueSec.style.display = 'none';
+      return;
+    }
+
+    continueCard.innerHTML = `
+      <img class="continue-thumb" src="${record.cover_image}" alt="${record.title}" onerror="this.src='https://via.placeholder.com/200x120/111/fff?text=WebMasti'">
+      <div class="continue-details">
+        <div class="continue-title">${record.title}</div>
+        <div class="continue-ep">▶ ${record.epTitle}</div>
+      </div>
+      <button class="btn-resume" id="btnResumePlay">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        Resume Watching
+      </button>
+    `;
+
+    document.getElementById('btnResumePlay').onclick = () => {
+      openModal(item, record.epIdx, true);
+    };
+
+    continueSec.style.display = 'block';
+  } catch (e) {
+    continueSec.style.display = 'none';
+  }
+}
+
+// URL Router & History State (Preserves page on refresh & back button)
+function updateUrlHash(item, epIdx) {
+  if (item) {
+    const newHash = `#series=${item.id}&ep=${epIdx || 0}`;
+    if (window.location.hash !== newHash) {
+      history.pushState({ modalOpen: true, id: item.id, epIdx: epIdx || 0 }, '', newHash);
+    }
+  } else {
+    if (window.location.hash) {
+      history.pushState({ modalOpen: false }, '', window.location.pathname);
+    }
+  }
+}
+
+function checkUrlRoute() {
+  const hash = window.location.hash;
+  if (hash && hash.includes('#series=')) {
+    const params = new URLSearchParams(hash.replace('#', '?'));
+    const seriesId = params.get('series');
+    const epIdx = parseInt(params.get('ep') || '0', 10);
+    if (seriesId) {
+      const item = catalogData.find(i => i.id === seriesId);
+      if (item) {
+        openModal(item, epIdx, false);
+      }
+    }
+  } else {
+    if (playerModal.classList.contains('active')) {
+      closeModalAction(false);
+    }
+  }
+}
+
+window.addEventListener('popstate', () => {
+  checkUrlRoute();
+});
+
+// Category Pills
 function renderCategoryPills() {
   const allowedPlatforms = [
     'ULLU', 'Atrangii', 'Rabbit', 'Kooku', 'PrimeShots', 
@@ -102,7 +202,6 @@ function renderCategoryPills() {
     });
   });
 
-  // Filter ONLY matching OTT platform names from the catalog
   const foundPlatforms = allowedPlatforms.filter(plat => 
     Array.from(categoriesSet).some(c => c.toLowerCase() === plat.toLowerCase())
   );
@@ -116,7 +215,7 @@ function renderCategoryPills() {
   categoryPills.innerHTML = pillsHTML;
 }
 
-// Setup Featured Hero
+// Setup Hero
 function setupHero(item) {
   if (!item) return;
   heroBackdrop.style.backgroundImage = `url('${item.cover_image}')`;
@@ -125,10 +224,10 @@ function setupHero(item) {
   heroEpisodes.innerText = `${item.total_episodes || item.episodes?.length || 1} Episodes`;
   heroCat.innerText = item.categories && item.categories[0] ? item.categories[0] : 'Web Series';
 
-  heroPlayBtn.onclick = () => openModal(item);
+  heroPlayBtn.onclick = () => openModal(item, 0, true);
 }
 
-// Render Catalog Grid with Pagination
+// Render Catalog Grid
 function renderGrid() {
   catalogGrid.innerHTML = '';
   if (filteredData.length === 0) {
@@ -169,12 +268,10 @@ function renderGrid() {
   renderPagination(totalPages);
 }
 
-// Render Pagination Buttons
 function renderPagination(totalPages) {
   paginationControls.innerHTML = '';
   if (totalPages <= 1) return;
 
-  // Prev Button
   const prevBtn = document.createElement('button');
   prevBtn.className = 'btn-page';
   prevBtn.innerText = '« Prev';
@@ -188,7 +285,6 @@ function renderPagination(totalPages) {
   };
   paginationControls.appendChild(prevBtn);
 
-  // Page Numbers
   const maxButtons = 5;
   let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
   let endPage = Math.min(totalPages, startPage + maxButtons - 1);
@@ -208,7 +304,6 @@ function renderPagination(totalPages) {
     paginationControls.appendChild(pageBtn);
   }
 
-  // Next Button
   const nextBtn = document.createElement('button');
   nextBtn.className = 'btn-page';
   nextBtn.innerText = 'Next »';
@@ -223,21 +318,17 @@ function renderPagination(totalPages) {
   paginationControls.appendChild(nextBtn);
 }
 
-
-// Current Active Series & Episode State
-let currentEpisodesList = [];
-let currentEpisodeIndex = 0;
-
-// Card click handler in catalog grid
 function handleCardClick(item) {
   if (typeof window.triggerAdOnClick === 'function') {
-    window.triggerAdOnClick();
+    window.triggerAdOnClick(false);
   }
-  openModal(item);
+  openModal(item, 0, true);
 }
 
 // Open Detail & Streaming Modal
-function openModal(item) {
+function openModal(item, startEpIdx, updateHash) {
+  if (!item) return;
+  currentActiveItem = item;
   modalCover.src = item.cover_image;
   modalTitle.innerText = item.title;
   modalDescription.innerText = item.description || `Watch all episodes of ${item.title} with high-speed direct MP4 streaming on WebMasti.`;
@@ -247,7 +338,8 @@ function openModal(item) {
     .join('');
 
   currentEpisodesList = item.episodes || [];
-  currentEpisodeIndex = 0;
+  const initEpIdx = (startEpIdx >= 0 && startEpIdx < currentEpisodesList.length) ? startEpIdx : 0;
+  currentEpisodeIndex = initEpIdx;
   epCount.innerText = currentEpisodesList.length;
 
   episodesGrid.innerHTML = '';
@@ -260,7 +352,7 @@ function openModal(item) {
   } else {
     currentEpisodesList.forEach((ep, idx) => {
       const epBtn = document.createElement('button');
-      epBtn.className = `btn-ep ${idx === 0 ? 'active' : ''}`;
+      epBtn.className = `btn-ep ${idx === initEpIdx ? 'active' : ''}`;
       epBtn.setAttribute('data-ep-idx', idx);
       epBtn.innerHTML = `
         <span>${ep.title || 'Episode ' + (idx + 1)}</span>
@@ -274,28 +366,73 @@ function openModal(item) {
       episodesGrid.appendChild(epBtn);
     });
 
-    // Start 1st episode
-    if (currentEpisodesList[0] && currentEpisodesList[0].video_url) {
-      playEpisodeAtIndex(0, false);
-    }
+    playEpisodeAtIndex(initEpIdx, false);
+  }
+
+  renderRecommendedSeries(item);
+
+  if (updateHash !== false) {
+    updateUrlHash(item, initEpIdx);
   }
 
   playerModal.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Play Episode at specific Index (Handles Ad trigger & active state)
+// 5-Sec Autoplay Progress Bar Header
+function startAutoplayCountdown(nextEpIdx, onComplete) {
+  const wrapper = document.getElementById('autoplayBarWrapper');
+  const text = document.getElementById('autoplayText');
+  const fill = document.getElementById('autoplayProgressFill');
+  const playBtn = document.getElementById('btnPlayNow');
+  if (!wrapper || !fill) {
+    onComplete();
+    return;
+  }
+
+  wrapper.style.display = 'block';
+  fill.style.width = '0%';
+
+  if (autoplayTimer) clearInterval(autoplayTimer);
+
+  const startTime = Date.now();
+  const durationMs = 5000;
+
+  autoplayTimer = setInterval(() => {
+    const elapsed = Date.now() - startTime;
+    const progress = Math.min(100, (elapsed / durationMs) * 100);
+    fill.style.width = `${progress}%`;
+
+    const remainingSec = Math.max(0, Math.ceil((durationMs - elapsed) / 1000));
+    text.innerText = `⏳ Episode ${nextEpIdx + 1} starting in ${remainingSec}s...`;
+
+    if (elapsed >= durationMs) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+      wrapper.style.display = 'none';
+      onComplete();
+    }
+  }, 100);
+
+  playBtn.onclick = () => {
+    if (autoplayTimer) clearInterval(autoplayTimer);
+    autoplayTimer = null;
+    wrapper.style.display = 'none';
+    onComplete();
+  };
+}
+
+// Play Episode at specific Index
 function playEpisodeAtIndex(idx, isManualClick) {
   if (!currentEpisodesList || !currentEpisodesList[idx]) return;
 
-  // Trigger Popunder / Click Ad
-  if (typeof window.triggerAdOnClick === 'function') {
-    window.triggerAdOnClick();
+  if (isManualClick && typeof window.triggerAdOnClick === 'function') {
+    window.triggerAdOnClick(false);
   }
 
   currentEpisodeIndex = idx;
   const ep = currentEpisodesList[idx];
 
-  // Update UI active button
   document.querySelectorAll('.btn-ep').forEach((btn, bIdx) => {
     if (bIdx === idx) {
       btn.classList.add('active');
@@ -307,12 +444,14 @@ function playEpisodeAtIndex(idx, isManualClick) {
   if (ep.video_url) {
     playVideo(ep.video_url, ep.title);
     preloadNextEpisode(idx);
+    saveContinueWatching(currentActiveItem, idx);
+    updateUrlHash(currentActiveItem, idx);
   } else {
     playerStatus.innerText = '⚠️ Video link missing for this episode';
   }
 }
 
-// Preload next episode stream for smooth zero-wait playback
+// Preload next episode stream
 function preloadNextEpisode(currentIdx) {
   if (currentEpisodesList && currentEpisodesList[currentIdx + 1] && currentEpisodesList[currentIdx + 1].video_url) {
     const nextUrl = currentEpisodesList[currentIdx + 1].video_url;
@@ -337,9 +476,9 @@ function playVideo(url, label) {
   });
 }
 
-// Auto Play Next Episode when video finishes playing (ended event)
+// Auto Play Next Episode on Video Completion (with Forced Ad Trigger & 5s Countdown)
 mainVideoPlayer.addEventListener('ended', () => {
-  // Gracefully exit full screen if video ended while in fullscreen mode
+  // Exit fullscreen if active so ad opens cleanly and UI is accessible
   if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
     try {
       if (document.exitFullscreen) {
@@ -352,30 +491,69 @@ mainVideoPlayer.addEventListener('ended', () => {
     }
   }
 
+  // Force trigger transition ad on episode completion!
+  if (typeof window.triggerAdOnClick === 'function') {
+    window.triggerAdOnClick(true);
+  }
+
   if (currentEpisodesList && currentEpisodeIndex + 1 < currentEpisodesList.length) {
     const nextIdx = currentEpisodeIndex + 1;
-    playerStatus.innerText = `⏭️ Auto-playing Episode ${nextIdx + 1}...`;
-    setTimeout(() => {
+    playerStatus.innerText = `⏭️ Next Episode ${nextIdx + 1} starting...`;
+    
+    // Start 5-second countdown progress bar before playing next episode
+    startAutoplayCountdown(nextIdx, () => {
       playEpisodeAtIndex(nextIdx, false);
-    }, 600);
+    });
   } else {
     playerStatus.innerText = '🎉 Series completed!';
   }
 });
 
+// Render Recommended Series Grid inside Modal
+function renderRecommendedSeries(currentItem) {
+  const recGrid = document.getElementById('recommendedGrid');
+  if (!recGrid) return;
+  recGrid.innerHTML = '';
+
+  const pool = catalogData.filter(i => i.id !== currentItem.id);
+  const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 6);
+
+  shuffled.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.style.margin = '0';
+    card.innerHTML = `
+      <div class="card-poster">
+        <img src="${item.cover_image}" alt="${item.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x225/111/fff?text=WebMasti'">
+      </div>
+      <div class="card-info" style="padding: 6px;">
+        <h4 style="font-size:0.8rem; font-weight:700; color:#fff; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${item.title}</h4>
+      </div>
+    `;
+    card.onclick = () => openModal(item, 0, true);
+    recGrid.appendChild(card);
+  });
+}
 
 // Close Modal
-closeModal.onclick = () => {
+function closeModalAction(updateHash) {
   playerModal.classList.remove('active');
   mainVideoPlayer.pause();
   videoSource.src = '';
-};
+  if (autoplayTimer) clearInterval(autoplayTimer);
+  const wrapper = document.getElementById('autoplayBarWrapper');
+  if (wrapper) wrapper.style.display = 'none';
+
+  if (updateHash !== false) {
+    updateUrlHash(null);
+  }
+}
+
+closeModal.onclick = () => closeModalAction(true);
 
 playerModal.onclick = (e) => {
   if (e.target === playerModal) {
-    playerModal.classList.remove('active');
-    mainVideoPlayer.pause();
-    videoSource.src = '';
+    closeModalAction(true);
   }
 };
 
@@ -410,7 +588,7 @@ categoryPills.addEventListener('click', (e) => {
   renderGrid();
 });
 
-// Initialize Ad Monetization System
+// Initialize Ad Monetization System (With Desktop-Only Social Bar check)
 function initAdMonetization() {
   if (!window.WEBMASTI_ADS || !window.WEBMASTI_ADS.enabled) return;
 
@@ -441,8 +619,8 @@ function initAdMonetization() {
     document.head.appendChild(s);
   }
 
-  // 4. Push Ad Script
-  if (ads.pushAdScript && ads.pushAdScript.trim().length > 5) {
+  // 4. Push / Social Bar Ad Script (Loaded ONLY on PC / Tablet screens > 768px)
+  if (window.innerWidth > 768 && ads.pushAdScript && ads.pushAdScript.trim().length > 5) {
     const s = document.createElement('script');
     s.src = ads.pushAdScript;
     document.head.appendChild(s);
@@ -454,5 +632,3 @@ document.addEventListener('DOMContentLoaded', () => {
   loadCatalog();
   initAdMonetization();
 });
-
-

@@ -803,4 +803,123 @@ html, body {
   }
 }
 
+/* Continue Watching Section */
+.continue-section {
+  max-width: 1400px;
+  margin: -30px auto 20px;
+  padding: 0 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.continue-container {
+  background: rgba(18, 22, 33, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 0, 85, 0.3);
+  box-shadow: 0 8px 32px rgba(255, 0, 85, 0.15);
+  border-radius: 14px;
+  padding: 16px 20px;
+}
+
+.continue-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--accent-pink);
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.continue-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.continue-thumb {
+  width: 90px;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.continue-details {
+  flex: 1;
+}
+
+.continue-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.continue-ep {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.btn-resume {
+  background: var(--accent-gradient);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease;
+}
+
+.btn-resume:hover {
+  transform: scale(1.05);
+}
+
+/* 5-Second Autoplay Progress Bar Header */
+.autoplay-bar-wrapper {
+  background: rgba(15, 20, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+}
+
+.autoplay-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn-play-now {
+  background: var(--accent-gradient);
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.autoplay-progress-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.autoplay-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: var(--accent-gradient);
+  transition: width 0.1s linear;
+}
+
 
