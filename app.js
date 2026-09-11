@@ -339,12 +339,25 @@ function playVideo(url, label) {
 
 // Auto Play Next Episode when video finishes playing (ended event)
 mainVideoPlayer.addEventListener('ended', () => {
+  // Gracefully exit full screen if video ended while in fullscreen mode
+  if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+    try {
+      if (document.exitFullscreen) {
+        document.exitFullscreen().catch(e => console.log(e));
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      }
+    } catch (err) {
+      console.log('Fullscreen exit notice:', err);
+    }
+  }
+
   if (currentEpisodesList && currentEpisodeIndex + 1 < currentEpisodesList.length) {
     const nextIdx = currentEpisodeIndex + 1;
     playerStatus.innerText = `⏭️ Auto-playing Episode ${nextIdx + 1}...`;
     setTimeout(() => {
       playEpisodeAtIndex(nextIdx, false);
-    }, 1000);
+    }, 600);
   } else {
     playerStatus.innerText = '🎉 Series completed!';
   }

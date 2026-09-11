@@ -20,8 +20,8 @@ window.WEBMASTI_ADS = {
     <div id="container-24aa9ede5467ca88bbfe69436b7de303"></div>
   `,
 
-  // 5. Push / Social Bar Ad Script
-  pushAdScript: "https://pl31272460.profitableratecpmnetwork.com/2d/a0/4e/2da04e784cf609feb34466e3fd84e3e6.js",
+  // 5. Push / Social Bar Ad Script (Disabled to prevent blocking mobile screen)
+  pushAdScript: "",
 
   // Enable/Disable Ads
   enabled: true

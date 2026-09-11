@@ -755,6 +755,32 @@ body {
   }
 }
 
+/* Native Ad Box Container & Responsive Scaling */
+.native-ad-box {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin: 15px 0 25px 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-glass);
+  padding: 10px 4px;
+}
+
+.native-ad-box iframe, 
+.native-ad-box div {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 @media (max-width: 480px) {
   .catalog-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -768,6 +794,12 @@ body {
   
   .episodes-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .native-ad-box {
+    margin: 10px 0 16px 0;
+    padding: 4px 2px;
+    border-radius: 8px;
   }
 }
 
