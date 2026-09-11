@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055" />
+      <stop offset="50%" stop-color="#bf00ff" />
+      <stop offset="100%" stop-color="#7928ca" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Play Icon -->
+  <g transform="translate(10, 10)">
+    <rect width="60" height="60" rx="16" fill="#141724" stroke="url(#logoGrad)" stroke-width="2" />
+    <path d="M24 18 L46 30 L24 42 Z" fill="url(#logoGrad)" />
+  </g>
+
+  <!-- Typography -->
+  <text x="82" y="52" font-family="'Outfit', sans-serif" font-weight="800" font-size="34" fill="#ffffff">Web<tspan fill="url(#logoGrad)">Masti</tspan></text>
+</svg>

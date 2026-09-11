@@ -3,7 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { fetchHtml, parseDetailPage } = require('./utils');
+const { fetchHtml, parseDetailPage, generateSitemap } = require('./utils');
 
 // Load configuration (same file used by utils)
 const CONFIG_PATH = path.join(__dirname, '..', 'config.json');
@@ -33,6 +33,7 @@ if (fs.existsSync(CHECKPOINT_FILE)) {
 function saveProgress() {
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(catalog, null, 2), 'utf-8');
   fs.writeFileSync(CHECKPOINT_FILE, JSON.stringify(Array.from(scrapedUrls), null, 2), 'utf-8');
+  generateSitemap(catalog);
 }
 
 /**

@@ -184,10 +184,53 @@ async function parseDetailPage(html, pageUrl) {
   };
 }
 
+/**
+ * Automatically update sitemap.xml with all valid catalog item URLs for search engine indexing.
+ */
+function generateSitemap(catalog) {
+  try {
+    const sitemapPath = path.join(__dirname, '..', 'sitemap.xml');
+    const baseUrl = 'https://webmasti.devendradubey61.workers.dev';
+    const today = new Date().toISOString().split('T')[0];
+
+    let xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${baseUrl}/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/privacy-policy.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>\n`;
+
+    (catalog || []).forEach(item => {
+      if (item && item.id) {
+        xml += `  <url>
+    <loc>${baseUrl}/#series=${encodeURIComponent(item.id)}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>\n`;
+      }
+    });
+
+    xml += `</urlset>`;
+    fs.writeFileSync(sitemapPath, xml, 'utf-8');
+  } catch (err) {
+    console.error('Error generating sitemap:', err.message);
+  }
+}
+
 module.exports = {
   fetchHtml,
   extractFileId,
   fetchShortenerMirrors,
   parseDetailPage,
+  generateSitemap,
 };
 

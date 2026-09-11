@@ -34,6 +34,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/catalog.json data/checkpoint_urls.json
+          git add data/catalog.json data/checkpoint_urls.json sitemap.xml
           git status
-          git diff-index --quiet HEAD || (git commit -m "🤖 Auto-update catalog.json with latest scraped series & episodes" && git push)
+          git diff-index --quiet HEAD || (git commit -m "🤖 Auto-update catalog.json & sitemap.xml with latest scraped series & episodes" && git push)
