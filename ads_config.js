@@ -2,8 +2,8 @@
 // Simply paste your Ad Codes from Monetag, PropellerAds, Adsterra, or HilltopAds below!
 
 window.WEBMASTI_ADS = {
-  // 1. Popunder / On-Click Ad Script
-  popunderScript: "https://pl31272333.profitableratecpmnetwork.com/a5/90/cc/a590cc8c91c5d6cc7ee4c0122f3b2bc1.js", 
+  // 1. Popunder / On-Click Ad Script (Disabled as requested)
+  popunderScript: "", 
 
   // 2. Direct Ad Link
   directAdLink: "https://www.profitableratecpmnetwork.com/b4eakvw57?key=a496ce996af212b180f35b5c908cf551",
@@ -20,7 +20,7 @@ window.WEBMASTI_ADS = {
     <div id="container-24aa9ede5467ca88bbfe69436b7de303"></div>
   `,
 
-  // 5. Push / Social Bar Ad Script (Loaded ONLY on Desktop/Tablet > 768px)
+  // 5. Push / Social Bar Ad Script (Active)
   pushAdScript: "https://pl31272460.profitableratecpmnetwork.com/2d/a0/4e/2da04e784cf609feb34466e3fd84e3e6.js",
 
   // Enable/Disable Ads

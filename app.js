@@ -619,8 +619,8 @@ function initAdMonetization() {
     document.head.appendChild(s);
   }
 
-  // 4. Push / Social Bar Ad Script (Loaded ONLY on PC / Tablet screens > 768px)
-  if (window.innerWidth > 768 && ads.pushAdScript && ads.pushAdScript.trim().length > 5) {
+  // 4. Push / Social Bar Ad Script (Active on All Devices)
+  if (ads.pushAdScript && ads.pushAdScript.trim().length > 5) {
     const s = document.createElement('script');
     s.src = ads.pushAdScript;
     document.head.appendChild(s);
