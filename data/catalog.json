@@ -1,5 +1,64 @@
 [
   {
+    "id": "khoon-bhari-maang",
+    "title": "Khoon Bhari Maang",
+    "url": "https://uffmaal.com/khoon-bhari-maang/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Khoon-Bhari-Maang.webp",
+    "categories": [
+      "ULLU",
+      "Donna Munshi",
+      "Maahi Khan"
+    ],
+    "description": "",
+    "total_episodes": 7,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/khoon-bhari-maang-episode-1/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=022ccda90f603339af47296e52b0fdd4a44027aee21f096b2962ebda0a87ceae"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/khoon-bhari-maang-episode-2/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9c95bdc331e2688adc7b0b8f020ea6d00d04eaa0a3e08b08877c9220877f17fb"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/khoon-bhari-maang-episode-3/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fb096a67f8049c421cb64088cee2890bcba647528345faf81085771ea5ef08a0"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/khoon-bhari-maang-episode-4/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c233ef33d0b7c6fd295b7eb1a426a3e731e9aa6bce1a7ffc06ee003bfccc9229"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/khoon-bhari-maang-episode-5/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ba38b6839af9ecbaba929a6d8b51553c1dae757211a2cb0a563606a8e2ecf7d2"
+      },
+      {
+        "title": "Episode 6",
+        "url": "https://uffmaal.com/episode/khoon-bhari-maang-episode-6/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4ef82a9a91e2566a579ac6b4d23029c4755d233c3acf1165c051b503206d5470"
+      },
+      {
+        "title": "Episode 7",
+        "url": "https://uffmaal.com/episode/khoon-bhari-maang-episode-7/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=538562f2cff649e2e3980f6ae8340bd47ca3dd491e71c8543be920e8df39e780"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=022ccda90f603339af47296e52b0fdd4a44027aee21f096b2962ebda0a87ceae",
+      "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9c95bdc331e2688adc7b0b8f020ea6d00d04eaa0a3e08b08877c9220877f17fb",
+      "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fb096a67f8049c421cb64088cee2890bcba647528345faf81085771ea5ef08a0",
+      "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c233ef33d0b7c6fd295b7eb1a426a3e731e9aa6bce1a7ffc06ee003bfccc9229",
+      "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ba38b6839af9ecbaba929a6d8b51553c1dae757211a2cb0a563606a8e2ecf7d2",
+      "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4ef82a9a91e2566a579ac6b4d23029c4755d233c3acf1165c051b503206d5470",
+      "https://cdn.azmaal.com/ULLU/Khoon%20Bhari%20Maang/Khoon%20Bhari%20Maang%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260912%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260912T100102Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=538562f2cff649e2e3980f6ae8340bd47ca3dd491e71c8543be920e8df39e780"
+    ]
+  },
+  {
     "id": "khwaish",
     "title": "Khwaish",
     "url": "https://uffmaal.com/khwaish/",
