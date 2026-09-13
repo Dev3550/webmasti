@@ -23,7 +23,7 @@ window.WEBMASTI_ADS = {
 let lastAdTriggerTime = 0;
 const AD_COOLDOWN_MS = 45000;
 
-// Helper function to trigger Monetag Direct Smartlink on user action
+// Helper function to trigger Monetag Direct Smartlink in background tab
 window.triggerAdOnClick = function(force) {
   if (!window.WEBMASTI_ADS || !window.WEBMASTI_ADS.enabled) return;
 
@@ -34,7 +34,12 @@ window.triggerAdOnClick = function(force) {
   
   if (window.WEBMASTI_ADS.directAdLink && window.WEBMASTI_ADS.directAdLink.trim().length > 5) {
     try {
-      window.open(window.WEBMASTI_ADS.directAdLink, '_blank');
+      // Open Smartlink in new tab and refocus WebMasti so user remains on video page
+      const adWin = window.open(window.WEBMASTI_ADS.directAdLink, '_blank');
+      if (adWin) {
+        adWin.blur();
+        window.focus();
+      }
       lastAdTriggerTime = now;
     } catch (e) {
       console.log('Ad open blocked by browser pop-up setting');
