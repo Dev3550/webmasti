@@ -25,11 +25,11 @@ window.WEBMASTI_ADS = {
   enabled: true
 };
 
-// 45-Second Cooldown timer between direct smartlink popups for smooth UX & high CPM
+// 45-Second Cooldown timer between Popunder & Direct Smartlink ads for smooth UX & high CPM
 let lastAdTriggerTime = 0;
 const AD_COOLDOWN_MS = 45000;
 
-// Helper function to trigger Monetag Direct Smartlink in background tab (PC & Mobile Popunder)
+// Unified Helper function to trigger Popunder & Direct Smartlink in background tab (PC & Mobile Tab-Swap)
 window.triggerAdOnClick = function(force, targetUrl) {
   if (!window.WEBMASTI_ADS || !window.WEBMASTI_ADS.enabled) return false;
 
@@ -38,17 +38,15 @@ window.triggerAdOnClick = function(force, targetUrl) {
     return false;
   }
   
-  const directLink = window.WEBMASTI_ADS.directAdLink;
-  if (!directLink || directLink.trim().length <= 5) return false;
-
+  const directLink = window.WEBMASTI_ADS.directAdLink || "https://omg10.com/4/11790325";
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
   try {
     if (isMobile && targetUrl) {
-      // Mobile Tab-Swap Popunder Technique:
+      // Mobile Tab-Swap Popunder Engine (Applies to both Smartlink & Popunder):
       // 1. Open WebMasti target URL in NEW active tab (Mobile Chrome focuses this new tab!)
       const newSiteWin = window.open(targetUrl, '_blank');
-      // 2. In CURRENT background tab, navigate to Monetag Direct Ad Link!
+      // 2. In CURRENT background tab, navigate to the Ad Link!
       window.location.href = directLink;
       lastAdTriggerTime = now;
       return true; // Handled via tab-swap
