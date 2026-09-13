@@ -1,7 +1,7 @@
 // WebMasti Hybrid Ad Engine (Monetag Smartlink + Adsterra Social Bar & Native Banners)
 window.WEBMASTI_ADS = {
-  // 1. Popunder / On-Click Ad Script (Disabled)
-  popunderScript: "", 
+  // 1. Popunder / On-Click Ad Script (Active on All Devices: Mobile, Tablet & Desktop)
+  popunderScript: "https://pl31272333.profitableratecpmnetwork.com/4b/8d/f3/4b8df32a820c78a05c3140510f2d48bf.js", 
 
   // 2. Monetag Direct Ad Link (Smartlink)
   directAdLink: "https://omg10.com/4/11790325",
