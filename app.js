@@ -318,11 +318,16 @@ function renderPagination(totalPages) {
   paginationControls.appendChild(nextBtn);
 }
 
-function handleCardClick(item) {
+function handleCardClick(item, epIdx) {
+  if (!item) return;
+  const targetUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(item.id)}`;
+  let adHandled = false;
   if (typeof window.triggerAdOnClick === 'function') {
-    window.triggerAdOnClick(false);
+    adHandled = window.triggerAdOnClick(false, targetUrl);
   }
-  openModal(item, 0, true);
+  if (!adHandled) {
+    openModal(item, epIdx || 0, true);
+  }
 }
 
 // Dynamic SEO Meta Tags & Schema.org Structured Data
@@ -492,7 +497,12 @@ function playEpisodeAtIndex(idx, isManualClick) {
   if (!currentEpisodesList || !currentEpisodesList[idx]) return;
 
   if (isManualClick && typeof window.triggerAdOnClick === 'function') {
-    window.triggerAdOnClick(false);
+    let targetUrl = '';
+    if (currentActiveItem) {
+      targetUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(currentActiveItem.id)}&ep=${idx}`;
+    }
+    const adHandled = window.triggerAdOnClick(false, targetUrl);
+    if (adHandled) return;
   }
 
   currentEpisodeIndex = idx;
