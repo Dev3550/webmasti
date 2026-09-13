@@ -2,8 +2,8 @@ name: WebMasti Cloud Auto Scraper
 
 on:
   schedule:
-    # Runs every 6 hours automatically (00:00, 06:00, 12:00, 18:00 UTC)
-    - cron: '0 */6 * * *'
+    # Runs every 30 minutes automatically
+    - cron: '*/30 * * * *'
   push:
     branches:
       - main
