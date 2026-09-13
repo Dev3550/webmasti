@@ -1,37 +1,29 @@
-// WebMasti Smart Ad Monetization Engine
-// Simply paste your Ad Codes from Monetag, PropellerAds, Adsterra, or HilltopAds below!
-
+// WebMasti Monetag Smart Ad Engine
 window.WEBMASTI_ADS = {
-  // 1. Popunder / On-Click Ad Script (Disabled as requested)
+  // 1. Popunder / On-Click Ad Script (Disabled)
   popunderScript: "", 
 
-  // 2. Direct Ad Link
-  directAdLink: "https://www.profitableratecpmnetwork.com/b4eakvw57?key=a496ce996af212b180f35b5c908cf551",
+  // 2. Monetag Direct Ad Link (Smartlink)
+  directAdLink: "https://omg10.com/4/11790325",
 
-  // 3. Top Header Banner / Native Ad HTML Code
-  topBannerCode: `
-    <script async="async" data-cfasync="false" src="https://pl31272345.profitableratecpmnetwork.com/24aa9ede5467ca88bbfe69436b7de303/invoke.js"></script>
-    <div id="container-24aa9ede5467ca88bbfe69436b7de303"></div>
-  `,
+  // 3. Top Header Banner / Native Ad HTML Code (Adsterra Disabled)
+  topBannerCode: "",
 
-  // 4. In-Modal Player Banner Ad HTML Code
-  playerBannerCode: `
-    <script async="async" data-cfasync="false" src="https://pl31272345.profitableratecpmnetwork.com/24aa9ede5467ca88bbfe69436b7de303/invoke.js"></script>
-    <div id="container-24aa9ede5467ca88bbfe69436b7de303"></div>
-  `,
+  // 4. In-Modal Player Banner Ad HTML Code (Adsterra Disabled)
+  playerBannerCode: "",
 
-  // 5. Push / Social Bar Ad Script (Active)
-  pushAdScript: "https://pl31272460.profitableratecpmnetwork.com/2d/a0/4e/2da04e784cf609feb34466e3fd84e3e6.js",
+  // 5. Push / Social Bar Ad Script (Adsterra Disabled)
+  pushAdScript: "",
 
   // Enable/Disable Ads
   enabled: true
 };
 
-// 25-Second Cooldown timer between popups
+// 45-Second Cooldown timer between direct smartlink popups for smooth UX & high CPM
 let lastAdTriggerTime = 0;
-const AD_COOLDOWN_MS = 25000;
+const AD_COOLDOWN_MS = 45000;
 
-// Helper function to trigger popunder / click ad on user action or episode switch
+// Helper function to trigger Monetag Direct Smartlink on user action
 window.triggerAdOnClick = function(force) {
   if (!window.WEBMASTI_ADS || !window.WEBMASTI_ADS.enabled) return;
 
