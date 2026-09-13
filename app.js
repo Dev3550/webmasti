@@ -325,6 +325,70 @@ function handleCardClick(item) {
   openModal(item, 0, true);
 }
 
+// Dynamic SEO Meta Tags & Schema.org Structured Data
+function updateDynamicSEO(item, epIdx) {
+  if (!item) return;
+  const epText = (item.episodes && item.episodes[epIdx]) ? ` - ${item.episodes[epIdx].title}` : '';
+  const pageTitle = `${item.title}${epText} Full Web Series - Watch Online Free HD | WebMasti`;
+  document.title = pageTitle;
+
+  const pageDesc = `Watch ${item.title} full web series episodes online in HD for free on WebMasti. Stream latest 18+ uncut Hindi web series with direct video access.`;
+  
+  const descMeta = document.querySelector('meta[name="description"]');
+  if (descMeta) descMeta.setAttribute('content', pageDesc);
+
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.setAttribute('content', pageTitle);
+
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc) ogDesc.setAttribute('content', pageDesc);
+
+  const ogImg = document.querySelector('meta[property="og:image"]');
+  if (ogImg && item.cover_image) ogImg.setAttribute('content', item.cover_image);
+
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.setAttribute('href', `https://webmasti.devendradubey61.workers.dev/#series=${encodeURIComponent(item.id)}`);
+
+  // Inject dynamic TVSeries JSON-LD Schema for Google Rich Snippets
+  let schemaScript = document.getElementById('dynamic-series-schema');
+  if (!schemaScript) {
+    schemaScript = document.createElement('script');
+    schemaScript.id = 'dynamic-series-schema';
+    schemaScript.type = 'application/ld+json';
+    document.head.appendChild(schemaScript);
+  }
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "TVSeries",
+    "name": item.title,
+    "description": item.description || pageDesc,
+    "image": item.cover_image,
+    "numberOfEpisodes": item.total_episodes || (item.episodes ? item.episodes.length : 1),
+    "inLanguage": "Hindi",
+    "genre": item.categories || ["Web Series", "18+ Uncut"],
+    "provider": {
+      "@type": "Organization",
+      "name": "WebMasti",
+      "url": "https://webmasti.devendradubey61.workers.dev/"
+    }
+  };
+
+  schemaScript.textContent = JSON.stringify(schemaData);
+}
+
+function resetSEOToDefault() {
+  document.title = "WebMasti - Watch 18+ Uncut Web Series & Movies Online Free HD";
+  const descMeta = document.querySelector('meta[name="description"]');
+  if (descMeta) descMeta.setAttribute('content', "Watch HD 18+ Uncut Web Series online for free on WebMasti. Stream latest episodes from ULLU, MoodX, PrimePlay, Kooku, Rabbit, Woow, Jugnu, and Exclusive Indian Web Series with direct streaming and fast buffering.");
+
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.setAttribute('href', "https://webmasti.devendradubey61.workers.dev/");
+
+  const schemaScript = document.getElementById('dynamic-series-schema');
+  if (schemaScript) schemaScript.remove();
+}
+
 // Open Detail & Streaming Modal
 function openModal(item, startEpIdx, updateHash) {
   if (!item) return;
@@ -370,6 +434,7 @@ function openModal(item, startEpIdx, updateHash) {
   }
 
   renderRecommendedSeries(item);
+  updateDynamicSEO(item, initEpIdx);
 
   if (updateHash !== false) {
     updateUrlHash(item, initEpIdx);
@@ -543,6 +608,8 @@ function closeModalAction(updateHash) {
   if (autoplayTimer) clearInterval(autoplayTimer);
   const wrapper = document.getElementById('autoplayBarWrapper');
   if (wrapper) wrapper.style.display = 'none';
+
+  resetSEOToDefault();
 
   if (updateHash !== false) {
     updateUrlHash(null);
