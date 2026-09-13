@@ -220,11 +220,11 @@ function setupHero(item) {
   if (!item) return;
   heroBackdrop.style.backgroundImage = `url('${item.cover_image}')`;
   heroTitle.innerText = cleanTextBranding(item.title);
-  heroDesc.innerText = cleanTextBranding(item.description) || `Watch ${cleanTextBranding(item.title)} exclusively on WebMasti with HD stream & zero ads.`;
+  heroDesc.innerText = cleanTextBranding(item.description) || `Watch ${cleanTextBranding(item.title)} exclusively on WebMasti with HD stream.`;
   heroEpisodes.innerText = `${item.total_episodes || item.episodes?.length || 1} Episodes`;
   heroCat.innerText = item.categories && item.categories[0] ? item.categories[0] : 'Web Series';
 
-  heroPlayBtn.onclick = () => openModal(item, 0, true);
+  heroPlayBtn.onclick = () => handleCardClick(item);
 }
 
 // Render Catalog Grid
@@ -595,7 +595,7 @@ function renderRecommendedSeries(currentItem) {
         <h4 style="font-size:0.8rem; font-weight:700; color:#fff; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${item.title}</h4>
       </div>
     `;
-    card.onclick = () => openModal(item, 0, true);
+    card.onclick = () => handleCardClick(item);
     recGrid.appendChild(card);
   });
 }
