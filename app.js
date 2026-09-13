@@ -394,6 +394,102 @@ function resetSEOToDefault() {
   if (schemaScript) schemaScript.remove();
 }
 
+// Seeded Engagement Metrics & Native Share System
+function getSeededStats(itemId) {
+  let hash = 0;
+  for (let i = 0; i < (itemId || '').length; i++) {
+    hash = (hash << 5) - hash + itemId.charCodeAt(i);
+    hash |= 0;
+  }
+  const positiveHash = Math.abs(hash);
+  const baseViews = 12500 + (positiveHash % 34500); // 12.5k to 47k views
+  const baseLikes = 1200 + (positiveHash % 3600);   // 1.2k to 4.8k likes
+
+  const userViews = parseInt(localStorage.getItem(`webmasti_views_${itemId}`) || '0', 10);
+  const userLiked = localStorage.getItem(`webmasti_liked_${itemId}`) === 'true';
+
+  return {
+    views: baseViews + userViews,
+    likes: baseLikes + (userLiked ? 1 : 0),
+    isLiked: userLiked
+  };
+}
+
+function updateEngagementBar(item) {
+  if (!item) return;
+
+  // Increment view count on modal open
+  const currentViews = parseInt(localStorage.getItem(`webmasti_views_${item.id}`) || '0', 10);
+  localStorage.setItem(`webmasti_views_${item.id}`, (currentViews + 1).toString());
+
+  const stats = getSeededStats(item.id);
+
+  const viewsEl = document.getElementById('modalViewsCount');
+  const likesEl = document.getElementById('modalLikesCount');
+  const likeBtn = document.getElementById('btnModalLike');
+  const shareBtn = document.getElementById('btnModalShare');
+
+  if (viewsEl) {
+    viewsEl.innerText = stats.views >= 1000 ? `${(stats.views / 1000).toFixed(1)}K` : stats.views.toLocaleString();
+  }
+
+  if (likesEl) {
+    likesEl.innerText = stats.likes.toLocaleString();
+  }
+
+  if (likeBtn) {
+    if (stats.isLiked) {
+      likeBtn.classList.add('liked');
+    } else {
+      likeBtn.classList.remove('liked');
+    }
+
+    likeBtn.onclick = () => {
+      const isCurrentlyLiked = localStorage.getItem(`webmasti_liked_${item.id}`) === 'true';
+      if (isCurrentlyLiked) {
+        localStorage.setItem(`webmasti_liked_${item.id}`, 'false');
+        likeBtn.classList.remove('liked');
+      } else {
+        localStorage.setItem(`webmasti_liked_${item.id}`, 'true');
+        likeBtn.classList.add('liked');
+      }
+      const updatedStats = getSeededStats(item.id);
+      if (likesEl) likesEl.innerText = updatedStats.likes.toLocaleString();
+    };
+  }
+
+  if (shareBtn) {
+    shareBtn.onclick = () => {
+      handleNativeShare(item);
+    };
+  }
+}
+
+function handleNativeShare(item) {
+  if (!item) return;
+  const shareUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(item.id)}`;
+  const shareTitle = `${item.title} - Watch Full Web Series HD | WebMasti`;
+  const shareText = `🔥 Watch ${item.title} full web series episodes in HD quality on WebMasti! Direct video streaming.`;
+
+  if (navigator.share) {
+    navigator.share({
+      title: shareTitle,
+      text: shareText,
+      url: shareUrl
+    }).catch(e => {
+      console.log('Native share canceled:', e);
+    });
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(shareUrl).then(() => {
+      alert('✨ WebMasti link copied to clipboard! Share it with your friends on WhatsApp or Telegram.');
+    }).catch(() => {
+      prompt('Copy this WebMasti link to share:', shareUrl);
+    });
+  } else {
+    prompt('Copy this WebMasti link to share:', shareUrl);
+  }
+}
+
 // Open Detail & Streaming Modal
 function openModal(item, startEpIdx, updateHash) {
   if (!item) return;
@@ -440,6 +536,7 @@ function openModal(item, startEpIdx, updateHash) {
 
   renderRecommendedSeries(item);
   updateDynamicSEO(item, initEpIdx);
+  updateEngagementBar(item);
 
   if (updateHash !== false) {
     updateUrlHash(item, initEpIdx);

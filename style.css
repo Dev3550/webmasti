@@ -466,6 +466,80 @@ body {
   line-height: 1.4;
 }
 
+/* Realtime Engagement Bar (Views, Likes, Native Share) */
+.modal-actions-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-glass);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.btn-stat-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 0, 85, 0.08);
+  border: 1px solid rgba(255, 0, 85, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent-pink);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-stat-like:hover {
+  transform: scale(1.05);
+  background: rgba(255, 0, 85, 0.2);
+}
+
+.btn-stat-like.liked {
+  background: var(--accent-gradient);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(255, 0, 85, 0.35);
+}
+
+.btn-stat-like.liked svg {
+  fill: #fff;
+}
+
+.btn-stat-share {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(121, 40, 202, 0.15);
+  border: 1px solid rgba(121, 40, 202, 0.3);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #c084fc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-stat-share:hover {
+  transform: scale(1.05);
+  background: rgba(121, 40, 202, 0.3);
+  color: #fff;
+}
+
 /* Video Player */
 .player-container {
   position: relative;
