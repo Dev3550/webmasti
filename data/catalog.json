@@ -1,5 +1,40 @@
 [
   {
+    "id": "laila-s1",
+    "title": "Laila S1",
+    "url": "https://uffmaal.com/laila-s1/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Laila-S1-Episode-3.webp",
+    "categories": [
+      "WOOW",
+      "Ekta More",
+      "Sharanya Jit Kaur"
+    ],
+    "description": "",
+    "total_episodes": 3,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/laila-s1-episode-1/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260914%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260914T001032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=81342a045ae812acd1231c4d4cca1ad992c4ed6dc09022244e70e75fe8f4ccf8"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/laila-s1-episode-2/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260914%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260914T001046Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e196902f7f4323575080556fbd33b2bf1725ac3c3178c398e5741e3f9c7872c9"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/laila-s1-episode-3/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260914%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260914T001055Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6091a3fbbb23f8bc3c3cb155ba3d7f91ecab533ac9d7a37c57a5477098e66a14"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260914%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260914T001032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=81342a045ae812acd1231c4d4cca1ad992c4ed6dc09022244e70e75fe8f4ccf8",
+      "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260914%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260914T001046Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e196902f7f4323575080556fbd33b2bf1725ac3c3178c398e5741e3f9c7872c9",
+      "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260914%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260914T001055Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6091a3fbbb23f8bc3c3cb155ba3d7f91ecab533ac9d7a37c57a5477098e66a14"
+    ]
+  },
+  {
     "id": "koi-jaye-toh-le-aaye",
     "title": "Koi Jaye Toh Le Aaye",
     "url": "https://uffmaal.com/koi-jaye-toh-le-aaye/",
