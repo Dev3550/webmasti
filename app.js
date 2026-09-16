@@ -682,12 +682,28 @@ function flushVideoMemory() {
   }
 }
 
-// Preload next episode stream & pre-fetch 10MB first chunk into cache for zero-lag episode switching
+// Detect Network Connection Speed (Slow 2G/3G vs Fast 4G/Wi-Fi)
+function getNetworkType() {
+  const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  if (!conn) return { isSlow: false, effectiveType: '4g', downlink: 10 };
+  
+  const effectiveType = conn.effectiveType || '4g';
+  const downlink = conn.downlink || 10;
+  const saveData = conn.saveData || false;
+
+  const isSlow = (effectiveType === '2g' || effectiveType === 'slow-2g' || effectiveType === '3g' || downlink < 1.8 || saveData);
+  return { isSlow, effectiveType, downlink, saveData };
+}
+
+// Adaptive Preload Engine - Adjusts caching behavior based on connection speed
 function preloadNextEpisode(currentIdx) {
+  const net = getNetworkType();
+  // On slow network connections (2G/3G/SaveData), preserve 100% bandwidth for the playing video
+  if (net.isSlow) return;
+
   if (currentEpisodesList && currentEpisodesList[currentIdx + 1] && currentEpisodesList[currentIdx + 1].video_url) {
     const nextUrl = currentEpisodesList[currentIdx + 1].video_url;
     
-    // 1. Preload link element
     const existing = document.querySelector(`link[href="${nextUrl}"]`);
     if (!existing) {
       const link = document.createElement('link');
@@ -697,16 +713,18 @@ function preloadNextEpisode(currentIdx) {
       document.head.appendChild(link);
     }
 
-    // 2. Pre-fetch 10MB video range chunk in background
     try {
       fetch(nextUrl, {
-        headers: { 'Range': 'bytes=0-10485760' }
+        headers: { 'Range': 'bytes=0-5242880' } // 5MB initial chunk
       }).catch(e => console.log('Next episode pre-fetch ready:', e));
     } catch (_) {}
   }
 }
 
-// 90-Second Ultra Pre-Buffering Pump Engine
+let adaptiveStallCount = 0;
+let lastStallTime = 0;
+
+// Adaptive Stream Buffer Engine - Dynamic buffering without fixed hardcoding
 function startBufferPump() {
   if (bufferCheckInterval) clearInterval(bufferCheckInterval);
 
@@ -726,23 +744,44 @@ function startBufferPump() {
         }
       }
 
-      // If buffered time ahead is less than 90 seconds, aggressively trigger stream buffer fetching
-      if (bufferedAhead < 90 && mainVideoPlayer.duration && (mainVideoPlayer.duration - currentTime > 5)) {
+      const net = getNetworkType();
+      const targetBuffer = net.isSlow ? 15 : 45; // 15s target on slow net, 45s on fast net
+
+      if (bufferedAhead < targetBuffer && mainVideoPlayer.duration && (mainVideoPlayer.duration - currentTime > 3)) {
         mainVideoPlayer.preload = 'auto';
       }
     } catch (e) {}
   }, 2000);
 }
 
-// Auto-Stall Recovery Listener
+// Auto-Stall Recovery & Adaptive Network Listener
 if (mainVideoPlayer) {
   mainVideoPlayer.addEventListener('waiting', () => {
-    setPlayerStatus('⚡ Pre-buffering 90s ahead for smooth playback...', 2500);
+    const now = Date.now();
+    if (now - lastStallTime < 20000) {
+      adaptiveStallCount++;
+    } else {
+      adaptiveStallCount = 1;
+    }
+    lastStallTime = now;
+
+    const net = getNetworkType();
+    if (net.isSlow || adaptiveStallCount >= 2) {
+      setPlayerStatus('📶 Slow network: Auto-optimizing stream...', 3000);
+    } else {
+      setPlayerStatus('⚡ Optimizing stream buffer...', 2000);
+    }
   });
 
   mainVideoPlayer.addEventListener('stalled', () => {
     if (mainVideoPlayer.readyState >= 2 && mainVideoPlayer.paused) {
       mainVideoPlayer.play().catch(() => {});
+    }
+  });
+
+  mainVideoPlayer.addEventListener('canplay', () => {
+    if (adaptiveStallCount > 0) {
+      adaptiveStallCount = 0;
     }
   });
 
@@ -762,7 +801,7 @@ function playVideo(url, label) {
   videoSource.src = url;
   mainVideoPlayer.load();
 
-  // 3. Start 90-second buffer pump engine
+  // 3. Start adaptive buffer pump engine
   startBufferPump();
 
   // 4. Play video
