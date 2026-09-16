@@ -444,24 +444,38 @@ function updateEngagementBar(item) {
       likeBtn.classList.remove('liked');
     }
 
-    likeBtn.onclick = () => {
+    const toggleLike = (e) => {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
       const isCurrentlyLiked = localStorage.getItem(`webmasti_liked_${item.id}`) === 'true';
       if (isCurrentlyLiked) {
         localStorage.setItem(`webmasti_liked_${item.id}`, 'false');
         likeBtn.classList.remove('liked');
+        setPlayerStatus('💔 Unliked', 2000);
       } else {
         localStorage.setItem(`webmasti_liked_${item.id}`, 'true');
         likeBtn.classList.add('liked');
+        setPlayerStatus('❤️ Liked this series!', 2000);
       }
       const updatedStats = getSeededStats(item.id);
       if (likesEl) likesEl.innerText = updatedStats.likes.toLocaleString();
     };
+
+    likeBtn.onclick = toggleLike;
   }
 
   if (shareBtn) {
-    shareBtn.onclick = () => {
+    const triggerShare = (e) => {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
       handleNativeShare(item);
     };
+
+    shareBtn.onclick = triggerShare;
   }
 }
 
@@ -476,12 +490,22 @@ function handleNativeShare(item) {
       title: shareTitle,
       text: shareText,
       url: shareUrl
+    }).then(() => {
+      setPlayerStatus('🔗 Shared successfully!', 2500);
     }).catch(e => {
-      console.log('Native share canceled:', e);
+      console.log('Native share canceled/fallback:', e);
+      fallbackCopy(shareUrl);
     });
-  } else if (navigator.clipboard) {
+  } else {
+    fallbackCopy(shareUrl);
+  }
+}
+
+function fallbackCopy(shareUrl) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(shareUrl).then(() => {
-      alert('✨ WebMasti link copied to clipboard! Share it with your friends on WhatsApp or Telegram.');
+      setPlayerStatus('📋 Link copied to clipboard!', 3000);
+      alert('✨ WebMasti episode link copied! Share it with your friends on WhatsApp or Telegram.');
     }).catch(() => {
       prompt('Copy this WebMasti link to share:', shareUrl);
     });
