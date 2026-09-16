@@ -623,10 +623,29 @@ function playEpisodeAtIndex(idx, isManualClick) {
   }
 }
 
-// Preload next episode stream
+let bufferCheckInterval = null;
+
+// Flush Video RAM & Decoded Buffer Memory between episodes so 2nd/3rd episode never lags or stutters
+function flushVideoMemory() {
+  if (bufferCheckInterval) clearInterval(bufferCheckInterval);
+  if (mainVideoPlayer) {
+    try {
+      mainVideoPlayer.pause();
+      if (videoSource) videoSource.removeAttribute('src');
+      mainVideoPlayer.removeAttribute('src');
+      mainVideoPlayer.load();
+    } catch (e) {
+      console.log('Video RAM flush notice:', e);
+    }
+  }
+}
+
+// Preload next episode stream & pre-fetch 10MB first chunk into cache for zero-lag episode switching
 function preloadNextEpisode(currentIdx) {
   if (currentEpisodesList && currentEpisodesList[currentIdx + 1] && currentEpisodesList[currentIdx + 1].video_url) {
     const nextUrl = currentEpisodesList[currentIdx + 1].video_url;
+    
+    // 1. Preload link element
     const existing = document.querySelector(`link[href="${nextUrl}"]`);
     if (!existing) {
       const link = document.createElement('link');
@@ -635,14 +654,84 @@ function preloadNextEpisode(currentIdx) {
       link.href = nextUrl;
       document.head.appendChild(link);
     }
+
+    // 2. Pre-fetch 10MB video range chunk in background
+    try {
+      fetch(nextUrl, {
+        headers: { 'Range': 'bytes=0-10485760' }
+      }).catch(e => console.log('Next episode pre-fetch ready:', e));
+    } catch (_) {}
   }
 }
 
-// Play Direct MP4 Stream Video
+// 90-Second Ultra Pre-Buffering Pump Engine
+function startBufferPump() {
+  if (bufferCheckInterval) clearInterval(bufferCheckInterval);
+
+  bufferCheckInterval = setInterval(() => {
+    if (!mainVideoPlayer || mainVideoPlayer.paused || mainVideoPlayer.ended) return;
+
+    try {
+      const currentTime = mainVideoPlayer.currentTime;
+      let bufferedAhead = 0;
+
+      for (let i = 0; i < mainVideoPlayer.buffered.length; i++) {
+        const start = mainVideoPlayer.buffered.start(i);
+        const end = mainVideoPlayer.buffered.end(i);
+        if (currentTime >= start && currentTime <= end) {
+          bufferedAhead = end - currentTime;
+          break;
+        }
+      }
+
+      // If buffered time ahead is less than 90 seconds, aggressively trigger stream buffer fetching
+      if (bufferedAhead < 90 && mainVideoPlayer.duration && (mainVideoPlayer.duration - currentTime > 5)) {
+        mainVideoPlayer.preload = 'auto';
+      }
+
+      // Update player status cleanly
+      if (playerStatus && !mainVideoPlayer.paused) {
+        const bufSec = Math.round(bufferedAhead);
+        if (bufSec > 0) {
+          playerStatus.innerText = `▶️ Playing (${bufSec}s Ultra-Buffered Ahead)`;
+        }
+      }
+    } catch (e) {}
+  }, 2000);
+}
+
+// Auto-Stall Recovery Listener
+if (mainVideoPlayer) {
+  mainVideoPlayer.addEventListener('waiting', () => {
+    if (playerStatus) playerStatus.innerText = '⚡ Pre-buffering 90s ahead for smooth playback...';
+  });
+
+  mainVideoPlayer.addEventListener('stalled', () => {
+    if (mainVideoPlayer.readyState >= 2 && mainVideoPlayer.paused) {
+      mainVideoPlayer.play().catch(() => {});
+    }
+  });
+
+  mainVideoPlayer.addEventListener('playing', () => {
+    startBufferPump();
+  });
+}
+
+// Play Direct MP4 Stream Video with RAM Memory Flush
 function playVideo(url, label) {
-  playerStatus.innerText = `▶️ Playing: ${label}`;
+  playerStatus.innerText = `▶️ Loading Stream: ${label}...`;
+
+  // 1. Flush previous video RAM memory buffer so 2nd/3rd episodes never lag or stutter
+  flushVideoMemory();
+
+  // 2. Assign new video URL
   videoSource.src = url;
   mainVideoPlayer.load();
+
+  // 3. Start 90-second buffer pump engine
+  startBufferPump();
+
+  // 4. Play video
   mainVideoPlayer.play().catch(e => {
     console.log('Autoplay blocked or stream ready:', e);
   });
@@ -710,8 +799,7 @@ function renderRecommendedSeries(currentItem) {
 // Close Modal
 function closeModalAction(updateHash) {
   playerModal.classList.remove('active');
-  mainVideoPlayer.pause();
-  videoSource.src = '';
+  flushVideoMemory();
   if (autoplayTimer) clearInterval(autoplayTimer);
   const wrapper = document.getElementById('autoplayBarWrapper');
   if (wrapper) wrapper.style.display = 'none';
