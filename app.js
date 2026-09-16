@@ -623,6 +623,24 @@ function playEpisodeAtIndex(idx, isManualClick) {
   }
 }
 
+let playerStatusTimer = null;
+
+// Helper to set player status with automatic fadeout after 3.5 seconds
+function setPlayerStatus(text, autoHideMs = 3500) {
+  if (!playerStatus) return;
+  playerStatus.innerText = text;
+  playerStatus.style.opacity = '1';
+  playerStatus.style.visibility = 'visible';
+
+  if (playerStatusTimer) clearTimeout(playerStatusTimer);
+  if (autoHideMs > 0) {
+    playerStatusTimer = setTimeout(() => {
+      playerStatus.style.opacity = '0';
+      playerStatus.style.visibility = 'hidden';
+    }, autoHideMs);
+  }
+}
+
 let bufferCheckInterval = null;
 
 // Flush Video RAM & Decoded Buffer Memory between episodes so 2nd/3rd episode never lags or stutters
@@ -688,14 +706,6 @@ function startBufferPump() {
       if (bufferedAhead < 90 && mainVideoPlayer.duration && (mainVideoPlayer.duration - currentTime > 5)) {
         mainVideoPlayer.preload = 'auto';
       }
-
-      // Update player status cleanly
-      if (playerStatus && !mainVideoPlayer.paused) {
-        const bufSec = Math.round(bufferedAhead);
-        if (bufSec > 0) {
-          playerStatus.innerText = `▶️ Playing (${bufSec}s Ultra-Buffered Ahead)`;
-        }
-      }
     } catch (e) {}
   }, 2000);
 }
@@ -703,7 +713,7 @@ function startBufferPump() {
 // Auto-Stall Recovery Listener
 if (mainVideoPlayer) {
   mainVideoPlayer.addEventListener('waiting', () => {
-    if (playerStatus) playerStatus.innerText = '⚡ Pre-buffering 90s ahead for smooth playback...';
+    setPlayerStatus('⚡ Pre-buffering 90s ahead for smooth playback...', 2500);
   });
 
   mainVideoPlayer.addEventListener('stalled', () => {
@@ -719,7 +729,7 @@ if (mainVideoPlayer) {
 
 // Play Direct MP4 Stream Video with RAM Memory Flush
 function playVideo(url, label) {
-  playerStatus.innerText = `▶️ Loading Stream: ${label}...`;
+  setPlayerStatus(`▶️ Playing: ${label}`, 3500);
 
   // 1. Flush previous video RAM memory buffer so 2nd/3rd episodes never lag or stutter
   flushVideoMemory();
@@ -759,14 +769,14 @@ mainVideoPlayer.addEventListener('ended', () => {
 
   if (currentEpisodesList && currentEpisodeIndex + 1 < currentEpisodesList.length) {
     const nextIdx = currentEpisodeIndex + 1;
-    playerStatus.innerText = `⏭️ Next Episode ${nextIdx + 1} starting...`;
+    setPlayerStatus(`⏭️ Next Episode ${nextIdx + 1} starting...`, 3000);
     
     // Start 5-second countdown progress bar before playing next episode
     startAutoplayCountdown(nextIdx, () => {
       playEpisodeAtIndex(nextIdx, false);
     });
   } else {
-    playerStatus.innerText = '🎉 Series completed!';
+    setPlayerStatus('🎉 Series completed!', 4000);
   }
 });
 
@@ -850,7 +860,7 @@ categoryPills.addEventListener('click', (e) => {
   renderGrid();
 });
 
-// Initialize Ad Monetization System (With Desktop-Only Social Bar check)
+// Initialize Ad Monetization System (Social Bar active ONLY on PC/Tablet > 768px, disabled on Mobile)
 function initAdMonetization() {
   if (!window.WEBMASTI_ADS || !window.WEBMASTI_ADS.enabled) return;
 
@@ -881,8 +891,8 @@ function initAdMonetization() {
     document.head.appendChild(s);
   }
 
-  // 4. Push / Social Bar Ad Script (Active on All Devices)
-  if (ads.pushAdScript && ads.pushAdScript.trim().length > 5) {
+  // 4. Push / Social Bar Ad Script (Active ONLY on Desktop/Tablet > 768px, Disabled on Mobile Phones)
+  if (ads.pushAdScript && ads.pushAdScript.trim().length > 5 && window.innerWidth > 768) {
     const s = document.createElement('script');
     s.src = ads.pushAdScript;
     document.head.appendChild(s);

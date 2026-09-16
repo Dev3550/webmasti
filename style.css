@@ -579,12 +579,17 @@ body {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.85);
   color: var(--accent-pink);
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
+  pointer-events: none;
+  z-index: 15;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Episodes Grid */
@@ -786,27 +791,54 @@ body {
   }
 
   .modal-overlay {
-    padding: 10px;
+    padding: 6px;
   }
 
   .modal-card {
-    padding: 16px;
-    max-height: 95vh;
+    padding: 14px 12px;
+    max-height: 96vh;
     border-radius: 14px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .modal-header {
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
   }
 
   .modal-poster {
-    width: 100%;
-    aspect-ratio: 16/9;
+    width: 85px;
+    height: 110px;
+    border-radius: 8px;
+    flex-shrink: 0;
   }
 
   .modal-info h2 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+
+  .modal-desc {
+    font-size: 0.8rem;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .modal-actions-bar {
+    margin-top: 8px;
+    gap: 6px;
+  }
+
+  .stat-badge, .btn-stat-like, .btn-stat-share {
+    padding: 4px 10px;
+    font-size: 0.75rem;
   }
 
   .episodes-grid {
