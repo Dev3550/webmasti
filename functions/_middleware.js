@@ -109,30 +109,15 @@ export async function onRequest(context) {
         const proxyCover = `${url.origin}/api/thumb?series=${encodeURIComponent(seriesId)}&src=${encodeURIComponent(seriesCover)}`;
         const playerEmbedUrl = `https://webmastihot.in/player.html?series=${encodeURIComponent(seriesId)}`;
 
-        // Open Graph Video tags for in-post playback on Facebook & Twitter
-        const videoMetaTags = videoUrl ? `
-  <!-- Facebook & Twitter Direct In-Post Video Playback -->
-  <meta property="og:video" content="${videoUrl.replace(/"/g, '&quot;')}">
-  <meta property="og:video:secure_url" content="${videoUrl.replace(/"/g, '&quot;')}">
-  <meta property="og:video:type" content="video/mp4">
-  <meta property="og:video:width" content="1280">
-  <meta property="og:video:height" content="720">
-  <meta property="og:video:url" content="${playerEmbedUrl}">
-  <meta name="twitter:card" content="player">
-  <meta name="twitter:player" content="${playerEmbedUrl}">
-  <meta name="twitter:player:width" content="1280">
-  <meta name="twitter:player:height" content="720">` : `
-  <meta name="twitter:card" content="summary_large_image">`;
-
         const dynamicTags = `
   <title>${pageTitle}</title>
   <meta name="description" content="${seriesDesc.replace(/"/g, '&quot;')}">
   <link rel="canonical" href="${canonicalUrl}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1, max-snippet:-1">
 
-  <!-- Open Graph / Facebook / WhatsApp Preview with Series Thumbnail -->
+  <!-- Open Graph / Facebook / WhatsApp Preview with Series Thumbnail (Clean card without play button overlay) -->
   <meta property="og:site_name" content="WebMasti">
-  <meta property="og:type" content="video.other">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta property="og:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
   <meta property="og:image" content="${seriesCover}">
@@ -144,7 +129,7 @@ export async function onRequest(context) {
   <meta property="og:image:height" content="338">
   <meta property="og:image:alt" content="${seriesTitle.replace(/"/g, '&quot;')}">
   <meta property="og:url" content="${canonicalUrl}">
-${videoMetaTags}
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta name="twitter:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
   <meta name="twitter:image" content="${proxyCover}">

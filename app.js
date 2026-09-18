@@ -842,9 +842,15 @@ function playVideo(url, label) {
   // 3. Start adaptive buffer pump engine
   startBufferPump();
 
-  // 4. Play video
+  // 4. Play video with robust autoplay fallback (for Facebook/external link clicks)
   mainVideoPlayer.play().catch(e => {
-    console.log('Autoplay blocked or stream ready:', e);
+    console.log('Autoplay unmuted blocked by browser, trying muted autoplay:', e);
+    mainVideoPlayer.muted = true;
+    mainVideoPlayer.play().then(() => {
+      setPlayerStatus('🔊 Playing (Muted) - Tap to unmute sound', 4000);
+    }).catch(err => {
+      console.log('Playback requires user tap:', err);
+    });
   });
 }
 
