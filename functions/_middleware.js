@@ -3,10 +3,64 @@
 
 export async function onRequest(context) {
   const url = new URL(context.request.url);
+
+  // 1. High-Performance Thumbnail Image Proxy for WhatsApp / Telegram / Social Crawlers
+  if (url.pathname === '/api/thumb') {
+    const seriesId = url.searchParams.get('series');
+    let srcUrl = url.searchParams.get('src') || '';
+
+    // If source URL not passed, lookup from catalog.json
+    if (!srcUrl && seriesId) {
+      try {
+        const catalogUrl = new URL('/data/catalog.json', url.origin);
+        const catalogRes = await context.env.ASSETS.fetch(catalogUrl);
+        if (catalogRes.ok) {
+          const catalog = await catalogRes.json();
+          const item = catalog.find(i => i.id === seriesId);
+          if (item && item.cover_image) {
+            srcUrl = item.cover_image;
+          }
+        }
+      } catch (e) {}
+    }
+
+    if (srcUrl && srcUrl.startsWith('http')) {
+      try {
+        const imgRes = await fetch(srcUrl, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Referer': 'https://uffmaal.com/',
+            'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+          }
+        });
+        if (imgRes.ok) {
+          const buffer = await imgRes.arrayBuffer();
+          const mimeType = imgRes.headers.get('content-type') || 'image/jpeg';
+          return new Response(buffer, {
+            status: 200,
+            headers: {
+              'Content-Type': mimeType,
+              'Cache-Control': 'public, max-age=604800, s-maxage=604800',
+              'Access-Control-Allow-Origin': '*'
+            }
+          });
+        }
+      } catch (err) {}
+    }
+
+    // Fallback: serve local og-banner.jpg
+    try {
+      const fallbackUrl = new URL('/og-banner.jpg', url.origin);
+      return await context.env.ASSETS.fetch(fallbackUrl);
+    } catch (e) {
+      return new Response('Not found', { status: 404 });
+    }
+  }
+
   const seriesId = url.searchParams.get('series');
   const category = url.searchParams.get('cat');
 
-  // Handle series deep link or category link
+  // 2. Handle series deep link or category link
   if (seriesId || category) {
     const response = await context.next();
     const contentType = response.headers.get('content-type') || '';
@@ -52,6 +106,7 @@ export async function onRequest(context) {
 
         const canonicalUrl = `https://webmastihot.in/?series=${encodeURIComponent(seriesId)}`;
         const pageTitle = `${seriesTitle} Watch Online Free HD Episodes - WebMasti`;
+        const proxyCover = `${url.origin}/api/thumb?series=${encodeURIComponent(seriesId)}&src=${encodeURIComponent(seriesCover)}`;
 
         const dynamicTags = `
   <title>${pageTitle}</title>
@@ -59,23 +114,24 @@ export async function onRequest(context) {
   <link rel="canonical" href="${canonicalUrl}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1, max-snippet:-1">
 
-  <!-- Open Graph / Facebook / WhatsApp -->
+  <!-- Open Graph / Facebook / WhatsApp Preview with Proxy Image -->
   <meta property="og:site_name" content="WebMasti">
   <meta property="og:type" content="video.other">
   <meta property="og:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta property="og:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
-  <meta property="og:image" content="${seriesCover}">
-  <meta property="og:image:secure_url" content="${seriesCover}">
+  <meta property="og:image" content="${proxyCover}">
+  <meta property="og:image:secure_url" content="${proxyCover}">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="600">
   <meta property="og:image:height" content="338">
+  <meta property="og:image:alt" content="${seriesTitle.replace(/"/g, '&quot;')}">
   <meta property="og:url" content="${canonicalUrl}">
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta name="twitter:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
-  <meta name="twitter:image" content="${seriesCover}">
+  <meta name="twitter:image" content="${proxyCover}">
 
   <!-- Google VideoObject Structured Data -->
   <script type="application/ld+json">
@@ -84,9 +140,9 @@ export async function onRequest(context) {
     "@type": "VideoObject",
     "name": "${seriesTitle.replace(/"/g, '\\"')}",
     "description": "${seriesDesc.replace(/"/g, '\\"')}",
-    "thumbnailUrl": ["${seriesCover}"],
+    "thumbnailUrl": ["${proxyCover}", "${seriesCover}"],
     "uploadDate": "2026-01-01T00:00:00+05:30",
-    "embedUrl": "${canonicalUrl}",
+    "embedUrl": "https://webmastihot.in/player.html?series=${encodeURIComponent(seriesId)}",
     "isFamilyFriendly": false,
     "inLanguage": "hi",
     "publisher": {
@@ -104,6 +160,7 @@ export async function onRequest(context) {
         html = html.replace(/<meta property="og:title"[^>]*>/gi, '');
         html = html.replace(/<meta property="og:description"[^>]*>/gi, '');
         html = html.replace(/<meta property="og:image"[^>]*>/gi, '');
+        html = html.replace(/<meta property="og:image:secure_url"[^>]*>/gi, '');
         html = html.replace(/<meta property="og:image:alt"[^>]*>/gi, '');
         html = html.replace(/<meta property="og:url"[^>]*>/gi, '');
         html = html.replace(/<meta name="twitter:title"[^>]*>/gi, '');

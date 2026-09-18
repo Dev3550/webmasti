@@ -502,15 +502,14 @@ function updateEngagementBar(item) {
 function handleNativeShare(item) {
   if (!item) return;
   const baseUrl = 'https://webmastihot.in';
-  // Include series id, title, and cover image so social crawlers (WhatsApp/Telegram) can render the rich preview
-  const shareUrl = `${baseUrl}/?series=${encodeURIComponent(item.id)}&title=${encodeURIComponent(item.title)}&img=${encodeURIComponent(item.cover_image || '')}`;
+  const shareUrl = `${baseUrl}/?series=${encodeURIComponent(item.id)}`;
   const shareTitle = `${item.title} - Watch Full HD Web Series on WebMasti`;
-  const shareText = `🔥 Watch *${item.title}* full episodes in HD quality on WebMasti! Direct video streaming:`;
+  const shareText = `🔥 Watch *${item.title}* Full Episodes Free in HD on WebMasti!\n${shareUrl}`;
 
   if (navigator.share) {
     navigator.share({
       title: shareTitle,
-      text: `${shareText}\n`,
+      text: shareText,
       url: shareUrl
     }).then(() => {
       setPlayerStatus('🔗 Shared successfully!', 2500);
@@ -524,7 +523,7 @@ function handleNativeShare(item) {
 }
 
 function fallbackCopy(shareUrl, item) {
-  const waText = encodeURIComponent(`🔥 Watch *${item ? item.title : 'Web Series'}* Full Episodes in HD quality on WebMasti!\n${shareUrl}`);
+  const waText = encodeURIComponent(`${shareUrl}\n\n🔥 Watch *${item ? item.title : 'Web Series'}* Full Episodes Free in HD on WebMasti!`);
   const waUrl = `https://api.whatsapp.com/send?text=${waText}`;
 
   if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -873,14 +872,23 @@ mainVideoPlayer.addEventListener('ended', () => {
   }
 });
 
-// Render Recommended Series Grid inside Modal
+let sliderAutoScrollInterval = null;
+let isUserInteractingWithSlider = false;
+
+// Render Recommended Series Grid inside Modal with 6-Second Auto-Scroll
 function renderRecommendedSeries(currentItem) {
   const recGrid = document.getElementById('recommendedGrid');
   if (!recGrid) return;
   recGrid.innerHTML = '';
 
+  if (sliderAutoScrollInterval) {
+    clearInterval(sliderAutoScrollInterval);
+    sliderAutoScrollInterval = null;
+  }
+
+  // Pick 15 series from catalog for continuous slider exploration
   const pool = catalogData.filter(i => i.id !== currentItem.id);
-  const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 12);
+  const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 15);
 
   shuffled.forEach(item => {
     const card = document.createElement('div');
@@ -905,6 +913,43 @@ function renderRecommendedSeries(currentItem) {
     };
     recGrid.appendChild(card);
   });
+
+  // Start 6-Second Auto-Scroll Engine
+  startSliderAutoScroll(recGrid);
+}
+
+function startSliderAutoScroll(recGrid) {
+  if (sliderAutoScrollInterval) clearInterval(sliderAutoScrollInterval);
+  if (!recGrid) return;
+
+  // Touch and hover pause handlers (attached once)
+  if (!recGrid._hasScrollListeners) {
+    recGrid.addEventListener('touchstart', () => { isUserInteractingWithSlider = true; }, { passive: true });
+    recGrid.addEventListener('touchend', () => {
+      setTimeout(() => { isUserInteractingWithSlider = false; }, 3000);
+    }, { passive: true });
+    recGrid.addEventListener('mouseenter', () => { isUserInteractingWithSlider = true; });
+    recGrid.addEventListener('mouseleave', () => { isUserInteractingWithSlider = false; });
+    recGrid._hasScrollListeners = true;
+  }
+
+  sliderAutoScrollInterval = setInterval(() => {
+    if (isUserInteractingWithSlider) return;
+    if (!playerModal || !playerModal.classList.contains('active')) {
+      clearInterval(sliderAutoScrollInterval);
+      return;
+    }
+
+    const firstCard = recGrid.querySelector('.card');
+    const step = firstCard ? (firstCard.offsetWidth + 14) : 150;
+
+    // Smoothly reset to 0 if reached the rightmost end
+    if (recGrid.scrollLeft + recGrid.clientWidth >= recGrid.scrollWidth - 15) {
+      recGrid.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      recGrid.scrollBy({ left: step, behavior: 'smooth' });
+    }
+  }, 6000);
 }
 
 // Close Modal
@@ -912,6 +957,10 @@ function closeModalAction(updateHash) {
   playerModal.classList.remove('active');
   flushVideoMemory();
   if (autoplayTimer) clearInterval(autoplayTimer);
+  if (sliderAutoScrollInterval) {
+    clearInterval(sliderAutoScrollInterval);
+    sliderAutoScrollInterval = null;
+  }
   const wrapper = document.getElementById('autoplayBarWrapper');
   if (wrapper) wrapper.style.display = 'none';
 
