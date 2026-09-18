@@ -77,11 +77,11 @@ async function loadCatalog() {
     }
 
     renderCategoryPills();
-
-    // Check URL state FIRST (restores active page, category & series modal before initial renderGrid)
-    checkUrlRoute();
-
+    renderGrid();
     renderContinueWatching();
+
+    // Check URL state for deep-linked series or refresh recovery
+    checkUrlRoute();
 
   } catch (err) {
     console.error('Error loading catalog:', err);
@@ -149,115 +149,34 @@ function renderContinueWatching() {
   }
 }
 
-// Helper to update page number in URL without reloading
-function updatePageUrlState(usePushState = false) {
-  if (playerModal && playerModal.classList.contains('active')) return;
-
-  const searchParams = new URLSearchParams(window.location.search);
-  const activePill = document.querySelector('.pill.active');
-  const activeCat = activePill ? activePill.getAttribute('data-cat') : null;
-
-  if (activeCat && activeCat !== 'all') {
-    searchParams.set('cat', activeCat);
-  } else {
-    searchParams.delete('cat');
-  }
-
-  if (currentPage > 1) {
-    searchParams.set('page', currentPage);
-  } else {
-    searchParams.delete('page');
-  }
-
-  const queryStr = searchParams.toString();
-  const targetSearch = queryStr ? `?${queryStr}` : '';
-  const newUrl = queryStr ? `?${queryStr}` : window.location.pathname;
-
-  if (window.location.search !== targetSearch) {
-    if (usePushState) {
-      history.pushState({ page: currentPage, cat: activeCat }, '', newUrl);
-    } else {
-      history.replaceState({ page: currentPage, cat: activeCat }, '', newUrl);
-    }
-  }
-}
-
-// URL Router & History State (Preserves page, series & category on refresh & back button)
+// URL Router & History State (Preserves page on refresh & back button)
 function updateUrlHash(item, epIdx) {
-  const searchParams = new URLSearchParams(window.location.search);
-  
   if (item) {
-    searchParams.set('series', item.id);
-    if (epIdx) searchParams.set('ep', epIdx);
-    else searchParams.delete('ep');
+    const newHash = `#series=${item.id}&ep=${epIdx || 0}`;
+    if (window.location.hash !== newHash) {
+      history.pushState({ modalOpen: true, id: item.id, epIdx: epIdx || 0 }, '', newHash);
+    }
   } else {
-    searchParams.delete('series');
-    searchParams.delete('ep');
-  }
-
-  if (currentPage > 1) {
-    searchParams.set('page', currentPage);
-  }
-
-  const newSearch = searchParams.toString() ? `?${searchParams.toString()}` : window.location.pathname;
-  if (window.location.search !== newSearch) {
-    history.pushState({ modalOpen: !!item, id: item ? item.id : null, epIdx: epIdx || 0, page: currentPage }, '', newSearch);
+    if (window.location.hash) {
+      history.pushState({ modalOpen: false }, '', window.location.pathname);
+    }
   }
 }
 
 function checkUrlRoute() {
-  const searchParams = new URLSearchParams(window.location.search);
-  let seriesId = searchParams.get('series');
-  let epIdx = parseInt(searchParams.get('ep') || '0', 10);
-  const cat = searchParams.get('cat');
-  const pageParam = parseInt(searchParams.get('page') || '1', 10);
-
-  // Preserve exact page number on refresh across Desktop, Mobile, and Tablet
-  if (pageParam > 0) {
-    currentPage = pageParam;
-  }
-
-  // Support /series/:slug path
-  if (!seriesId && window.location.pathname.startsWith('/series/')) {
-    seriesId = decodeURIComponent(window.location.pathname.replace(/^\/series\//, '').replace(/\/$/, ''));
-  }
-
-  // Fallback for legacy hash links (#series=...)
-  if (!seriesId && window.location.hash && window.location.hash.includes('series=')) {
-    const hashParams = new URLSearchParams(window.location.hash.replace('#', '?'));
-    seriesId = hashParams.get('series');
-    epIdx = parseInt(hashParams.get('ep') || '0', 10);
-  }
-
-  if (cat) {
-    // Auto-filter category from URL
-    const targetCat = cat.toLowerCase();
-    const pill = document.querySelector(`.pill[data-cat="${cat}"]`) ||
-                 Array.from(document.querySelectorAll('.pill')).find(p => p.getAttribute('data-cat').toLowerCase() === targetCat);
-    if (pill) {
-      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
-    }
-    filteredData = catalogData.filter(item => {
-      return (item.categories || []).some(c => c.toLowerCase().includes(targetCat));
-    });
-  } else {
-    filteredData = [...catalogData];
-  }
-
-  renderGrid();
-
-  if (seriesId) {
-    const sLower = seriesId.toLowerCase();
-    const item = catalogData.find(i => 
-      i.id.toLowerCase() === sLower || 
-      (i.title && cleanTextBranding(i.title).toLowerCase().replace(/[^a-z0-9]+/g, '-') === sLower)
-    );
-    if (item) {
-      openModal(item, epIdx, false);
+  const hash = window.location.hash;
+  if (hash && hash.includes('#series=')) {
+    const params = new URLSearchParams(hash.replace('#', '?'));
+    const seriesId = params.get('series');
+    const epIdx = parseInt(params.get('ep') || '0', 10);
+    if (seriesId) {
+      const item = catalogData.find(i => i.id === seriesId);
+      if (item) {
+        openModal(item, epIdx, false);
+      }
     }
   } else {
-    if (playerModal && playerModal.classList.contains('active')) {
+    if (playerModal.classList.contains('active')) {
       closeModalAction(false);
     }
   }
@@ -347,7 +266,6 @@ function renderGrid() {
   });
 
   renderPagination(totalPages);
-  updatePageUrlState();
 }
 
 function renderPagination(totalPages) {
@@ -362,7 +280,6 @@ function renderPagination(totalPages) {
     if (currentPage > 1) {
       currentPage--;
       renderGrid();
-      updatePageUrlState(true);
       window.scrollTo({ top: catalogGrid.offsetTop - 100, behavior: 'smooth' });
     }
   };
@@ -382,7 +299,6 @@ function renderPagination(totalPages) {
     pageBtn.onclick = () => {
       currentPage = p;
       renderGrid();
-      updatePageUrlState(true);
       window.scrollTo({ top: catalogGrid.offsetTop - 100, behavior: 'smooth' });
     };
     paginationControls.appendChild(pageBtn);
@@ -396,7 +312,6 @@ function renderPagination(totalPages) {
     if (currentPage < totalPages) {
       currentPage++;
       renderGrid();
-      updatePageUrlState(true);
       window.scrollTo({ top: catalogGrid.offsetTop - 100, behavior: 'smooth' });
     }
   };
@@ -405,11 +320,13 @@ function renderPagination(totalPages) {
 
 function handleCardClick(item, epIdx) {
   if (!item) return;
-  openModal(item, epIdx || 0, true);
+  const targetUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(item.id)}`;
+  let adHandled = false;
   if (typeof window.triggerAdOnClick === 'function') {
-    try {
-      window.triggerAdOnClick(false);
-    } catch (e) {}
+    adHandled = window.triggerAdOnClick(false, targetUrl);
+  }
+  if (!adHandled) {
+    openModal(item, epIdx || 0, true);
   }
 }
 
@@ -435,7 +352,7 @@ function updateDynamicSEO(item, epIdx) {
   if (ogImg && item.cover_image) ogImg.setAttribute('content', item.cover_image);
 
   const canonical = document.querySelector('link[rel="canonical"]');
-  if (canonical) canonical.setAttribute('href', `https://webmastihot.in/?series=${encodeURIComponent(item.id)}`);
+  if (canonical) canonical.setAttribute('href', `https://webmastihot.in/#series=${encodeURIComponent(item.id)}`);
 
   // Inject dynamic TVSeries JSON-LD Schema for Google Rich Snippets
   let schemaScript = document.getElementById('dynamic-series-schema');
@@ -564,19 +481,9 @@ function updateEngagementBar(item) {
 
 function handleNativeShare(item) {
   if (!item) return;
-  const baseUrl = 'https://webmastihot.in';
-  const directVid = (item.video_urls && item.video_urls[0]) || 
-                    (item.episodes && item.episodes[0] && item.episodes[0].video_url) || '';
-
-  const shareParams = new URLSearchParams();
-  shareParams.set('series', item.id);
-  if (item.title) shareParams.set('title', item.title);
-  if (item.cover_image) shareParams.set('img', item.cover_image);
-  if (directVid) shareParams.set('vid', directVid);
-
-  const shareUrl = `${baseUrl}/watch?${shareParams.toString()}`;
-  const shareTitle = `${item.title} - Watch Full HD Web Series on WebMasti`;
-  const shareText = `🔥 Watch *${item.title}* Full Episodes Free in HD on WebMasti!\n${shareUrl}`;
+  const shareUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(item.id)}`;
+  const shareTitle = `${item.title} - Watch Full Web Series HD | WebMasti`;
+  const shareText = `🔥 Watch ${item.title} full web series episodes in HD quality on WebMasti! Direct video streaming.`;
 
   if (navigator.share) {
     navigator.share({
@@ -587,26 +494,23 @@ function handleNativeShare(item) {
       setPlayerStatus('🔗 Shared successfully!', 2500);
     }).catch(e => {
       console.log('Native share canceled/fallback:', e);
-      fallbackCopy(shareUrl, item);
+      fallbackCopy(shareUrl);
     });
   } else {
-    fallbackCopy(shareUrl, item);
+    fallbackCopy(shareUrl);
   }
 }
 
-function fallbackCopy(shareUrl, item) {
-  const waText = encodeURIComponent(`${shareUrl}\n\n🔥 Watch *${item ? item.title : 'Web Series'}* Full Episodes Free in HD on WebMasti!`);
-  const waUrl = `https://api.whatsapp.com/send?text=${waText}`;
-
+function fallbackCopy(shareUrl) {
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(shareUrl).then(() => {
-      setPlayerStatus('📋 Link copied! Opening WhatsApp...', 3000);
-      window.open(waUrl, '_blank');
+      setPlayerStatus('📋 Link copied to clipboard!', 3000);
+      alert('✨ WebMasti episode link copied! Share it with your friends on WhatsApp or Telegram.');
     }).catch(() => {
-      window.open(waUrl, '_blank');
+      prompt('Copy this WebMasti link to share:', shareUrl);
     });
   } else {
-    window.open(waUrl, '_blank');
+    prompt('Copy this WebMasti link to share:', shareUrl);
   }
 }
 
@@ -627,24 +531,10 @@ function openModal(item, startEpIdx, updateHash) {
   currentEpisodeIndex = initEpIdx;
   epCount.innerText = currentEpisodesList.length;
 
-  const epSelect = document.getElementById('episodeSelect');
-  if (epSelect) {
-    epSelect.innerHTML = '';
-    currentEpisodesList.forEach((ep, idx) => {
-      const opt = document.createElement('option');
-      opt.value = idx;
-      opt.innerText = ep.title || `Episode ${idx + 1}`;
-      if (idx === initEpIdx) opt.selected = true;
-      epSelect.appendChild(opt);
-    });
-
-    epSelect.onchange = (e) => {
-      const selectedIdx = parseInt(e.target.value, 10);
-      playEpisodeAtIndex(selectedIdx, true);
-    };
-  }
-
+  episodesGrid.innerHTML = '';
+  
   if (currentEpisodesList.length === 0) {
+    episodesGrid.innerHTML = `<p style="color:#9ca3af; font-size:0.9rem;">No episodes available for this item.</p>`;
     if (item.video_urls && item.video_urls.length > 0) {
       playVideo(item.video_urls[0], 'Full Video');
     }
@@ -728,18 +618,16 @@ function playEpisodeAtIndex(idx, isManualClick) {
   if (!currentEpisodesList || !currentEpisodesList[idx]) return;
 
   if (isManualClick && typeof window.triggerAdOnClick === 'function') {
-    try {
-      window.triggerAdOnClick(false);
-    } catch (e) {}
+    let targetUrl = '';
+    if (currentActiveItem) {
+      targetUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(currentActiveItem.id)}&ep=${idx}`;
+    }
+    const adHandled = window.triggerAdOnClick(false, targetUrl);
+    if (adHandled) return;
   }
 
   currentEpisodeIndex = idx;
   const ep = currentEpisodesList[idx];
-
-  const epSelect = document.getElementById('episodeSelect');
-  if (epSelect) {
-    epSelect.value = idx;
-  }
 
   document.querySelectorAll('.btn-ep').forEach((btn, bIdx) => {
     if (bIdx === idx) {
@@ -921,15 +809,9 @@ function playVideo(url, label) {
   // 3. Start adaptive buffer pump engine
   startBufferPump();
 
-  // 4. Play video with robust autoplay fallback (for Facebook/external link clicks)
+  // 4. Play video
   mainVideoPlayer.play().catch(e => {
-    console.log('Autoplay unmuted blocked by browser, trying muted autoplay:', e);
-    mainVideoPlayer.muted = true;
-    mainVideoPlayer.play().then(() => {
-      setPlayerStatus('🔊 Playing (Muted) - Tap to unmute sound', 4000);
-    }).catch(err => {
-      console.log('Playback requires user tap:', err);
-    });
+    console.log('Autoplay blocked or stream ready:', e);
   });
 }
 
@@ -966,23 +848,14 @@ mainVideoPlayer.addEventListener('ended', () => {
   }
 });
 
-let sliderAutoScrollInterval = null;
-let isUserInteractingWithSlider = false;
-
-// Render Recommended Series Grid inside Modal with 6-Second Auto-Scroll
+// Render Recommended Series Grid inside Modal
 function renderRecommendedSeries(currentItem) {
   const recGrid = document.getElementById('recommendedGrid');
   if (!recGrid) return;
   recGrid.innerHTML = '';
 
-  if (sliderAutoScrollInterval) {
-    clearInterval(sliderAutoScrollInterval);
-    sliderAutoScrollInterval = null;
-  }
-
-  // Pick 15 series from catalog for continuous slider exploration
   const pool = catalogData.filter(i => i.id !== currentItem.id);
-  const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 15);
+  const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 12);
 
   shuffled.forEach(item => {
     const card = document.createElement('div');
@@ -1002,75 +875,11 @@ function renderRecommendedSeries(currentItem) {
     `;
     card.onclick = () => {
       handleCardClick(item);
-      const scrollBody = playerModal.querySelector('.modal-scroll-body');
-      if (scrollBody) scrollBody.scrollTo({ top: 0, behavior: 'smooth' });
+      const cardEl = playerModal.querySelector('.modal-card');
+      if (cardEl) cardEl.scrollTo({ top: 0, behavior: 'smooth' });
     };
     recGrid.appendChild(card);
   });
-
-  // Start 6-Second Auto-Scroll Engine
-  startSliderAutoScroll(recGrid);
-}
-
-function startSliderAutoScroll(recGrid) {
-  if (sliderAutoScrollInterval) clearInterval(sliderAutoScrollInterval);
-  if (!recGrid) return;
-
-  // Touch, wheel, and navigation controls (attached once)
-  if (!recGrid._hasScrollListeners) {
-    recGrid.addEventListener('touchstart', () => { isUserInteractingWithSlider = true; }, { passive: true });
-    recGrid.addEventListener('touchend', () => {
-      setTimeout(() => { isUserInteractingWithSlider = false; }, 3000);
-    }, { passive: true });
-    recGrid.addEventListener('mouseenter', () => { isUserInteractingWithSlider = true; });
-    recGrid.addEventListener('mouseleave', () => { isUserInteractingWithSlider = false; });
-
-    // Desktop Mouse Wheel support (Horizontal scrolling via mouse wheel)
-    recGrid.addEventListener('wheel', (e) => {
-      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-        e.preventDefault();
-        recGrid.scrollBy({ left: e.deltaY * 1.5, behavior: 'smooth' });
-      }
-    }, { passive: false });
-
-    // Desktop Navigation Arrow buttons
-    const prevBtn = document.getElementById('btnSlidePrev');
-    const nextBtn = document.getElementById('btnSlideNext');
-    if (prevBtn) {
-      prevBtn.onclick = (e) => {
-        e.stopPropagation();
-        const step = recGrid.clientWidth * 0.65;
-        recGrid.scrollBy({ left: -step, behavior: 'smooth' });
-      };
-    }
-    if (nextBtn) {
-      nextBtn.onclick = (e) => {
-        e.stopPropagation();
-        const step = recGrid.clientWidth * 0.65;
-        recGrid.scrollBy({ left: step, behavior: 'smooth' });
-      };
-    }
-
-    recGrid._hasScrollListeners = true;
-  }
-
-  sliderAutoScrollInterval = setInterval(() => {
-    if (isUserInteractingWithSlider) return;
-    if (!playerModal || !playerModal.classList.contains('active')) {
-      clearInterval(sliderAutoScrollInterval);
-      return;
-    }
-
-    const firstCard = recGrid.querySelector('.card');
-    const step = firstCard ? (firstCard.offsetWidth + 14) : 150;
-
-    // Smoothly reset to 0 if reached the rightmost end
-    if (recGrid.scrollLeft + recGrid.clientWidth >= recGrid.scrollWidth - 15) {
-      recGrid.scrollTo({ left: 0, behavior: 'smooth' });
-    } else {
-      recGrid.scrollBy({ left: step, behavior: 'smooth' });
-    }
-  }, 6000);
 }
 
 // Close Modal
@@ -1078,10 +887,6 @@ function closeModalAction(updateHash) {
   playerModal.classList.remove('active');
   flushVideoMemory();
   if (autoplayTimer) clearInterval(autoplayTimer);
-  if (sliderAutoScrollInterval) {
-    clearInterval(sliderAutoScrollInterval);
-    sliderAutoScrollInterval = null;
-  }
   const wrapper = document.getElementById('autoplayBarWrapper');
   if (wrapper) wrapper.style.display = 'none';
 
@@ -1093,11 +898,6 @@ function closeModalAction(updateHash) {
 }
 
 closeModal.onclick = () => closeModalAction(true);
-
-const btnModalHome = document.getElementById('btnModalHome');
-if (btnModalHome) {
-  btnModalHome.onclick = () => closeModalAction(true);
-}
 
 playerModal.onclick = (e) => {
   if (e.target === playerModal) {

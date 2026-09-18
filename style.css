@@ -56,60 +56,6 @@ body {
   gap: 8px;
 }
 
-/* Universal Home Button (Desktop, Tablet, Mobile) */
-.btn-nav-home {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 6px !important;
-  background: linear-gradient(135deg, #ff0055 0%, #7928ca 100%) !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  padding: 6px 14px !important;
-  border-radius: 20px !important;
-  font-size: 0.85rem !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 15px rgba(255, 0, 85, 0.35) !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-  cursor: pointer !important;
-  margin-right: 10px !important;
-  flex-shrink: 0 !important;
-  z-index: 10 !important;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.btn-nav-home:hover {
-  transform: translateY(-2px) scale(1.05) !important;
-  box-shadow: 0 6px 20px rgba(255, 0, 85, 0.55) !important;
-  color: #ffffff !important;
-}
-
-.btn-modal-home {
-  position: absolute !important;
-  top: 10px !important;
-  left: 12px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 5px !important;
-  background: rgba(0, 0, 0, 0.75) !important;
-  backdrop-filter: blur(8px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  color: #ffffff !important;
-  font-size: 0.82rem !important;
-  font-weight: 700 !important;
-  padding: 6px 14px !important;
-  border-radius: 20px !important;
-  cursor: pointer !important;
-  z-index: 99 !important;
-  transition: all 0.2s ease !important;
-}
-
-.btn-modal-home:hover {
-  background: #ff0055 !important;
-  border-color: #ff0055 !important;
-  transform: scale(1.05) !important;
-}
-
 .logo-masti {
   color: #fff;
 }
@@ -453,24 +399,25 @@ body {
   border-radius: 20px;
   width: 100%;
   max-width: 950px;
-  height: 92vh;
   max-height: 92vh;
   max-height: 92dvh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; /* Outer card does NOT scroll: player stays 100% fixed at top */
-  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding: 16px 20px 60px 20px;
   position: relative;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
 }
 
 .btn-close {
   position: absolute;
   top: 10px;
-  right: 12px;
+  right: 14px;
   background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   font-size: 1.6rem;
   width: 38px;
@@ -481,7 +428,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-  z-index: 99;
+  z-index: 60;
 }
 
 .btn-close:hover {
@@ -626,18 +573,19 @@ body {
   color: #fff;
 }
 
-/* Video Player (Locked firmly at top of modal, 100% immune to scrolling) */
+/* Video Player (Sticky at the top while user scrolls below) */
 .player-container {
+  position: sticky;
+  top: -16px;
+  z-index: 45;
   width: 100%;
   aspect-ratio: 16/9;
   background: #000;
-  flex-shrink: 0; /* Player NEVER shrinks or scrolls away */
-  border-radius: 20px 20px 0 0;
+  border-radius: 14px;
   overflow: hidden;
-  position: relative;
-  border-bottom: 1px solid var(--border-glass);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
-  z-index: 20;
+  margin-bottom: 18px;
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
 }
 
 .player-container video {
@@ -680,16 +628,11 @@ body {
   visibility: visible;
 }
 
-/* Modal Scroll Body (The ONLY scrolling container in the modal) */
+/* Modal Scroll Body */
 .modal-scroll-body {
   width: 100%;
-  flex: 1 1 auto;
-  overflow-y: auto;
-  overflow-x: hidden;
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-  padding: 18px 20px 60px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Episodes Grid */
@@ -711,122 +654,19 @@ body {
   gap: 10px;
 }
 
-/* Recommended More Like This Section (Horizontal Slider) */
+/* Recommended More Like This Section */
 .recommended-section {
   border-top: 1px solid var(--border-glass);
-  padding-top: 20px;
-  margin-top: 22px;
-  padding-bottom: 40px;
+  padding-top: 24px;
+  margin-top: 24px;
+  padding-bottom: 60px; /* Ample space to prevent cutoff while scrolling */
 }
 
-.recommended-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-
-.slider-nav-controls {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.btn-slider-nav {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid var(--border-glass);
-  color: #fff;
-  font-size: 1.1rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  user-select: none;
-}
-
-.btn-slider-nav:hover {
-  background: var(--accent-pink);
-  border-color: var(--accent-pink);
-  transform: scale(1.1);
-}
-
-.recommended-slider {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  gap: 10px;
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-x;
-  scroll-behavior: smooth;
-  padding: 4px 2px 14px 2px;
-}
-
-.recommended-slider::-webkit-scrollbar {
-  height: 5px;
-}
-
-.recommended-slider::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 10px;
-}
-
-.recommended-slider::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, #ff0055, #7928ca);
-  border-radius: 10px;
-}
-
-.recommended-slider .card {
-  flex: 0 0 125px !important;
-  width: 125px !important;
-  min-width: 125px !important;
-  max-width: 125px !important;
-  scroll-snap-align: start;
-  margin: 0;
-  cursor: pointer;
-  border-radius: 10px;
-  background: rgba(18, 22, 33, 0.9);
-  border: 1px solid var(--border-glass);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.recommended-slider .card:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(255, 0, 85, 0.3);
-}
-
-.recommended-slider .card .card-poster {
-  aspect-ratio: 16/9;
-  border-radius: 9px 9px 0 0;
-  overflow: hidden;
-}
-
-.recommended-slider .card .card-episodes-badge {
-  font-size: 0.58rem !important;
-  padding: 1px 4px !important;
-  top: 4px;
-  right: 4px;
-}
-
-.recommended-slider .card .card-info {
-  padding: 6px 5px !important;
-}
-
-.recommended-slider .card h4 {
-  font-size: 0.74rem !important;
-  line-height: 1.25;
-  margin-bottom: 2px !important;
-}
-
-.recommended-slider .card .tag {
-  font-size: 0.62rem !important;
-  padding: 1px 5px !important;
+#recommendedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
 }
 
 .btn-ep {
@@ -1029,44 +869,15 @@ body {
   }
 
   .modal-overlay {
-    padding: 12px 6px;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
+    padding: 6px;
   }
 
   .modal-card {
-    padding: 0 !important;
-    width: 100%;
-    max-width: 950px;
-    height: 90vh;
-    height: 90dvh;
-    max-height: 90dvh;
-    margin: auto;
-    border-radius: 16px;
-    overflow: hidden !important;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.95);
-  }
-
-  .player-container {
-    width: 100%;
-    aspect-ratio: 16/9;
-    border-radius: 16px 16px 0 0;
-    flex-shrink: 0;
-    position: sticky;
-    top: 0;
-    z-index: 50;
-  }
-
-  .modal-scroll-body {
-    padding: 14px 12px 60px 12px;
-    flex: 1 1 auto;
-    overflow-y: auto !important;
-    overflow-x: hidden;
+    padding: 14px 12px;
+    max-height: 96vh;
+    border-radius: 14px;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
   }
 
   .modal-header {
@@ -1343,82 +1154,41 @@ html, body {
     z-index: 1002;
   }
 
-  .modal-overlay {
-    padding-top: 110px !important;
-    padding-bottom: 10px !important;
-    padding-left: 8px !important;
-    padding-right: 8px !important;
-    align-items: flex-start !important;
-    justify-content: center !important;
-    overflow-y: auto !important;
+  .player-container {
+    top: -10px;
+    margin-bottom: 14px;
+    border-radius: 10px;
   }
 
   .modal-card {
-    height: auto !important;
-    max-height: calc(100vh - 120px) !important;
-    max-height: calc(100dvh - 120px) !important;
-    border-radius: 16px !important;
-    padding: 0;
-    margin: 0 auto !important;
-  }
-
-  .player-container {
-    border-radius: 16px 16px 0 0 !important;
-  }
-
-  .modal-scroll-body {
-    padding: 12px 14px 70px 14px;
+    padding: 10px 10px 80px 10px;
+    max-height: 96vh;
+    max-height: 96dvh;
+    border-radius: 16px;
   }
 
   .btn-close {
-    top: 8px;
-    right: 8px;
+    top: 6px;
+    right: 6px;
     width: 32px;
     height: 32px;
     font-size: 1.3rem;
   }
 
-  .recommended-slider {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    gap: 10px !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    touch-action: pan-x !important;
-    -webkit-overflow-scrolling: touch !important;
-    width: 100% !important;
+  .recommended-section {
+    padding-bottom: 80px;
   }
 
-  .recommended-slider .card,
-  #recommendedGrid .card {
-    flex: 0 0 115px !important;
-    width: 115px !important;
-    min-width: 115px !important;
-    max-width: 115px !important;
+  #recommendedGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
   }
 }
 
 @media (max-width: 480px) {
-  .modal-overlay {
-    padding-top: 115px !important;
-    padding-bottom: 10px !important;
-    padding-left: 6px !important;
-    padding-right: 6px !important;
-  }
-
-  .modal-card {
-    max-height: calc(100vh - 125px) !important;
-    max-height: calc(100dvh - 125px) !important;
-    border-radius: 14px !important;
-  }
-
-  .recommended-slider .card,
-  #recommendedGrid .card {
-    flex: 0 0 105px !important;
-    width: 105px !important;
-    min-width: 105px !important;
-    max-width: 105px !important;
+  #recommendedGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 }
 
