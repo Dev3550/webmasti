@@ -1,5 +1,40 @@
 [
   {
+    "id": "kidnapped",
+    "title": "Kidnapped",
+    "url": "https://uffmaal.com/kidnapped/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Kidnapped-Episode-1.webp",
+    "categories": [
+      "WOOW",
+      "Hiral Radadiya"
+    ],
+    "description": "",
+    "total_episodes": 3,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/kidnapped-episode-1/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260918%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260918T070631Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c5c1e45447f6c4337caa87934e3ac86a0fc7b78748d41f793dbd02a295e20d42"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/kidnapped-episode-2/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260918%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260918T070633Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a9d36ec4932d4bab95df0ac32eba9a7f3c0a8a54e48cba05ee81329237cc7eec"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/kidnapped-episode-3/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260918%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260918T070635Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9c64946566219943a8f24e5c557096df6f6a8895e90394e54d3e97c945574745"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260918%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260918T070631Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c5c1e45447f6c4337caa87934e3ac86a0fc7b78748d41f793dbd02a295e20d42",
+      "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260918%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260918T070633Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a9d36ec4932d4bab95df0ac32eba9a7f3c0a8a54e48cba05ee81329237cc7eec",
+      "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260918%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260918T070635Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9c64946566219943a8f24e5c557096df6f6a8895e90394e54d3e97c945574745"
+    ],
+    "scraped_at": "2026-09-18T07:21:51.101Z"
+  },
+  {
     "id": "sasur-ki-nayee-dulhan",
     "title": "Sasur Ki Nayee Dulhan",
     "url": "https://uffmaal.com/sasur-ki-nayee-dulhan/",
@@ -32309,40 +32344,6 @@
       "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260913T165423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e71ccb0a552edffddc7ad9aea498d44527efa0df3bfcb89f104efe06c58e58dc",
       "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260913T165423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dd569c1d74934f9b53e855ddf46f7025c5d42149aab43bbbea751d38401bf6af",
       "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260913T165423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b5aa95edb25f4c38f4ed466d390d1d62b8833f74e94a927a5d66d6c92ced914a"
-    ]
-  },
-  {
-    "id": "kidnapped",
-    "title": "Kidnapped",
-    "url": "https://uffmaal.com/kidnapped/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Kidnapped-Episode-1.webp",
-    "categories": [
-      "WOOW",
-      "Hiral Radadiya"
-    ],
-    "description": "",
-    "total_episodes": 3,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/kidnapped-episode-1/",
-        "video_url": "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260913T071310Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b2691e905173c3387c2a73778278075bd399641c10c8c091098524bc5cd9544f"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/kidnapped-episode-2/",
-        "video_url": "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260913T071310Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e06fe96a5a7cc7701811010b62e929d1717574dc2b5220e2641e0247490c052c"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/kidnapped-episode-3/",
-        "video_url": "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260913T072709Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28d4facd58adfa0ecf874431c50903b1fb8912881c4d1e2b3fe16813f735662e"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260913T071310Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b2691e905173c3387c2a73778278075bd399641c10c8c091098524bc5cd9544f",
-      "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260913T071310Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e06fe96a5a7cc7701811010b62e929d1717574dc2b5220e2641e0247490c052c",
-      "https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260913T072709Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28d4facd58adfa0ecf874431c50903b1fb8912881c4d1e2b3fe16813f735662e"
     ]
   }
 ]

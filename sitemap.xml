@@ -75,6 +75,30 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=kidnapped</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Kidnapped-Episode-1.webp</image:loc>
+      <image:title>Kidnapped Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Kidnapped-Episode-1.webp</video:thumbnail_loc>
+      <video:title>Kidnapped Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Kidnapped online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260918%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260918T070631Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c5c1e45447f6c4337caa87934e3ac86a0fc7b78748d41f793dbd02a295e20d42</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=kidnapped</video:player_loc>
+      <video:publication_date>2026-09-18</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>WOOW</video:tag>
+      <video:tag>Hiral Radadiya</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=sasur-ki-nayee-dulhan</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -16702,30 +16726,6 @@
       <video:tag>Atrangii</video:tag>
       <video:tag>Heena Panchal</video:tag>
       <video:tag>Sherleen Dutt</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=kidnapped</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Kidnapped-Episode-1.webp</image:loc>
-      <image:title>Kidnapped Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Kidnapped-Episode-1.webp</video:thumbnail_loc>
-      <video:title>Kidnapped Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Kidnapped online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/WOOW/Kidnapped/Kidnapped%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260913%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260913T071310Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=b2691e905173c3387c2a73778278075bd399641c10c8c091098524bc5cd9544f</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=kidnapped</video:player_loc>
-      <video:publication_date>2026-09-18</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>WOOW</video:tag>
-      <video:tag>Hiral Radadiya</video:tag>
     </video:video>
   </url>
 </urlset>
