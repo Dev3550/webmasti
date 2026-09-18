@@ -227,6 +227,9 @@ function generateSitemap(catalog) {
         const itemTitleEscaped = (item.title || 'Web Series').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         const itemCover = item.cover_image || '';
         const itemUrl = `${baseUrl}/?series=${encodeURIComponent(item.id)}`;
+        const playerEmbedUrl = `${baseUrl}/player.html?series=${encodeURIComponent(item.id)}`;
+        const directVideo = (item.video_urls && item.video_urls[0]) || 
+                            (item.episodes && item.episodes.find(e => e.video_url) ? item.episodes.find(e => e.video_url).video_url : '');
 
         xml += `  <url>
     <loc>${itemUrl}</loc>
@@ -239,6 +242,10 @@ function generateSitemap(catalog) {
             .map(c => `      <video:tag>${c.replace(/&/g, '&amp;')}</video:tag>`)
             .join('\n');
 
+          const contentLocTag = directVideo 
+            ? `\n      <video:content_loc>${directVideo.replace(/&/g, '&amp;')}</video:content_loc>`
+            : '';
+
           xml += `
     <image:image>
       <image:loc>${itemCover.replace(/&/g, '&amp;')}</image:loc>
@@ -247,8 +254,8 @@ function generateSitemap(catalog) {
     <video:video>
       <video:thumbnail_loc>${itemCover.replace(/&/g, '&amp;')}</video:thumbnail_loc>
       <video:title>${itemTitleEscaped} Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of ${itemTitleEscaped} online in HD quality for free on WebMasti</video:description>
-      <video:player_loc>${itemUrl}</video:player_loc>
+      <video:description>Watch all episodes of ${itemTitleEscaped} online in HD quality for free on WebMasti</video:description>${contentLocTag}
+      <video:player_loc>${playerEmbedUrl}</video:player_loc>
       <video:publication_date>${today}</video:publication_date>
       <video:family_friendly>no</video:family_friendly>
       <video:requires_subscription>no</video:requires_subscription>

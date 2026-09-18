@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebMasti Player</title>
+  <meta name="robots" content="noindex, follow">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { width: 100%; height: 100%; background: #000; overflow: hidden; display: flex; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    #videoContainer { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+    video { width: 100%; height: 100%; object-fit: contain; background: #000; }
+    .overlay-brand { position: absolute; top: 12px; left: 16px; font-weight: 900; font-size: 1rem; color: #ff0055; text-shadow: 0 2px 8px rgba(0,0,0,0.8); pointer-events: none; z-index: 10; }
+    .loading-spinner { position: absolute; width: 48px; height: 48px; border: 4px solid rgba(255,255,255,0.2); border-top-color: #ff0055; border-radius: 50%; animation: spin 0.8s linear infinite; z-index: 5; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div id="videoContainer">
+    <div class="overlay-brand">WebMasti</div>
+    <div class="loading-spinner" id="loadingSpinner"></div>
+    <video id="player" controls playsinline preload="metadata" poster="og-banner.jpg">
+      <source id="playerSource" src="" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <script>
+    async function initEmbedPlayer() {
+      const params = new URLSearchParams(window.location.search);
+      const seriesId = params.get('series');
+      const epIdx = parseInt(params.get('ep') || '0', 10);
+      const spinner = document.getElementById('loadingSpinner');
+      const player = document.getElementById('player');
+      const source = document.getElementById('playerSource');
+
+      if (!seriesId) {
+        if (spinner) spinner.style.display = 'none';
+        return;
+      }
+
+      try {
+        const res = await fetch('data/catalog.json');
+        if (!res.ok) throw new Error('Failed to load catalog');
+        const catalog = await res.json();
+        const item = catalog.find(i => i.id === seriesId);
+
+        if (item) {
+          let videoUrl = '';
+          if (item.episodes && item.episodes[epIdx] && item.episodes[epIdx].video_url) {
+            videoUrl = item.episodes[epIdx].video_url;
+          } else if (item.video_urls && item.video_urls[epIdx]) {
+            videoUrl = item.video_urls[epIdx];
+          } else if (item.video_urls && item.video_urls[0]) {
+            videoUrl = item.video_urls[0];
+          }
+
+          if (item.cover_image) {
+            player.poster = item.cover_image;
+          }
+
+          if (videoUrl) {
+            source.src = videoUrl;
+            player.load();
+          }
+        }
+      } catch (err) {
+        console.error('Embed player error:', err);
+      } finally {
+        if (spinner) spinner.style.display = 'none';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', initEmbedPlayer);
+  </script>
+</body>
+</html>
