@@ -502,7 +502,16 @@ function updateEngagementBar(item) {
 function handleNativeShare(item) {
   if (!item) return;
   const baseUrl = 'https://webmastihot.in';
-  const shareUrl = `${baseUrl}/?series=${encodeURIComponent(item.id)}`;
+  const directVid = (item.video_urls && item.video_urls[0]) || 
+                    (item.episodes && item.episodes[0] && item.episodes[0].video_url) || '';
+
+  const shareParams = new URLSearchParams();
+  shareParams.set('series', item.id);
+  if (item.title) shareParams.set('title', item.title);
+  if (item.cover_image) shareParams.set('img', item.cover_image);
+  if (directVid) shareParams.set('vid', directVid);
+
+  const shareUrl = `${baseUrl}/?${shareParams.toString()}`;
   const shareTitle = `${item.title} - Watch Full HD Web Series on WebMasti`;
   const shareText = `🔥 Watch *${item.title}* Full Episodes Free in HD on WebMasti!\n${shareUrl}`;
 

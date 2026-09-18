@@ -1,10 +1,10 @@
-// Cloudflare Pages Middleware for Dynamic SEO & Open Graph Previews
-// Automatically optimizes Googlebot, Bingbot, WhatsApp, Telegram, and social crawlers for every series & category
+// Cloudflare Pages Middleware for Dynamic SEO, Social Previews & In-Post Video Playback
+// Automatically optimizes Googlebot, Bingbot, WhatsApp, Telegram, Facebook, and Twitter crawlers
 
 export async function onRequest(context) {
   const url = new URL(context.request.url);
 
-  // 1. High-Performance Thumbnail Image Proxy for WhatsApp / Telegram / Social Crawlers
+  // 1. High-Performance Thumbnail Image Proxy for Social Crawlers
   if (url.pathname === '/api/thumb') {
     const seriesId = url.searchParams.get('series');
     let srcUrl = url.searchParams.get('src') || '';
@@ -13,7 +13,7 @@ export async function onRequest(context) {
     if (!srcUrl && seriesId) {
       try {
         const catalogUrl = new URL('/data/catalog.json', url.origin);
-        const catalogRes = await context.env.ASSETS.fetch(catalogUrl);
+        const catalogRes = await context.env.ASSETS.fetch(new Request(catalogUrl));
         if (catalogRes.ok) {
           const catalog = await catalogRes.json();
           const item = catalog.find(i => i.id === seriesId);
@@ -51,7 +51,7 @@ export async function onRequest(context) {
     // Fallback: serve local og-banner.jpg
     try {
       const fallbackUrl = new URL('/og-banner.jpg', url.origin);
-      return await context.env.ASSETS.fetch(fallbackUrl);
+      return await context.env.ASSETS.fetch(new Request(fallbackUrl));
     } catch (e) {
       return new Response('Not found', { status: 404 });
     }
@@ -71,27 +71,27 @@ export async function onRequest(context) {
       if (seriesId) {
         let seriesTitle = url.searchParams.get('title') || '';
         let seriesCover = url.searchParams.get('img') || '';
+        let videoUrl = url.searchParams.get('vid') || '';
         let seriesDesc = '';
-        let seriesCategories = [];
-        let totalEpisodes = 1;
 
-        // Try reading catalog.json from assets if metadata is missing from query
-        try {
-          const catalogUrl = new URL('/data/catalog.json', url.origin);
-          const catalogRes = await context.env.ASSETS.fetch(catalogUrl);
-          if (catalogRes.ok) {
-            const catalog = await catalogRes.json();
-            const item = catalog.find(i => i.id === seriesId);
-            if (item) {
-              if (!seriesTitle) seriesTitle = item.title;
-              if (!seriesCover) seriesCover = item.cover_image;
-              seriesDesc = item.description || '';
-              seriesCategories = item.categories || [];
-              totalEpisodes = item.total_episodes || (item.episodes ? item.episodes.length : 1);
+        // If metadata is not in URL, try catalog.json
+        if (!seriesTitle || !seriesCover || !videoUrl) {
+          try {
+            const catalogUrl = new URL('/data/catalog.json', url.origin);
+            const catalogRes = await context.env.ASSETS.fetch(new Request(catalogUrl));
+            if (catalogRes.ok) {
+              const catalog = await catalogRes.json();
+              const item = catalog.find(i => i.id === seriesId);
+              if (item) {
+                if (!seriesTitle) seriesTitle = item.title;
+                if (!seriesCover) seriesCover = item.cover_image;
+                if (!videoUrl) {
+                  videoUrl = (item.video_urls && item.video_urls[0]) || (item.episodes && item.episodes[0] && item.episodes[0].video_url) || '';
+                }
+                seriesDesc = item.description || '';
+              }
             }
-          }
-        } catch (e) {
-          // Fallback to query or defaults
+          } catch (e) {}
         }
 
         if (!seriesTitle) {
@@ -101,12 +101,28 @@ export async function onRequest(context) {
           seriesCover = `${url.origin}/og-banner.jpg`;
         }
         if (!seriesDesc) {
-          seriesDesc = `Watch ${seriesTitle} uncut web series all episodes online in Full HD for free on WebMasti. Stream latest Indian OTT web series with fast buffer and high video quality.`;
+          seriesDesc = `Watch ${seriesTitle} uncut web series full episodes online in Full HD for free on WebMasti. Fast video streaming.`;
         }
 
         const canonicalUrl = `https://webmastihot.in/?series=${encodeURIComponent(seriesId)}`;
-        const pageTitle = `${seriesTitle} Watch Online Free HD Episodes - WebMasti`;
+        const pageTitle = `${seriesTitle} - Watch Full HD Web Series on WebMasti`;
         const proxyCover = `${url.origin}/api/thumb?series=${encodeURIComponent(seriesId)}&src=${encodeURIComponent(seriesCover)}`;
+        const playerEmbedUrl = `https://webmastihot.in/player.html?series=${encodeURIComponent(seriesId)}`;
+
+        // Open Graph Video tags for in-post playback on Facebook & Twitter
+        const videoMetaTags = videoUrl ? `
+  <!-- Facebook & Twitter Direct In-Post Video Playback -->
+  <meta property="og:video" content="${videoUrl.replace(/"/g, '&quot;')}">
+  <meta property="og:video:secure_url" content="${videoUrl.replace(/"/g, '&quot;')}">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1280">
+  <meta property="og:video:height" content="720">
+  <meta property="og:video:url" content="${playerEmbedUrl}">
+  <meta name="twitter:card" content="player">
+  <meta name="twitter:player" content="${playerEmbedUrl}">
+  <meta name="twitter:player:width" content="1280">
+  <meta name="twitter:player:height" content="720">` : `
+  <meta name="twitter:card" content="summary_large_image">`;
 
         const dynamicTags = `
   <title>${pageTitle}</title>
@@ -114,11 +130,13 @@ export async function onRequest(context) {
   <link rel="canonical" href="${canonicalUrl}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1, max-snippet:-1">
 
-  <!-- Open Graph / Facebook / WhatsApp Preview with Proxy Image -->
+  <!-- Open Graph / Facebook / WhatsApp Preview with Series Thumbnail -->
   <meta property="og:site_name" content="WebMasti">
   <meta property="og:type" content="video.other">
   <meta property="og:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta property="og:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
+  <meta property="og:image" content="${seriesCover}">
+  <meta property="og:image:secure_url" content="${seriesCover}">
   <meta property="og:image" content="${proxyCover}">
   <meta property="og:image:secure_url" content="${proxyCover}">
   <meta property="og:image:type" content="image/jpeg">
@@ -126,9 +144,7 @@ export async function onRequest(context) {
   <meta property="og:image:height" content="338">
   <meta property="og:image:alt" content="${seriesTitle.replace(/"/g, '&quot;')}">
   <meta property="og:url" content="${canonicalUrl}">
-
-  <!-- Twitter Meta -->
-  <meta name="twitter:card" content="summary_large_image">
+${videoMetaTags}
   <meta name="twitter:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta name="twitter:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
   <meta name="twitter:image" content="${proxyCover}">
@@ -140,9 +156,10 @@ export async function onRequest(context) {
     "@type": "VideoObject",
     "name": "${seriesTitle.replace(/"/g, '\\"')}",
     "description": "${seriesDesc.replace(/"/g, '\\"')}",
-    "thumbnailUrl": ["${proxyCover}", "${seriesCover}"],
+    "thumbnailUrl": ["${seriesCover}", "${proxyCover}"],
     "uploadDate": "2026-01-01T00:00:00+05:30",
-    "embedUrl": "https://webmastihot.in/player.html?series=${encodeURIComponent(seriesId)}",
+    "embedUrl": "${playerEmbedUrl}",
+    "contentUrl": "${(videoUrl || '').replace(/"/g, '\\"')}",
     "isFamilyFriendly": false,
     "inLanguage": "hi",
     "publisher": {
@@ -163,9 +180,17 @@ export async function onRequest(context) {
         html = html.replace(/<meta property="og:image:secure_url"[^>]*>/gi, '');
         html = html.replace(/<meta property="og:image:alt"[^>]*>/gi, '');
         html = html.replace(/<meta property="og:url"[^>]*>/gi, '');
+        html = html.replace(/<meta property="og:video"[^>]*>/gi, '');
+        html = html.replace(/<meta property="og:video:secure_url"[^>]*>/gi, '');
+        html = html.replace(/<meta property="og:video:type"[^>]*>/gi, '');
+        html = html.replace(/<meta property="og:video:width"[^>]*>/gi, '');
+        html = html.replace(/<meta property="og:video:height"[^>]*>/gi, '');
+        html = html.replace(/<meta property="og:video:url"[^>]*>/gi, '');
         html = html.replace(/<meta name="twitter:title"[^>]*>/gi, '');
         html = html.replace(/<meta name="twitter:description"[^>]*>/gi, '');
         html = html.replace(/<meta name="twitter:image"[^>]*>/gi, '');
+        html = html.replace(/<meta name="twitter:card"[^>]*>/gi, '');
+        html = html.replace(/<meta name="twitter:player"[^>]*>/gi, '');
         html = html.replace('<head>', `<head>${dynamicTags}`);
 
         return new Response(html, {
