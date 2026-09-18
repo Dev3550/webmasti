@@ -77,11 +77,11 @@ async function loadCatalog() {
     }
 
     renderCategoryPills();
-    renderGrid();
-    renderContinueWatching();
 
-    // Check URL state for deep-linked series or refresh recovery
+    // Check URL state FIRST (restores active page, category & series modal before initial renderGrid)
     checkUrlRoute();
+
+    renderContinueWatching();
 
   } catch (err) {
     console.error('Error loading catalog:', err);
