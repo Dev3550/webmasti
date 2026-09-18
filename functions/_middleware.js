@@ -39,9 +39,9 @@ export async function onRequest(context) {
       } catch (err) {}
     }
 
-    // Fallback: serve local og-banner.jpg
+    // Fallback: serve local webmasti-banner.jpg
     try {
-      const fallbackUrl = new URL('/og-banner.jpg', url.origin);
+      const fallbackUrl = new URL('/webmasti-banner.jpg', url.origin);
       return await context.env.ASSETS.fetch(new Request(fallbackUrl));
     } catch (e) {
       return new Response('Not found', { status: 404 });
@@ -66,7 +66,7 @@ export async function onRequest(context) {
         seriesTitle = seriesId.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
       }
       if (!seriesCover) {
-        seriesCover = `${url.origin}/og-banner.jpg`;
+        seriesCover = `${url.origin}/webmasti-banner.jpg`;
       }
       const seriesDesc = `Watch ${seriesTitle} uncut web series full episodes online in Full HD for free on WebMasti. Fast streaming playback.`;
 
