@@ -122,6 +122,10 @@
   <header class="navbar">
     <div class="nav-container">
       <div class="logo">
+        <a href="/" class="btn-nav-home" aria-label="Go to Home" style="display:inline-flex; align-items:center; gap:5px; color:#fff; text-decoration:none; background:linear-gradient(135deg, rgba(255,0,85,0.25), rgba(121,40,202,0.25)); border:1px solid rgba(255,0,85,0.5); padding:5px 12px; border-radius:20px; font-size:0.82rem; font-weight:700; margin-right:8px;">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          Home
+        </a>
         <img src="favicon.svg" alt="WebMasti Logo" width="32" height="32" style="border-radius: 8px;">
         <span class="logo-masti">Web</span><span class="logo-accent">Masti</span>
         <span class="badge-vip">HD STREAM</span>
@@ -196,6 +200,10 @@
   <!-- Detail & Streaming Modal with Sticky Video Player -->
   <div class="modal-overlay" id="playerModal">
     <div class="modal-card">
+      <button class="btn-modal-home" id="btnModalHome" aria-label="Go Home" style="position: absolute; top: 10px; left: 12px; background: rgba(0,0,0,0.75); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.25); color: #fff; font-size: 0.8rem; font-weight: 700; padding: 6px 12px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; gap: 5px; z-index: 99;">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        Home
+      </button>
       <button class="btn-close" id="closeModal" aria-label="Close Player">&times;</button>
 
       <!-- Video Player Container (Sticky at the top while scrolling) -->
@@ -254,11 +262,18 @@
           </div>
         </div>
 
-        <!-- Episodes Selector -->
+        <!-- Episodes Selector Dropdown -->
         <div class="episodes-section">
-          <h3 class="episodes-title">Episodes (<span id="epCount">0</span>)</h3>
-          <div class="episodes-grid" id="episodesGrid">
-            <!-- Dynamic Episode Buttons -->
+          <div class="episodes-header-row" style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; background: rgba(255,255,255,0.04); padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border-glass);">
+            <h3 class="episodes-title" style="margin: 0; font-size: 0.95rem; font-weight: 700; color: #fff;">Episodes (<span id="epCount">0</span>)</h3>
+            <div class="select-wrapper" style="position: relative; display: flex; align-items: center;">
+              <select id="episodeSelect" class="episode-dropdown-select" aria-label="Select Episode" style="background: linear-gradient(135deg, #1f2937, #111827); color: #ff0055; border: 1px solid rgba(255, 0, 85, 0.5); padding: 8px 32px 8px 14px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; cursor: pointer; outline: none; appearance: none; -webkit-appearance: none; box-shadow: 0 4px 15px rgba(255,0,85,0.2);">
+              </select>
+              <svg style="position: absolute; right: 10px; pointer-events: none; color: #ff0055;" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </div>
+          </div>
+          <div class="episodes-grid" id="episodesGrid" style="display: none;">
+            <!-- Hidden Grid -->
           </div>
         </div>
 

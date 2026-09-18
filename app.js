@@ -571,10 +571,24 @@ function openModal(item, startEpIdx, updateHash) {
   currentEpisodeIndex = initEpIdx;
   epCount.innerText = currentEpisodesList.length;
 
-  episodesGrid.innerHTML = '';
-  
+  const epSelect = document.getElementById('episodeSelect');
+  if (epSelect) {
+    epSelect.innerHTML = '';
+    currentEpisodesList.forEach((ep, idx) => {
+      const opt = document.createElement('option');
+      opt.value = idx;
+      opt.innerText = ep.title || `Episode ${idx + 1}`;
+      if (idx === initEpIdx) opt.selected = true;
+      epSelect.appendChild(opt);
+    });
+
+    epSelect.onchange = (e) => {
+      const selectedIdx = parseInt(e.target.value, 10);
+      playEpisodeAtIndex(selectedIdx, true);
+    };
+  }
+
   if (currentEpisodesList.length === 0) {
-    episodesGrid.innerHTML = `<p style="color:#9ca3af; font-size:0.9rem;">No episodes available for this item.</p>`;
     if (item.video_urls && item.video_urls.length > 0) {
       playVideo(item.video_urls[0], 'Full Video');
     }
@@ -658,16 +672,18 @@ function playEpisodeAtIndex(idx, isManualClick) {
   if (!currentEpisodesList || !currentEpisodesList[idx]) return;
 
   if (isManualClick && typeof window.triggerAdOnClick === 'function') {
-    let targetUrl = '';
-    if (currentActiveItem) {
-      targetUrl = window.location.origin + window.location.pathname + `?series=${encodeURIComponent(currentActiveItem.id)}&ep=${idx}`;
-    }
-    const adHandled = window.triggerAdOnClick(false, targetUrl);
-    if (adHandled) return;
+    try {
+      window.triggerAdOnClick(false);
+    } catch (e) {}
   }
 
   currentEpisodeIndex = idx;
   const ep = currentEpisodesList[idx];
+
+  const epSelect = document.getElementById('episodeSelect');
+  if (epSelect) {
+    epSelect.value = idx;
+  }
 
   document.querySelectorAll('.btn-ep').forEach((btn, bIdx) => {
     if (bIdx === idx) {
@@ -1021,6 +1037,11 @@ function closeModalAction(updateHash) {
 }
 
 closeModal.onclick = () => closeModalAction(true);
+
+const btnModalHome = document.getElementById('btnModalHome');
+if (btnModalHome) {
+  btnModalHome.onclick = () => closeModalAction(true);
+}
 
 playerModal.onclick = (e) => {
   if (e.target === playerModal) {

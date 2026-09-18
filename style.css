@@ -1290,22 +1290,26 @@ html, body {
   }
 
   .modal-overlay {
-    padding: 12px !important;
-    align-items: center !important;
+    padding-top: 110px !important;
+    padding-bottom: 10px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    align-items: flex-start !important;
     justify-content: center !important;
+    overflow-y: auto !important;
   }
 
   .modal-card {
-    height: 88vh !important;
-    height: 88dvh !important;
-    max-height: 88dvh !important;
-    border-radius: 18px !important;
+    height: auto !important;
+    max-height: calc(100vh - 120px) !important;
+    max-height: calc(100dvh - 120px) !important;
+    border-radius: 16px !important;
     padding: 0;
-    margin: auto !important;
+    margin: 0 auto !important;
   }
 
   .player-container {
-    border-radius: 18px 18px 0 0 !important;
+    border-radius: 16px 16px 0 0 !important;
   }
 
   .modal-scroll-body {
@@ -1324,13 +1328,16 @@ html, body {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
+    gap: 10px !important;
     overflow-x: auto !important;
     overflow-y: hidden !important;
     touch-action: pan-x !important;
     -webkit-overflow-scrolling: touch !important;
+    width: 100% !important;
   }
 
-  .recommended-slider .card {
+  .recommended-slider .card,
+  #recommendedGrid .card {
     flex: 0 0 115px !important;
     width: 115px !important;
     min-width: 115px !important;
@@ -1340,17 +1347,20 @@ html, body {
 
 @media (max-width: 480px) {
   .modal-overlay {
-    padding: 8px !important;
+    padding-top: 115px !important;
+    padding-bottom: 10px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
   }
 
   .modal-card {
-    height: 90vh !important;
-    height: 90dvh !important;
-    max-height: 90dvh !important;
+    max-height: calc(100vh - 125px) !important;
+    max-height: calc(100dvh - 125px) !important;
     border-radius: 14px !important;
   }
 
-  .recommended-slider .card {
+  .recommended-slider .card,
+  #recommendedGrid .card {
     flex: 0 0 105px !important;
     width: 105px !important;
     min-width: 105px !important;
