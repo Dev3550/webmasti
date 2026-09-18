@@ -169,6 +169,11 @@ function checkUrlRoute() {
   let epIdx = parseInt(searchParams.get('ep') || '0', 10);
   const cat = searchParams.get('cat');
 
+  // Support /series/:slug path
+  if (!seriesId && window.location.pathname.startsWith('/series/')) {
+    seriesId = decodeURIComponent(window.location.pathname.replace(/^\/series\//, '').replace(/\/$/, ''));
+  }
+
   // Fallback for legacy hash links (#series=...)
   if (!seriesId && window.location.hash && window.location.hash.includes('series=')) {
     const hashParams = new URLSearchParams(window.location.hash.replace('#', '?'));
@@ -511,7 +516,7 @@ function handleNativeShare(item) {
   if (item.cover_image) shareParams.set('img', item.cover_image);
   if (directVid) shareParams.set('vid', directVid);
 
-  const shareUrl = `${baseUrl}/?${shareParams.toString()}`;
+  const shareUrl = `${baseUrl}/watch?${shareParams.toString()}`;
   const shareTitle = `${item.title} - Watch Full HD Web Series on WebMasti`;
   const shareText = `🔥 Watch *${item.title}* Full Episodes Free in HD on WebMasti!\n${shareUrl}`;
 
