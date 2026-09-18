@@ -1,0 +1,23 @@
+{
+  "name": "WebMasti - 18+ Uncut HD Web Series",
+  "short_name": "WebMasti",
+  "description": "Watch 18+ Uncut Web Series & Movies Online Free in HD Quality",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0e17",
+  "theme_color": "#ff0055",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

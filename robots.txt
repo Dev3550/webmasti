@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://webmasti.devendradubey61.workers.dev/sitemap.xml
+Sitemap: https://webmastihot.in/sitemap.xml

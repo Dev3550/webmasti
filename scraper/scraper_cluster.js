@@ -79,12 +79,64 @@ async function discoverAllItemUrls() {
 }
 
 /**
+ * Helper to check if an item's signed video URLs are nearing expiration (>= 5 days old).
+ * Signed S3/R2 URLs typically expire in 7 days (X-Amz-Expires=604800).
+ * By renewing them at 5 days, no video will ever expire for users.
+ */
+function isItemExpiringOrExpired(item, maxAgeDays = 5) {
+  if (!item) return true;
+
+  // 1. Check item.scraped_at timestamp if present
+  if (item.scraped_at) {
+    const scrapedTime = new Date(item.scraped_at).getTime();
+    if (!isNaN(scrapedTime)) {
+      const ageMs = Date.now() - scrapedTime;
+      if (ageMs >= maxAgeDays * 24 * 60 * 60 * 1000) {
+        return true;
+      }
+    }
+  }
+
+  // 2. Inspect video URLs for cryptographic signature timestamp: X-Amz-Date=YYYYMMDDTHHMMSSZ
+  const sampleUrls = [];
+  if (item.episodes && item.episodes.length > 0) {
+    for (const ep of item.episodes) {
+      if (ep.video_url) sampleUrls.push(ep.video_url);
+    }
+  }
+  if (item.video_urls && item.video_urls.length > 0) {
+    sampleUrls.push(...item.video_urls);
+  }
+
+  if (sampleUrls.length === 0) return true; // Missing video links, re-scrape
+
+  for (const vUrl of sampleUrls) {
+    const match = vUrl.match(/X-Amz-Date=(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z/i);
+    if (match) {
+      const year = parseInt(match[1], 10);
+      const month = parseInt(match[2], 10) - 1;
+      const day = parseInt(match[3], 10);
+      const hour = parseInt(match[4], 10);
+      const min = parseInt(match[5], 10);
+      const sec = parseInt(match[6], 10);
+      const signedTime = Date.UTC(year, month, day, hour, min, sec);
+      const ageMs = Date.now() - signedTime;
+      if (ageMs >= maxAgeDays * 24 * 60 * 60 * 1000) {
+        return true; // Older than 5 days – auto-renew!
+      }
+    }
+  }
+
+  return false;
+}
+
+/**
  * Worker function that processes URLs from the shared queue.
  */
 async function worker(id, queue) {
   while (queue.length > 0) {
     const url = queue.shift();
-    if (!url || scrapedUrls.has(url)) continue;
+    if (!url) continue;
     try {
       console.log(`[Worker ${id}] 📥 Fetching ${url}`);
       const html = await fetchHtml(url);
@@ -95,9 +147,9 @@ async function worker(id, queue) {
       const item = await parseDetailPage(html, url);
       // Only add items that actually contain playable episodes or video URLs
       if ((item.episodes && item.episodes.length > 0) || (item.video_urls && item.video_urls.length > 0) || (item.total_episodes && item.total_episodes > 0)) {
-        // Strict Deduplication by ID and Title (Case-insensitive)
+        // Strict Deduplication by ID, Title, and URL (Case-insensitive)
         const cleanTitleLower = (item.title || '').toLowerCase().trim();
-        catalog = catalog.filter(i => i.id !== item.id && (i.title || '').toLowerCase().trim() !== cleanTitleLower);
+        catalog = catalog.filter(i => i.id !== item.id && (i.title || '').toLowerCase().trim() !== cleanTitleLower && i.url !== url);
         catalog.unshift(item);
       }
       scrapedUrls.add(url);
@@ -113,18 +165,42 @@ async function worker(id, queue) {
 
 async function runClusterScraper() {
   console.log('==================================================================');
-  console.log('  🚀 WebMasti – Cloud Auto-Scraper (10 Workers)');
+  console.log('  🚀 WebMasti – Cloud Auto-Scraper (10 Workers + 5-Day Auto-Renewal)');
   console.log('==================================================================');
 
   const allUrls = await discoverAllItemUrls();
-  const queue = allUrls.filter(u => !scrapedUrls.has(u));
+
+  // Create lookup map of existing catalog items
+  const catalogUrlMap = new Map();
+  catalog.forEach(item => {
+    if (item.url) catalogUrlMap.set(item.url, item);
+  });
+
+  const newUrls = [];
+  const expiringUrls = [];
+
+  for (const url of allUrls) {
+    const existing = catalogUrlMap.get(url);
+    if (!existing || !scrapedUrls.has(url)) {
+      newUrls.push(url);
+    } else if (isItemExpiringOrExpired(existing, 5)) {
+      expiringUrls.push(url);
+    }
+  }
+
+  console.log(`\n🔎 Discovery Analysis:`);
+  console.log(`   ✨ New items to scrape: ${newUrls.length}`);
+  console.log(`   ⏳ Expiring items (>= 5 days old, auto-renewing fresh links): ${expiringUrls.length}`);
+
+  // Prioritize new series, followed by renewing expiring ones
+  const queue = [...newUrls, ...expiringUrls];
 
   if (queue.length === 0) {
-    console.log(' 🎉 All items already scraped – nothing to do.');
+    console.log(' 🎉 All catalog items have fresh signed video links (< 5 days old) – nothing to do.');
     return;
   }
 
-  console.log(`\n🗂️  Queue size: ${queue.length} (skipping ${allUrls.length - queue.length} already done)`);
+  console.log(`\n🗂️  Total queue size: ${queue.length} items`);
   console.log(`🚀 Launching ${WORKER_COUNT} parallel workers...`);
 
   const promises = [];
@@ -134,7 +210,7 @@ async function runClusterScraper() {
   await Promise.all(promises);
   saveProgress();
   console.log('\n==================================================================');
-  console.log(`✅ Scraping completed – ${catalog.length} items stored in ${OUTPUT_FILE}`);
+  console.log(`✅ Scraping & Auto-Renewal completed – ${catalog.length} items stored in ${OUTPUT_FILE}`);
   console.log('==================================================================');
 }
 

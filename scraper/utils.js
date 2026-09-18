@@ -181,6 +181,7 @@ async function parseDetailPage(html, pageUrl) {
     total_episodes: episodesData.length,
     episodes: episodesData,
     video_urls: videoLinks,
+    scraped_at: new Date().toISOString(),
   };
 }
 
@@ -190,7 +191,7 @@ async function parseDetailPage(html, pageUrl) {
 function generateSitemap(catalog) {
   try {
     const sitemapPath = path.join(__dirname, '..', 'sitemap.xml');
-    const baseUrl = 'https://webmasti.devendradubey61.workers.dev';
+    const baseUrl = 'https://webmastihot.in';
     const today = new Date().toISOString().split('T')[0];
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>

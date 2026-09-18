@@ -128,7 +128,7 @@ function renderContinueWatching() {
     }
 
     continueCard.innerHTML = `
-      <img class="continue-thumb" src="${record.cover_image}" alt="${record.title}" onerror="this.src='https://via.placeholder.com/200x120/111/fff?text=WebMasti'">
+      <img class="continue-thumb" src="${record.cover_image}" alt="${record.title}" onerror="this.src='logo.svg'">
       <div class="continue-details">
         <div class="continue-title">${record.title}</div>
         <div class="continue-ep">▶ ${record.epTitle}</div>
@@ -250,7 +250,7 @@ function renderGrid() {
     card.className = 'card';
     card.innerHTML = `
       <div class="card-poster">
-        <img src="${item.cover_image}" alt="${item.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x225/111/fff?text=WebMasti'">
+        <img src="${item.cover_image}" alt="${item.title}" loading="lazy" onerror="this.src='logo.svg'">
         <span class="card-episodes-badge">${epCountText} EPS</span>
       </div>
       <div class="card-info">
@@ -352,7 +352,7 @@ function updateDynamicSEO(item, epIdx) {
   if (ogImg && item.cover_image) ogImg.setAttribute('content', item.cover_image);
 
   const canonical = document.querySelector('link[rel="canonical"]');
-  if (canonical) canonical.setAttribute('href', `https://webmasti.devendradubey61.workers.dev/#series=${encodeURIComponent(item.id)}`);
+  if (canonical) canonical.setAttribute('href', `https://webmastihot.in/#series=${encodeURIComponent(item.id)}`);
 
   // Inject dynamic TVSeries JSON-LD Schema for Google Rich Snippets
   let schemaScript = document.getElementById('dynamic-series-schema');
@@ -375,7 +375,7 @@ function updateDynamicSEO(item, epIdx) {
     "provider": {
       "@type": "Organization",
       "name": "WebMasti",
-      "url": "https://webmasti.devendradubey61.workers.dev/"
+      "url": "https://webmastihot.in/"
     }
   };
 
@@ -388,7 +388,7 @@ function resetSEOToDefault() {
   if (descMeta) descMeta.setAttribute('content', "Watch HD 18+ Uncut Web Series online for free on WebMasti. Stream latest episodes from ULLU, MoodX, PrimePlay, Kooku, Rabbit, Woow, Jugnu, and Exclusive Indian Web Series with direct streaming and fast buffering.");
 
   const canonical = document.querySelector('link[rel="canonical"]');
-  if (canonical) canonical.setAttribute('href', "https://webmasti.devendradubey61.workers.dev/");
+  if (canonical) canonical.setAttribute('href', "https://webmastihot.in/");
 
   const schemaScript = document.getElementById('dynamic-series-schema');
   if (schemaScript) schemaScript.remove();
@@ -788,6 +788,11 @@ if (mainVideoPlayer) {
   mainVideoPlayer.addEventListener('playing', () => {
     startBufferPump();
   });
+
+  mainVideoPlayer.addEventListener('error', (e) => {
+    console.error('Video playback error:', e);
+    setPlayerStatus('⚠️ Video link expired or unavailable. Retrying or select another episode.', 6000);
+  });
 }
 
 // Play Direct MP4 Stream Video with RAM Memory Flush
@@ -850,7 +855,7 @@ function renderRecommendedSeries(currentItem) {
   recGrid.innerHTML = '';
 
   const pool = catalogData.filter(i => i.id !== currentItem.id);
-  const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 6);
+  const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 12);
 
   shuffled.forEach(item => {
     const card = document.createElement('div');
@@ -858,13 +863,21 @@ function renderRecommendedSeries(currentItem) {
     card.style.margin = '0';
     card.innerHTML = `
       <div class="card-poster">
-        <img src="${item.cover_image}" alt="${item.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x225/111/fff?text=WebMasti'">
+        <img src="${item.cover_image}" alt="${item.title}" loading="lazy" onerror="this.src='logo.svg'">
+        <span class="card-episodes-badge">${item.total_episodes || (item.episodes ? item.episodes.length : 1)} EPS</span>
       </div>
-      <div class="card-info" style="padding: 6px;">
-        <h4 style="font-size:0.8rem; font-weight:700; color:#fff; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${item.title}</h4>
+      <div class="card-info" style="padding: 8px 6px;">
+        <h4 style="font-size:0.82rem; font-weight:700; color:#fff; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom: 4px;">${item.title}</h4>
+        <div class="card-tags" style="margin: 0;">
+          ${(item.categories || []).slice(0, 1).map(cat => `<span class="tag" style="font-size: 0.68rem; padding: 2px 6px;">${cat}</span>`).join('')}
+        </div>
       </div>
     `;
-    card.onclick = () => handleCardClick(item);
+    card.onclick = () => {
+      handleCardClick(item);
+      const cardEl = playerModal.querySelector('.modal-card');
+      if (cardEl) cardEl.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     recGrid.appendChild(card);
   });
 }
@@ -926,44 +939,41 @@ categoryPills.addEventListener('click', (e) => {
 // Initialize Ad Monetization System (Social Bar active ONLY on PC/Tablet > 768px, disabled on Mobile)
 function initAdMonetization() {
   if (!window.WEBMASTI_ADS || !window.WEBMASTI_ADS.enabled) return;
-
-  const ads = window.WEBMASTI_ADS;
-
-  // 1. Top Banner Ad
-  const topAdContainer = document.getElementById('topAdContainer');
-  if (topAdContainer && ads.topBannerCode && ads.topBannerCode.trim().length > 15) {
-    topAdContainer.innerHTML = ads.topBannerCode;
-    topAdContainer.style.display = 'block';
-  }
-
-  // 2. Modal Player Banner Ad
-  const modalAdContainer = document.getElementById('modalAdContainer');
-  if (modalAdContainer && ads.playerBannerCode && ads.playerBannerCode.trim().length > 15) {
-    modalAdContainer.innerHTML = ads.playerBannerCode;
-    modalAdContainer.style.display = 'block';
-  }
-
-  // 3. Popunder Script
-  if (ads.popunderScript && ads.popunderScript.trim().length > 5) {
-    const s = document.createElement('script');
-    if (ads.popunderScript.startsWith('http')) {
-      s.src = ads.popunderScript;
-    } else {
-      s.text = ads.popunderScript;
-    }
-    document.head.appendChild(s);
-  }
-
-  // 4. Push / Social Bar Ad Script (Active ONLY on Desktop/Tablet > 768px, Disabled on Mobile Phones)
-  if (ads.pushAdScript && ads.pushAdScript.trim().length > 5 && window.innerWidth > 768) {
-    const s = document.createElement('script');
-    s.src = ads.pushAdScript;
-    document.head.appendChild(s);
-  }
+  // Monetag ads are initialized via tag.min.js in index.html and sw.js
+  console.log('WebMasti Monetag Ad Engine Initialized.');
 }
 
 // Initialize on DOM Ready
 document.addEventListener('DOMContentLoaded', () => {
   loadCatalog();
   initAdMonetization();
+
+  // Corner Floating Home Button handler
+  const floatingHomeBtn = document.getElementById('floatingHomeBtn');
+  if (floatingHomeBtn) {
+    floatingHomeBtn.addEventListener('click', (e) => {
+      if (playerModal && playerModal.classList.contains('active')) {
+        e.preventDefault();
+        closeModalAction(true);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (window.location.hash) {
+        e.preventDefault();
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+        resetSEOToDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  // Register Monetag Push Notification Service Worker (sw.js)
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').then(reg => {
+        console.log('WebMasti ServiceWorker registered successfully:', reg.scope);
+      }).catch(err => {
+        console.log('WebMasti ServiceWorker registration notice:', err);
+      });
+    });
+  }
 });
+
