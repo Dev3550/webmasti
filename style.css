@@ -56,6 +56,60 @@ body {
   gap: 8px;
 }
 
+/* Universal Home Button (Desktop, Tablet, Mobile) */
+.btn-nav-home {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  background: linear-gradient(135deg, #ff0055 0%, #7928ca 100%) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 6px 14px !important;
+  border-radius: 20px !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 15px rgba(255, 0, 85, 0.35) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  cursor: pointer !important;
+  margin-right: 10px !important;
+  flex-shrink: 0 !important;
+  z-index: 10 !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-nav-home:hover {
+  transform: translateY(-2px) scale(1.05) !important;
+  box-shadow: 0 6px 20px rgba(255, 0, 85, 0.55) !important;
+  color: #ffffff !important;
+}
+
+.btn-modal-home {
+  position: absolute !important;
+  top: 10px !important;
+  left: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  background: rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  padding: 6px 14px !important;
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  z-index: 99 !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-modal-home:hover {
+  background: #ff0055 !important;
+  border-color: #ff0055 !important;
+  transform: scale(1.05) !important;
+}
+
 .logo-masti {
   color: #fff;
 }

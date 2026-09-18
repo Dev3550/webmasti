@@ -149,17 +149,52 @@ function renderContinueWatching() {
   }
 }
 
-// URL Router & History State (Preserves page on refresh & back button, Googlebot crawlable)
-function updateUrlHash(item, epIdx) {
-  if (item) {
-    const newSearch = `?series=${encodeURIComponent(item.id)}${epIdx ? `&ep=${epIdx}` : ''}`;
-    if (window.location.search !== newSearch) {
-      history.pushState({ modalOpen: true, id: item.id, epIdx: epIdx || 0 }, '', newSearch);
-    }
+// Helper to update page number in URL without reloading
+function updatePageUrlState() {
+  if (playerModal && playerModal.classList.contains('active')) return;
+
+  const searchParams = new URLSearchParams(window.location.search);
+  const activePill = document.querySelector('.pill.active');
+  const activeCat = activePill ? activePill.getAttribute('data-cat') : null;
+
+  if (activeCat && activeCat !== 'all') {
+    searchParams.set('cat', activeCat);
   } else {
-    if (window.location.search || window.location.hash) {
-      history.pushState({ modalOpen: false }, '', window.location.pathname);
-    }
+    searchParams.delete('cat');
+  }
+
+  if (currentPage > 1) {
+    searchParams.set('page', currentPage);
+  } else {
+    searchParams.delete('page');
+  }
+
+  const newSearch = searchParams.toString() ? `?${searchParams.toString()}` : window.location.pathname;
+  if (window.location.search !== newSearch) {
+    history.replaceState({ page: currentPage, cat: activeCat }, '', newSearch);
+  }
+}
+
+// URL Router & History State (Preserves page, series & category on refresh & back button)
+function updateUrlHash(item, epIdx) {
+  const searchParams = new URLSearchParams(window.location.search);
+  
+  if (item) {
+    searchParams.set('series', item.id);
+    if (epIdx) searchParams.set('ep', epIdx);
+    else searchParams.delete('ep');
+  } else {
+    searchParams.delete('series');
+    searchParams.delete('ep');
+  }
+
+  if (currentPage > 1) {
+    searchParams.set('page', currentPage);
+  }
+
+  const newSearch = searchParams.toString() ? `?${searchParams.toString()}` : window.location.pathname;
+  if (window.location.search !== newSearch) {
+    history.pushState({ modalOpen: !!item, id: item ? item.id : null, epIdx: epIdx || 0, page: currentPage }, '', newSearch);
   }
 }
 
@@ -168,6 +203,12 @@ function checkUrlRoute() {
   let seriesId = searchParams.get('series');
   let epIdx = parseInt(searchParams.get('ep') || '0', 10);
   const cat = searchParams.get('cat');
+  const pageParam = parseInt(searchParams.get('page') || '1', 10);
+
+  // Preserve exact page number on refresh across Desktop, Mobile, and Tablet
+  if (pageParam > 0) {
+    currentPage = pageParam;
+  }
 
   // Support /series/:slug path
   if (!seriesId && window.location.pathname.startsWith('/series/')) {
@@ -181,16 +222,7 @@ function checkUrlRoute() {
     epIdx = parseInt(hashParams.get('ep') || '0', 10);
   }
 
-  if (seriesId) {
-    const sLower = seriesId.toLowerCase();
-    const item = catalogData.find(i => 
-      i.id.toLowerCase() === sLower || 
-      (i.title && cleanTextBranding(i.title).toLowerCase().replace(/[^a-z0-9]+/g, '-') === sLower)
-    );
-    if (item) {
-      openModal(item, epIdx, false);
-    }
-  } else if (cat) {
+  if (cat) {
     // Auto-filter category from URL
     const targetCat = cat.toLowerCase();
     const pill = document.querySelector(`.pill[data-cat="${cat}"]`) ||
@@ -202,10 +234,23 @@ function checkUrlRoute() {
     filteredData = catalogData.filter(item => {
       return (item.categories || []).some(c => c.toLowerCase().includes(targetCat));
     });
-    currentPage = 1;
-    renderGrid();
   } else {
-    if (playerModal.classList.contains('active')) {
+    filteredData = [...catalogData];
+  }
+
+  renderGrid();
+
+  if (seriesId) {
+    const sLower = seriesId.toLowerCase();
+    const item = catalogData.find(i => 
+      i.id.toLowerCase() === sLower || 
+      (i.title && cleanTextBranding(i.title).toLowerCase().replace(/[^a-z0-9]+/g, '-') === sLower)
+    );
+    if (item) {
+      openModal(item, epIdx, false);
+    }
+  } else {
+    if (playerModal && playerModal.classList.contains('active')) {
       closeModalAction(false);
     }
   }
@@ -295,6 +340,7 @@ function renderGrid() {
   });
 
   renderPagination(totalPages);
+  updatePageUrlState();
 }
 
 function renderPagination(totalPages) {
