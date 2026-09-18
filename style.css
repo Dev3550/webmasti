@@ -1290,20 +1290,22 @@ html, body {
   }
 
   .modal-overlay {
-    padding: 0;
-    align-items: flex-end;
+    padding: 12px !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .modal-card {
-    height: 94vh;
-    height: 94dvh;
-    max-height: 94dvh;
-    border-radius: 16px 16px 0 0;
+    height: 88vh !important;
+    height: 88dvh !important;
+    max-height: 88dvh !important;
+    border-radius: 18px !important;
     padding: 0;
+    margin: auto !important;
   }
 
   .player-container {
-    border-radius: 16px 16px 0 0;
+    border-radius: 18px 18px 0 0 !important;
   }
 
   .modal-scroll-body {
@@ -1318,6 +1320,16 @@ html, body {
     font-size: 1.3rem;
   }
 
+  .recommended-slider {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    touch-action: pan-x !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
   .recommended-slider .card {
     flex: 0 0 115px !important;
     width: 115px !important;
@@ -1327,6 +1339,17 @@ html, body {
 }
 
 @media (max-width: 480px) {
+  .modal-overlay {
+    padding: 8px !important;
+  }
+
+  .modal-card {
+    height: 90vh !important;
+    height: 90dvh !important;
+    max-height: 90dvh !important;
+    border-radius: 14px !important;
+  }
+
   .recommended-slider .card {
     flex: 0 0 105px !important;
     width: 105px !important;

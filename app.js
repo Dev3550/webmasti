@@ -182,7 +182,11 @@ function checkUrlRoute() {
   }
 
   if (seriesId) {
-    const item = catalogData.find(i => i.id === seriesId);
+    const sLower = seriesId.toLowerCase();
+    const item = catalogData.find(i => 
+      i.id.toLowerCase() === sLower || 
+      (i.title && cleanTextBranding(i.title).toLowerCase().replace(/[^a-z0-9]+/g, '-') === sLower)
+    );
     if (item) {
       openModal(item, epIdx, false);
     }
@@ -345,13 +349,11 @@ function renderPagination(totalPages) {
 
 function handleCardClick(item, epIdx) {
   if (!item) return;
-  const targetUrl = window.location.origin + window.location.pathname + `?series=${encodeURIComponent(item.id)}`;
-  let adHandled = false;
+  openModal(item, epIdx || 0, true);
   if (typeof window.triggerAdOnClick === 'function') {
-    adHandled = window.triggerAdOnClick(false, targetUrl);
-  }
-  if (!adHandled) {
-    openModal(item, epIdx || 0, true);
+    try {
+      window.triggerAdOnClick(false);
+    } catch (e) {}
   }
 }
 
