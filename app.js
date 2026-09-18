@@ -937,7 +937,7 @@ function startSliderAutoScroll(recGrid) {
   if (sliderAutoScrollInterval) clearInterval(sliderAutoScrollInterval);
   if (!recGrid) return;
 
-  // Touch and hover pause handlers (attached once)
+  // Touch, wheel, and navigation controls (attached once)
   if (!recGrid._hasScrollListeners) {
     recGrid.addEventListener('touchstart', () => { isUserInteractingWithSlider = true; }, { passive: true });
     recGrid.addEventListener('touchend', () => {
@@ -945,6 +945,33 @@ function startSliderAutoScroll(recGrid) {
     }, { passive: true });
     recGrid.addEventListener('mouseenter', () => { isUserInteractingWithSlider = true; });
     recGrid.addEventListener('mouseleave', () => { isUserInteractingWithSlider = false; });
+
+    // Desktop Mouse Wheel support (Horizontal scrolling via mouse wheel)
+    recGrid.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        recGrid.scrollBy({ left: e.deltaY * 1.5, behavior: 'smooth' });
+      }
+    }, { passive: false });
+
+    // Desktop Navigation Arrow buttons
+    const prevBtn = document.getElementById('btnSlidePrev');
+    const nextBtn = document.getElementById('btnSlideNext');
+    if (prevBtn) {
+      prevBtn.onclick = (e) => {
+        e.stopPropagation();
+        const step = recGrid.clientWidth * 0.65;
+        recGrid.scrollBy({ left: -step, behavior: 'smooth' });
+      };
+    }
+    if (nextBtn) {
+      nextBtn.onclick = (e) => {
+        e.stopPropagation();
+        const step = recGrid.clientWidth * 0.65;
+        recGrid.scrollBy({ left: step, behavior: 'smooth' });
+      };
+    }
+
     recGrid._hasScrollListeners = true;
   }
 

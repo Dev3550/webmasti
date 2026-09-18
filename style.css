@@ -672,37 +672,54 @@ body {
   margin-bottom: 12px;
 }
 
-.swipe-hint {
-  font-size: 0.78rem;
-  color: var(--accent-pink);
-  font-weight: 600;
-  background: rgba(255, 0, 85, 0.1);
-  padding: 4px 10px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 0, 85, 0.2);
+.slider-nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-slider-nav {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-glass);
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
   user-select: none;
+}
+
+.btn-slider-nav:hover {
+  background: var(--accent-pink);
+  border-color: var(--accent-pink);
+  transform: scale(1.1);
 }
 
 .recommended-slider {
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: nowrap !important;
-  gap: 14px;
+  gap: 10px;
   overflow-x: auto !important;
   overflow-y: hidden !important;
-  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x;
   scroll-behavior: smooth;
-  padding: 6px 4px 14px 4px;
+  padding: 4px 2px 14px 2px;
 }
 
 .recommended-slider::-webkit-scrollbar {
-  height: 6px;
+  height: 5px;
 }
 
 .recommended-slider::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
   border-radius: 10px;
 }
 
@@ -712,26 +729,50 @@ body {
 }
 
 .recommended-slider .card {
-  flex: 0 0 150px !important;
-  width: 150px !important;
-  min-width: 150px !important;
-  max-width: 150px !important;
+  flex: 0 0 125px !important;
+  width: 125px !important;
+  min-width: 125px !important;
+  max-width: 125px !important;
   scroll-snap-align: start;
   margin: 0;
   cursor: pointer;
-  border-radius: 12px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 10px;
+  background: rgba(18, 22, 33, 0.9);
+  border: 1px solid var(--border-glass);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .recommended-slider .card:hover {
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 8px 25px rgba(255, 0, 85, 0.35);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(255, 0, 85, 0.3);
 }
 
 .recommended-slider .card .card-poster {
   aspect-ratio: 16/9;
-  border-radius: 10px;
+  border-radius: 9px 9px 0 0;
   overflow: hidden;
+}
+
+.recommended-slider .card .card-episodes-badge {
+  font-size: 0.58rem !important;
+  padding: 1px 4px !important;
+  top: 4px;
+  right: 4px;
+}
+
+.recommended-slider .card .card-info {
+  padding: 6px 5px !important;
+}
+
+.recommended-slider .card h4 {
+  font-size: 0.74rem !important;
+  line-height: 1.25;
+  margin-bottom: 2px !important;
+}
+
+.recommended-slider .card .tag {
+  font-size: 0.62rem !important;
+  padding: 1px 5px !important;
 }
 
 .btn-ep {
@@ -1278,19 +1319,19 @@ html, body {
   }
 
   .recommended-slider .card {
-    flex: 0 0 135px !important;
-    width: 135px !important;
-    min-width: 135px !important;
-    max-width: 135px !important;
+    flex: 0 0 115px !important;
+    width: 115px !important;
+    min-width: 115px !important;
+    max-width: 115px !important;
   }
 }
 
 @media (max-width: 480px) {
   .recommended-slider .card {
-    flex: 0 0 120px !important;
-    width: 120px !important;
-    min-width: 120px !important;
-    max-width: 120px !important;
+    flex: 0 0 105px !important;
+    width: 105px !important;
+    min-width: 105px !important;
+    max-width: 105px !important;
   }
 }
 

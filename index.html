@@ -11,6 +11,17 @@
     gtag('config', 'G-HCYVHG8E0M');
   </script>
 
+  <script>
+    // Automatically redirect legacy hash links (#series=slug) to SEO query links (?series=slug)
+    if (window.location.hash && window.location.hash.includes('series=')) {
+      var hParams = new URLSearchParams(window.location.hash.replace('#', '?'));
+      var sId = hParams.get('series');
+      if (sId) {
+        window.location.replace('/?series=' + encodeURIComponent(sId));
+      }
+    }
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebMasti - Watch 18+ Uncut Web Series Online Free HD | ULLU, PrimePlay, MoodX, Kooku</title>
@@ -254,7 +265,10 @@
         <div class="recommended-section" id="recommendedSection">
           <div class="recommended-header">
             <h3 class="episodes-title">🔥 More Like This</h3>
-            <span class="swipe-hint">👈 Slide horizontally 👉</span>
+            <div class="slider-nav-controls">
+              <button class="btn-slider-nav" id="btnSlidePrev" aria-label="Previous Series">‹</button>
+              <button class="btn-slider-nav" id="btnSlideNext" aria-label="Next Series">›</button>
+            </div>
           </div>
           <div class="recommended-slider" id="recommendedGrid"></div>
         </div>
