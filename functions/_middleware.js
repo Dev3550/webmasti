@@ -1,5 +1,6 @@
-// Cloudflare Pages Middleware for Dynamic SEO, Social Previews & In-Post Video Playback
-// Automatically optimizes Googlebot, Bingbot, WhatsApp, Telegram, Facebook, and Twitter crawlers
+// Cloudflare Pages Middleware for Instant Dynamic SEO & Social Thumbnails
+// Bundles seo_map.json at build time for 0ms, 100% reliable thumbnail resolution
+import seoMap from './seo_map.json';
 
 export async function onRequest(context) {
   const url = new URL(context.request.url);
@@ -9,19 +10,9 @@ export async function onRequest(context) {
     const seriesId = url.searchParams.get('series');
     let srcUrl = url.searchParams.get('src') || '';
 
-    // If source URL not passed, lookup from catalog.json
-    if (!srcUrl && seriesId) {
-      try {
-        const catalogUrl = new URL('/data/catalog.json', url.origin);
-        const catalogRes = await context.env.ASSETS.fetch(new Request(catalogUrl));
-        if (catalogRes.ok) {
-          const catalog = await catalogRes.json();
-          const item = catalog.find(i => i.id === seriesId);
-          if (item && item.cover_image) {
-            srcUrl = item.cover_image;
-          }
-        }
-      } catch (e) {}
+    // Direct lookup from bundled seoMap
+    if (!srcUrl && seriesId && seoMap[seriesId]) {
+      srcUrl = seoMap[seriesId].cover || '';
     }
 
     if (srcUrl && srcUrl.startsWith('http')) {
@@ -63,67 +54,42 @@ export async function onRequest(context) {
   // 2. Handle series deep link or category link
   if (seriesId || category) {
     const response = await context.next();
-    const contentType = response.headers.get('content-type') || '';
-    
-    if (contentType.includes('text/html')) {
-      let html = await response.text();
+    let html = await response.text();
 
-      if (seriesId) {
-        let seriesTitle = url.searchParams.get('title') || '';
-        let seriesCover = url.searchParams.get('img') || '';
-        let videoUrl = url.searchParams.get('vid') || '';
-        let seriesDesc = '';
+    if (seriesId) {
+      const item = seoMap[seriesId] || {};
+      let seriesTitle = url.searchParams.get('title') || item.title || '';
+      let seriesCover = url.searchParams.get('img') || item.cover || '';
+      let videoUrl = url.searchParams.get('vid') || item.vid || '';
 
-        // If metadata is not in URL, try catalog.json
-        if (!seriesTitle || !seriesCover || !videoUrl) {
-          try {
-            const catalogUrl = new URL('/data/catalog.json', url.origin);
-            const catalogRes = await context.env.ASSETS.fetch(new Request(catalogUrl));
-            if (catalogRes.ok) {
-              const catalog = await catalogRes.json();
-              const item = catalog.find(i => i.id === seriesId);
-              if (item) {
-                if (!seriesTitle) seriesTitle = item.title;
-                if (!seriesCover) seriesCover = item.cover_image;
-                if (!videoUrl) {
-                  videoUrl = (item.video_urls && item.video_urls[0]) || (item.episodes && item.episodes[0] && item.episodes[0].video_url) || '';
-                }
-                seriesDesc = item.description || '';
-              }
-            }
-          } catch (e) {}
-        }
+      if (!seriesTitle) {
+        seriesTitle = seriesId.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+      }
+      if (!seriesCover) {
+        seriesCover = `${url.origin}/og-banner.jpg`;
+      }
+      const seriesDesc = `Watch ${seriesTitle} uncut web series full episodes online in Full HD for free on WebMasti. Fast streaming playback.`;
 
-        if (!seriesTitle) {
-          seriesTitle = seriesId.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
-        }
-        if (!seriesCover) {
-          seriesCover = `${url.origin}/og-banner.jpg`;
-        }
-        if (!seriesDesc) {
-          seriesDesc = `Watch ${seriesTitle} uncut web series full episodes online in Full HD for free on WebMasti. Fast video streaming.`;
-        }
+      const canonicalUrl = `https://webmastihot.in/?series=${encodeURIComponent(seriesId)}`;
+      const pageTitle = `${seriesTitle} - Watch Full HD Web Series on WebMasti`;
+      const proxyCover = `${url.origin}/api/thumb?series=${encodeURIComponent(seriesId)}&src=${encodeURIComponent(seriesCover)}`;
+      const playerEmbedUrl = `https://webmastihot.in/player.html?series=${encodeURIComponent(seriesId)}`;
 
-        const canonicalUrl = `https://webmastihot.in/?series=${encodeURIComponent(seriesId)}`;
-        const pageTitle = `${seriesTitle} - Watch Full HD Web Series on WebMasti`;
-        const proxyCover = `${url.origin}/api/thumb?series=${encodeURIComponent(seriesId)}&src=${encodeURIComponent(seriesCover)}`;
-        const playerEmbedUrl = `https://webmastihot.in/player.html?series=${encodeURIComponent(seriesId)}`;
-
-        const dynamicTags = `
+      const dynamicTags = `
   <title>${pageTitle}</title>
   <meta name="description" content="${seriesDesc.replace(/"/g, '&quot;')}">
   <link rel="canonical" href="${canonicalUrl}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1, max-snippet:-1">
 
-  <!-- Open Graph / Facebook / WhatsApp Preview with Series Thumbnail (Clean card without play button overlay) -->
+  <!-- Open Graph / Facebook / WhatsApp Preview with Exact Series Thumbnail -->
   <meta property="og:site_name" content="WebMasti">
   <meta property="og:type" content="website">
   <meta property="og:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta property="og:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
-  <meta property="og:image" content="${seriesCover}">
-  <meta property="og:image:secure_url" content="${seriesCover}">
   <meta property="og:image" content="${proxyCover}">
   <meta property="og:image:secure_url" content="${proxyCover}">
+  <meta property="og:image" content="${seriesCover}">
+  <meta property="og:image:secure_url" content="${seriesCover}">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="600">
   <meta property="og:image:height" content="338">
@@ -141,7 +107,7 @@ export async function onRequest(context) {
     "@type": "VideoObject",
     "name": "${seriesTitle.replace(/"/g, '\\"')}",
     "description": "${seriesDesc.replace(/"/g, '\\"')}",
-    "thumbnailUrl": ["${seriesCover}", "${proxyCover}"],
+    "thumbnailUrl": ["${proxyCover}", "${seriesCover}"],
     "uploadDate": "2026-01-01T00:00:00+05:30",
     "embedUrl": "${playerEmbedUrl}",
     "contentUrl": "${(videoUrl || '').replace(/"/g, '\\"')}",
@@ -156,38 +122,34 @@ export async function onRequest(context) {
   </script>
 `;
 
-        html = html.replace(/<title>.*?<\/title>/i, '');
-        html = html.replace(/<meta name="description"[^>]*>/gi, '');
-        html = html.replace(/<link rel="canonical"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:title"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:description"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:image"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:image:secure_url"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:image:alt"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:url"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:video"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:video:secure_url"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:video:type"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:video:width"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:video:height"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:video:url"[^>]*>/gi, '');
-        html = html.replace(/<meta name="twitter:title"[^>]*>/gi, '');
-        html = html.replace(/<meta name="twitter:description"[^>]*>/gi, '');
-        html = html.replace(/<meta name="twitter:image"[^>]*>/gi, '');
-        html = html.replace(/<meta name="twitter:card"[^>]*>/gi, '');
-        html = html.replace(/<meta name="twitter:player"[^>]*>/gi, '');
-        html = html.replace('<head>', `<head>${dynamicTags}`);
+      html = html.replace(/<title>.*?<\/title>/i, '');
+      html = html.replace(/<meta name="description"[^>]*>/gi, '');
+      html = html.replace(/<link rel="canonical"[^>]*>/gi, '');
+      html = html.replace(/<meta property="og:title"[^>]*>/gi, '');
+      html = html.replace(/<meta property="og:description"[^>]*>/gi, '');
+      html = html.replace(/<meta property="og:image"[^>]*>/gi, '');
+      html = html.replace(/<meta property="og:image:secure_url"[^>]*>/gi, '');
+      html = html.replace(/<meta property="og:image:alt"[^>]*>/gi, '');
+      html = html.replace(/<meta property="og:url"[^>]*>/gi, '');
+      html = html.replace(/<meta name="twitter:title"[^>]*>/gi, '');
+      html = html.replace(/<meta name="twitter:description"[^>]*>/gi, '');
+      html = html.replace(/<meta name="twitter:image"[^>]*>/gi, '');
+      html = html.replace(/<meta name="twitter:card"[^>]*>/gi, '');
+      html = html.replace('<head>', `<head>${dynamicTags}`);
 
-        return new Response(html, {
-          status: response.status,
-          headers: response.headers
-        });
-      } else if (category) {
-        const canonicalUrl = `https://webmastihot.in/?cat=${encodeURIComponent(category)}`;
-        const pageTitle = `${category} Web Series Watch Online Free HD - WebMasti`;
-        const pageDesc = `Watch all latest ${category} 18+ uncut web series full episodes in HD online for free on WebMasti. Stream with fast buffering and direct playback.`;
+      return new Response(html, {
+        status: response.status,
+        headers: {
+          ...Object.fromEntries(response.headers.entries()),
+          'content-type': 'text/html; charset=utf-8'
+        }
+      });
+    } else if (category) {
+      const canonicalUrl = `https://webmastihot.in/?cat=${encodeURIComponent(category)}`;
+      const pageTitle = `${category} Web Series Watch Online Free HD - WebMasti`;
+      const pageDesc = `Watch all latest ${category} 18+ uncut web series full episodes in HD online for free on WebMasti. Stream with fast buffering and direct playback.`;
 
-        const dynamicTags = `
+      const dynamicTags = `
   <title>${pageTitle}</title>
   <meta name="description" content="${pageDesc}">
   <link rel="canonical" href="${canonicalUrl}">
@@ -199,20 +161,21 @@ export async function onRequest(context) {
   <meta name="twitter:description" content="${pageDesc}">
 `;
 
-        html = html.replace(/<title>.*?<\/title>/i, '');
-        html = html.replace(/<meta name="description"[^>]*>/gi, '');
-        html = html.replace(/<link rel="canonical"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:title"[^>]*>/gi, '');
-        html = html.replace(/<meta property="og:description"[^>]*>/gi, '');
-        html = html.replace('<head>', `<head>${dynamicTags}`);
+      html = html.replace(/<title>.*?<\/title>/i, '');
+      html = html.replace(/<meta name="description"[^>]*>/gi, '');
+      html = html.replace(/<link rel="canonical"[^>]*>/gi, '');
+      html = html.replace(/<meta property="og:title"[^>]*>/gi, '');
+      html = html.replace(/<meta property="og:description"[^>]*>/gi, '');
+      html = html.replace('<head>', `<head>${dynamicTags}`);
 
-        return new Response(html, {
-          status: response.status,
-          headers: response.headers
-        });
-      }
+      return new Response(html, {
+        status: response.status,
+        headers: {
+          ...Object.fromEntries(response.headers.entries()),
+          'content-type': 'text/html; charset=utf-8'
+        }
+      });
     }
-    return response;
   }
 
   return context.next();

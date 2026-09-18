@@ -271,6 +271,25 @@ ${tags ? tags + '\n' : ''}    </video:video>`;
     xml += `</urlset>`;
     fs.writeFileSync(sitemapPath, xml, 'utf-8');
     console.log(`Successfully generated sitemap.xml with ${(catalog || []).length} items.`);
+
+    // Automatically sync functions/seo_map.json for instant Cloudflare Pages social previews
+    try {
+      const seoMapPath = path.join(__dirname, '..', 'functions', 'seo_map.json');
+      const seoMap = {};
+      (catalog || []).forEach(x => {
+        if (x && x.id) {
+          seoMap[x.id] = {
+            title: x.title || '',
+            cover: x.cover_image || '',
+            vid: (x.video_urls && x.video_urls[0]) || (x.episodes && x.episodes[0] && x.episodes[0].video_url) || ''
+          };
+        }
+      });
+      fs.writeFileSync(seoMapPath, JSON.stringify(seoMap), 'utf-8');
+      console.log(`Successfully synced functions/seo_map.json with ${Object.keys(seoMap).length} items.`);
+    } catch (mapErr) {
+      console.error('Notice syncing seo_map.json:', mapErr.message);
+    }
   } catch (err) {
     console.error('Error generating sitemap:', err.message);
   }
