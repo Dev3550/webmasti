@@ -1,0 +1,9 @@
+_worker.js
+functions/
+.git/
+.github/
+scraper/
+node_modules/
+package.json
+package-lock.json
+wrangler.toml
