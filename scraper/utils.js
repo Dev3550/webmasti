@@ -211,27 +211,50 @@ function generateSitemap(catalog) {
     <priority>0.5</priority>
   </url>\n`;
 
+    // Popular platform category landing pages for targeted Google keyword ranking
+    const topCategories = ['ULLU', 'PrimePlay', 'MoodX', 'Kooku', 'Rabbit', 'JUGNU', 'Atrangii', 'Voovi', 'Hunter', 'Woow'];
+    topCategories.forEach(cat => {
+      xml += `  <url>
+    <loc>${baseUrl}/?cat=${encodeURIComponent(cat)}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>\n`;
+    });
+
     (catalog || []).forEach(item => {
       if (item && item.id) {
         const itemTitleEscaped = (item.title || 'Web Series').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         const itemCover = item.cover_image || '';
+        const itemUrl = `${baseUrl}/?series=${encodeURIComponent(item.id)}`;
+
         xml += `  <url>
-    <loc>${baseUrl}/#series=${encodeURIComponent(item.id)}</loc>
+    <loc>${itemUrl}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>`;
         if (itemCover) {
+          const tags = (item.categories || [])
+            .slice(0, 5)
+            .map(c => `      <video:tag>${c.replace(/&/g, '&amp;')}</video:tag>`)
+            .join('\n');
+
           xml += `
     <image:image>
       <image:loc>${itemCover.replace(/&/g, '&amp;')}</image:loc>
-      <image:title>${itemTitleEscaped} Full Web Series</image:title>
+      <image:title>${itemTitleEscaped} Full HD Poster</image:title>
     </image:image>
     <video:video>
       <video:thumbnail_loc>${itemCover.replace(/&/g, '&amp;')}</video:thumbnail_loc>
-      <video:title>${itemTitleEscaped} Watch Online Free HD</video:title>
-      <video:description>Watch all episodes of ${itemTitleEscaped} in HD quality on WebMasti</video:description>
-      <video:player_loc>${baseUrl}/#series=${encodeURIComponent(item.id)}</video:player_loc>
-    </video:video>`;
+      <video:title>${itemTitleEscaped} Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of ${itemTitleEscaped} online in HD quality for free on WebMasti</video:description>
+      <video:player_loc>${itemUrl}</video:player_loc>
+      <video:publication_date>${today}</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+${tags ? tags + '\n' : ''}    </video:video>`;
         }
         xml += `
   </url>\n`;
@@ -240,6 +263,7 @@ function generateSitemap(catalog) {
 
     xml += `</urlset>`;
     fs.writeFileSync(sitemapPath, xml, 'utf-8');
+    console.log(`Successfully generated sitemap.xml with ${(catalog || []).length} items.`);
   } catch (err) {
     console.error('Error generating sitemap:', err.message);
   }

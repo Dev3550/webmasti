@@ -149,15 +149,15 @@ function renderContinueWatching() {
   }
 }
 
-// URL Router & History State (Preserves page on refresh & back button)
+// URL Router & History State (Preserves page on refresh & back button, Googlebot crawlable)
 function updateUrlHash(item, epIdx) {
   if (item) {
-    const newHash = `#series=${item.id}&ep=${epIdx || 0}`;
-    if (window.location.hash !== newHash) {
-      history.pushState({ modalOpen: true, id: item.id, epIdx: epIdx || 0 }, '', newHash);
+    const newSearch = `?series=${encodeURIComponent(item.id)}${epIdx ? `&ep=${epIdx}` : ''}`;
+    if (window.location.search !== newSearch) {
+      history.pushState({ modalOpen: true, id: item.id, epIdx: epIdx || 0 }, '', newSearch);
     }
   } else {
-    if (window.location.hash) {
+    if (window.location.search || window.location.hash) {
       history.pushState({ modalOpen: false }, '', window.location.pathname);
     }
   }
@@ -167,7 +167,9 @@ function checkUrlRoute() {
   const searchParams = new URLSearchParams(window.location.search);
   let seriesId = searchParams.get('series');
   let epIdx = parseInt(searchParams.get('ep') || '0', 10);
+  const cat = searchParams.get('cat');
 
+  // Fallback for legacy hash links (#series=...)
   if (!seriesId && window.location.hash && window.location.hash.includes('series=')) {
     const hashParams = new URLSearchParams(window.location.hash.replace('#', '?'));
     seriesId = hashParams.get('series');
@@ -179,6 +181,20 @@ function checkUrlRoute() {
     if (item) {
       openModal(item, epIdx, false);
     }
+  } else if (cat) {
+    // Auto-filter category from URL
+    const targetCat = cat.toLowerCase();
+    const pill = document.querySelector(`.pill[data-cat="${cat}"]`) ||
+                 Array.from(document.querySelectorAll('.pill')).find(p => p.getAttribute('data-cat').toLowerCase() === targetCat);
+    if (pill) {
+      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+    }
+    filteredData = catalogData.filter(item => {
+      return (item.categories || []).some(c => c.toLowerCase().includes(targetCat));
+    });
+    currentPage = 1;
+    renderGrid();
   } else {
     if (playerModal.classList.contains('active')) {
       closeModalAction(false);
@@ -324,7 +340,7 @@ function renderPagination(totalPages) {
 
 function handleCardClick(item, epIdx) {
   if (!item) return;
-  const targetUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(item.id)}`;
+  const targetUrl = window.location.origin + window.location.pathname + `?series=${encodeURIComponent(item.id)}`;
   let adHandled = false;
   if (typeof window.triggerAdOnClick === 'function') {
     adHandled = window.triggerAdOnClick(false, targetUrl);
@@ -356,7 +372,7 @@ function updateDynamicSEO(item, epIdx) {
   if (ogImg && item.cover_image) ogImg.setAttribute('content', item.cover_image);
 
   const canonical = document.querySelector('link[rel="canonical"]');
-  if (canonical) canonical.setAttribute('href', `https://webmastihot.in/#series=${encodeURIComponent(item.id)}`);
+  if (canonical) canonical.setAttribute('href', `https://webmastihot.in/?series=${encodeURIComponent(item.id)}`);
 
   // Inject dynamic TVSeries JSON-LD Schema for Google Rich Snippets
   let schemaScript = document.getElementById('dynamic-series-schema');
@@ -629,7 +645,7 @@ function playEpisodeAtIndex(idx, isManualClick) {
   if (isManualClick && typeof window.triggerAdOnClick === 'function') {
     let targetUrl = '';
     if (currentActiveItem) {
-      targetUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(currentActiveItem.id)}&ep=${idx}`;
+      targetUrl = window.location.origin + window.location.pathname + `?series=${encodeURIComponent(currentActiveItem.id)}&ep=${idx}`;
     }
     const adHandled = window.triggerAdOnClick(false, targetUrl);
     if (adHandled) return;

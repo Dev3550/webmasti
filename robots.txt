@@ -1,4 +1,35 @@
+# WebMasti Robots.txt - Optimized for Fast Googlebot & Search Engine Indexing
 User-agent: *
+Allow: /
+Allow: /data/catalog.json
+Allow: /sitemap.xml
+Disallow: /scraper/
+Disallow: /node_modules/
+
+User-agent: Googlebot
+Allow: /
+Allow: /?series=*
+Allow: /?cat=*
+Allow: /data/catalog.json
+
+User-agent: Googlebot-Video
+Allow: /
+Allow: /?series=*
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /data/
+Allow: /*.webp
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+
+User-agent: Bingbot
+Allow: /
+Allow: /?series=*
+
+User-agent: Yandex
 Allow: /
 
 Sitemap: https://webmastihot.in/sitemap.xml
+Host: https://webmastihot.in
