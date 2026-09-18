@@ -150,7 +150,7 @@ function renderContinueWatching() {
 }
 
 // Helper to update page number in URL without reloading
-function updatePageUrlState() {
+function updatePageUrlState(usePushState = false) {
   if (playerModal && playerModal.classList.contains('active')) return;
 
   const searchParams = new URLSearchParams(window.location.search);
@@ -169,9 +169,16 @@ function updatePageUrlState() {
     searchParams.delete('page');
   }
 
-  const newSearch = searchParams.toString() ? `?${searchParams.toString()}` : window.location.pathname;
-  if (window.location.search !== newSearch) {
-    history.replaceState({ page: currentPage, cat: activeCat }, '', newSearch);
+  const queryStr = searchParams.toString();
+  const targetSearch = queryStr ? `?${queryStr}` : '';
+  const newUrl = queryStr ? `?${queryStr}` : window.location.pathname;
+
+  if (window.location.search !== targetSearch) {
+    if (usePushState) {
+      history.pushState({ page: currentPage, cat: activeCat }, '', newUrl);
+    } else {
+      history.replaceState({ page: currentPage, cat: activeCat }, '', newUrl);
+    }
   }
 }
 
@@ -355,6 +362,7 @@ function renderPagination(totalPages) {
     if (currentPage > 1) {
       currentPage--;
       renderGrid();
+      updatePageUrlState(true);
       window.scrollTo({ top: catalogGrid.offsetTop - 100, behavior: 'smooth' });
     }
   };
@@ -374,6 +382,7 @@ function renderPagination(totalPages) {
     pageBtn.onclick = () => {
       currentPage = p;
       renderGrid();
+      updatePageUrlState(true);
       window.scrollTo({ top: catalogGrid.offsetTop - 100, behavior: 'smooth' });
     };
     paginationControls.appendChild(pageBtn);
@@ -387,6 +396,7 @@ function renderPagination(totalPages) {
     if (currentPage < totalPages) {
       currentPage++;
       renderGrid();
+      updatePageUrlState(true);
       window.scrollTo({ top: catalogGrid.offsetTop - 100, behavior: 'smooth' });
     }
   };
