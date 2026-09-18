@@ -399,25 +399,24 @@ body {
   border-radius: 20px;
   width: 100%;
   max-width: 950px;
+  height: 92vh;
   max-height: 92vh;
   max-height: 92dvh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-  padding: 16px 20px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Outer card does NOT scroll: player stays 100% fixed at top */
+  padding: 0;
   position: relative;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
 }
 
 .btn-close {
   position: absolute;
   top: 10px;
-  right: 14px;
+  right: 12px;
   background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #fff;
   font-size: 1.6rem;
   width: 38px;
@@ -428,7 +427,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-  z-index: 60;
+  z-index: 99;
 }
 
 .btn-close:hover {
@@ -573,19 +572,18 @@ body {
   color: #fff;
 }
 
-/* Video Player (Sticky at the top while user scrolls below) */
+/* Video Player (Locked firmly at top of modal, 100% immune to scrolling) */
 .player-container {
-  position: sticky;
-  top: -16px;
-  z-index: 45;
   width: 100%;
   aspect-ratio: 16/9;
   background: #000;
-  border-radius: 14px;
+  flex-shrink: 0; /* Player NEVER shrinks or scrolls away */
+  border-radius: 20px 20px 0 0;
   overflow: hidden;
-  margin-bottom: 18px;
-  border: 1px solid var(--border-glass);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+  position: relative;
+  border-bottom: 1px solid var(--border-glass);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
+  z-index: 20;
 }
 
 .player-container video {
@@ -628,11 +626,16 @@ body {
   visibility: visible;
 }
 
-/* Modal Scroll Body */
+/* Modal Scroll Body (The ONLY scrolling container in the modal) */
 .modal-scroll-body {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding: 18px 20px 60px 20px;
 }
 
 /* Episodes Grid */
@@ -654,19 +657,75 @@ body {
   gap: 10px;
 }
 
-/* Recommended More Like This Section */
+/* Recommended More Like This Section (Horizontal Slider) */
 .recommended-section {
   border-top: 1px solid var(--border-glass);
-  padding-top: 24px;
-  margin-top: 24px;
-  padding-bottom: 60px; /* Ample space to prevent cutoff while scrolling */
+  padding-top: 20px;
+  margin-top: 22px;
+  padding-bottom: 40px;
 }
 
-#recommendedGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 12px;
-  margin-top: 14px;
+.recommended-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.swipe-hint {
+  font-size: 0.78rem;
+  color: var(--accent-pink);
+  font-weight: 600;
+  background: rgba(255, 0, 85, 0.1);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 0, 85, 0.2);
+  user-select: none;
+}
+
+.recommended-slider {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 2px 14px 2px;
+}
+
+.recommended-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.recommended-slider::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.recommended-slider::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #ff0055, #7928ca);
+  border-radius: 10px;
+}
+
+.recommended-slider .card {
+  flex: 0 0 150px;
+  width: 150px;
+  scroll-snap-align: start;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.recommended-slider .card:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 8px 25px rgba(255, 0, 85, 0.35);
+}
+
+.recommended-slider .card .card-poster {
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .btn-ep {
@@ -1154,41 +1213,45 @@ html, body {
     z-index: 1002;
   }
 
-  .player-container {
-    top: -10px;
-    margin-bottom: 14px;
-    border-radius: 10px;
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
   }
 
   .modal-card {
-    padding: 10px 10px 80px 10px;
-    max-height: 96vh;
-    max-height: 96dvh;
-    border-radius: 16px;
+    height: 94vh;
+    height: 94dvh;
+    max-height: 94dvh;
+    border-radius: 16px 16px 0 0;
+    padding: 0;
+  }
+
+  .player-container {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .modal-scroll-body {
+    padding: 12px 14px 70px 14px;
   }
 
   .btn-close {
-    top: 6px;
-    right: 6px;
+    top: 8px;
+    right: 8px;
     width: 32px;
     height: 32px;
     font-size: 1.3rem;
   }
 
-  .recommended-section {
-    padding-bottom: 80px;
-  }
-
-  #recommendedGrid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+  .recommended-slider .card {
+    flex: 0 0 125px;
+    width: 125px;
   }
 }
 
 @media (max-width: 480px) {
-  #recommendedGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+  .recommended-slider .card {
+    flex: 0 0 115px;
+    width: 115px;
   }
 }
 

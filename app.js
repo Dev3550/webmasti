@@ -164,16 +164,20 @@ function updateUrlHash(item, epIdx) {
 }
 
 function checkUrlRoute() {
-  const hash = window.location.hash;
-  if (hash && hash.includes('#series=')) {
-    const params = new URLSearchParams(hash.replace('#', '?'));
-    const seriesId = params.get('series');
-    const epIdx = parseInt(params.get('ep') || '0', 10);
-    if (seriesId) {
-      const item = catalogData.find(i => i.id === seriesId);
-      if (item) {
-        openModal(item, epIdx, false);
-      }
+  const searchParams = new URLSearchParams(window.location.search);
+  let seriesId = searchParams.get('series');
+  let epIdx = parseInt(searchParams.get('ep') || '0', 10);
+
+  if (!seriesId && window.location.hash && window.location.hash.includes('series=')) {
+    const hashParams = new URLSearchParams(window.location.hash.replace('#', '?'));
+    seriesId = hashParams.get('series');
+    epIdx = parseInt(hashParams.get('ep') || '0', 10);
+  }
+
+  if (seriesId) {
+    const item = catalogData.find(i => i.id === seriesId);
+    if (item) {
+      openModal(item, epIdx, false);
     }
   } else {
     if (playerModal.classList.contains('active')) {
@@ -481,36 +485,41 @@ function updateEngagementBar(item) {
 
 function handleNativeShare(item) {
   if (!item) return;
-  const shareUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(item.id)}`;
-  const shareTitle = `${item.title} - Watch Full Web Series HD | WebMasti`;
-  const shareText = `🔥 Watch ${item.title} full web series episodes in HD quality on WebMasti! Direct video streaming.`;
+  const baseUrl = 'https://webmastihot.in';
+  // Include series id, title, and cover image so social crawlers (WhatsApp/Telegram) can render the rich preview
+  const shareUrl = `${baseUrl}/?series=${encodeURIComponent(item.id)}&title=${encodeURIComponent(item.title)}&img=${encodeURIComponent(item.cover_image || '')}`;
+  const shareTitle = `${item.title} - Watch Full HD Web Series on WebMasti`;
+  const shareText = `🔥 Watch *${item.title}* full episodes in HD quality on WebMasti! Direct video streaming:`;
 
   if (navigator.share) {
     navigator.share({
       title: shareTitle,
-      text: shareText,
+      text: `${shareText}\n`,
       url: shareUrl
     }).then(() => {
       setPlayerStatus('🔗 Shared successfully!', 2500);
     }).catch(e => {
       console.log('Native share canceled/fallback:', e);
-      fallbackCopy(shareUrl);
+      fallbackCopy(shareUrl, item);
     });
   } else {
-    fallbackCopy(shareUrl);
+    fallbackCopy(shareUrl, item);
   }
 }
 
-function fallbackCopy(shareUrl) {
+function fallbackCopy(shareUrl, item) {
+  const waText = encodeURIComponent(`🔥 Watch *${item ? item.title : 'Web Series'}* Full Episodes in HD quality on WebMasti!\n${shareUrl}`);
+  const waUrl = `https://api.whatsapp.com/send?text=${waText}`;
+
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(shareUrl).then(() => {
-      setPlayerStatus('📋 Link copied to clipboard!', 3000);
-      alert('✨ WebMasti episode link copied! Share it with your friends on WhatsApp or Telegram.');
+      setPlayerStatus('📋 Link copied! Opening WhatsApp...', 3000);
+      window.open(waUrl, '_blank');
     }).catch(() => {
-      prompt('Copy this WebMasti link to share:', shareUrl);
+      window.open(waUrl, '_blank');
     });
   } else {
-    prompt('Copy this WebMasti link to share:', shareUrl);
+    window.open(waUrl, '_blank');
   }
 }
 
@@ -875,8 +884,8 @@ function renderRecommendedSeries(currentItem) {
     `;
     card.onclick = () => {
       handleCardClick(item);
-      const cardEl = playerModal.querySelector('.modal-card');
-      if (cardEl) cardEl.scrollTo({ top: 0, behavior: 'smooth' });
+      const scrollBody = playerModal.querySelector('.modal-scroll-body');
+      if (scrollBody) scrollBody.scrollTo({ top: 0, behavior: 'smooth' });
     };
     recGrid.appendChild(card);
   });
