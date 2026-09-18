@@ -1,14 +1,14 @@
 // WebMasti Pure Monetag Ad Engine (Monetag Smartlink + Multitag + Push Notifications)
 window.WEBMASTI_ADS = {
   // 1. Monetag Direct Smartlink Link
-  directAdLink: "https://omg10.com/4/11790325",
+  directAdLink: "https://omg10.com/4/11829066",
 
   // 2. Monetag Push Service Worker Zone
-  pushZoneId: 11828957,
-  pushDomain: "5gvci.com",
+  pushZoneId: 11829074,
+  pushDomain: "3nbf4.com",
 
   // 3. Monetag Multitag Zone
-  multitagZone: 278478,
+  multitagZone: 282356,
 
   // Enable/Disable Ads
   enabled: true
@@ -27,7 +27,7 @@ window.triggerAdOnClick = function(force, targetUrl) {
     return false;
   }
   
-  const directLink = window.WEBMASTI_ADS.directAdLink || "https://omg10.com/4/11790325";
+  const directLink = window.WEBMASTI_ADS.directAdLink || "https://omg10.com/4/11829066";
 
   try {
     // Open Monetag Smartlink in new tab so original video page is never lost
