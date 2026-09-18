@@ -1,6 +1,6 @@
 // Cloudflare Pages Middleware for Instant Dynamic SEO & Social Thumbnails
-// Bundles seo_map.json at build time for 0ms, 100% reliable thumbnail resolution
-import seoMap from './seo_map.json';
+// Bundles seo_map.js at build time for 0ms, 100% reliable thumbnail resolution
+import { seoMap } from './seo_map.js';
 
 export async function onRequest(context) {
   const url = new URL(context.request.url);
@@ -86,10 +86,10 @@ export async function onRequest(context) {
   <meta property="og:type" content="website">
   <meta property="og:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta property="og:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
-  <meta property="og:image" content="${proxyCover}">
-  <meta property="og:image:secure_url" content="${proxyCover}">
   <meta property="og:image" content="${seriesCover}">
   <meta property="og:image:secure_url" content="${seriesCover}">
+  <meta property="og:image" content="${proxyCover}">
+  <meta property="og:image:secure_url" content="${proxyCover}">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="600">
   <meta property="og:image:height" content="338">
