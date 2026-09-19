@@ -75,6 +75,32 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=raddi-wala</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Raddi-Wala-Episode-1.webp</image:loc>
+      <image:title>Raddi Wala Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Raddi-Wala-Episode-1.webp</video:thumbnail_loc>
+      <video:title>Raddi Wala Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Raddi Wala online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260919T192609Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=10f69d804a9413ebbb7a8e0d54f4296cb29c805a813835a156de7c760e14d028</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=raddi-wala</video:player_loc>
+      <video:publication_date>2026-09-19</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>JUGNU</video:tag>
+      <video:tag>Babita Dubey</video:tag>
+      <video:tag>Malvika Tomar</video:tag>
+      <video:tag>Suhana Khan</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=pehredaar-s6</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
