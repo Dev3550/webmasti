@@ -77,11 +77,11 @@ async function loadCatalog() {
     }
 
     renderCategoryPills();
-    renderGrid();
-    renderContinueWatching();
 
-    // Check URL state for deep-linked series or refresh recovery
+    // Check URL state FIRST (restores active page, category & series modal before initial renderGrid)
     checkUrlRoute();
+
+    renderContinueWatching();
 
   } catch (err) {
     console.error('Error loading catalog:', err);
@@ -149,34 +149,115 @@ function renderContinueWatching() {
   }
 }
 
-// URL Router & History State (Preserves page on refresh & back button)
-function updateUrlHash(item, epIdx) {
-  if (item) {
-    const newHash = `#series=${item.id}&ep=${epIdx || 0}`;
-    if (window.location.hash !== newHash) {
-      history.pushState({ modalOpen: true, id: item.id, epIdx: epIdx || 0 }, '', newHash);
-    }
+// Helper to update page number and category in URL without reloading
+function updatePageUrlState(usePushState = false) {
+  if (playerModal && playerModal.classList.contains('active')) return;
+
+  const searchParams = new URLSearchParams(window.location.search);
+  const activePill = document.querySelector('.pill.active');
+  const activeCat = activePill ? activePill.getAttribute('data-cat') : null;
+
+  if (activeCat && activeCat !== 'all') {
+    searchParams.set('cat', activeCat);
   } else {
-    if (window.location.hash) {
-      history.pushState({ modalOpen: false }, '', window.location.pathname);
+    searchParams.delete('cat');
+  }
+
+  if (currentPage > 1) {
+    searchParams.set('page', currentPage);
+  } else {
+    searchParams.delete('page');
+  }
+
+  const queryStr = searchParams.toString();
+  const targetSearch = queryStr ? `?${queryStr}` : '';
+  const newUrl = queryStr ? `?${queryStr}` : window.location.pathname;
+
+  if (window.location.search !== targetSearch) {
+    if (usePushState) {
+      history.pushState({ page: currentPage, cat: activeCat }, '', newUrl);
+    } else {
+      history.replaceState({ page: currentPage, cat: activeCat }, '', newUrl);
     }
   }
 }
 
+// URL Router & History State (Preserves page, series & category on refresh & back button)
+function updateUrlHash(item, epIdx) {
+  const searchParams = new URLSearchParams(window.location.search);
+
+  if (item) {
+    searchParams.set('series', item.id);
+    if (epIdx) searchParams.set('ep', epIdx);
+    else searchParams.delete('ep');
+  } else {
+    searchParams.delete('series');
+    searchParams.delete('ep');
+  }
+
+  if (currentPage > 1) {
+    searchParams.set('page', currentPage);
+  } else {
+    searchParams.delete('page');
+  }
+
+  const queryStr = searchParams.toString();
+  const targetSearch = queryStr ? `?${queryStr}` : '';
+  const newUrl = queryStr ? `?${queryStr}` : window.location.pathname;
+
+  if (window.location.search !== targetSearch) {
+    history.pushState({ modalOpen: !!item, id: item ? item.id : null, epIdx: epIdx || 0, page: currentPage }, '', newUrl);
+  }
+}
+
 function checkUrlRoute() {
-  const hash = window.location.hash;
-  if (hash && hash.includes('#series=')) {
-    const params = new URLSearchParams(hash.replace('#', '?'));
-    const seriesId = params.get('series');
-    const epIdx = parseInt(params.get('ep') || '0', 10);
-    if (seriesId) {
-      const item = catalogData.find(i => i.id === seriesId);
-      if (item) {
-        openModal(item, epIdx, false);
-      }
+  const searchParams = new URLSearchParams(window.location.search);
+  let seriesId = searchParams.get('series');
+  let epIdx = parseInt(searchParams.get('ep') || '0', 10);
+  const cat = searchParams.get('cat');
+  const pageParam = parseInt(searchParams.get('page') || '1', 10);
+
+  // Preserve exact page number on refresh across Desktop, Mobile, and Tablet
+  if (pageParam > 0) {
+    currentPage = pageParam;
+  }
+
+  // Fallback for legacy hash links (#series=...)
+  if (!seriesId && window.location.hash && window.location.hash.includes('series=')) {
+    const hashParams = new URLSearchParams(window.location.hash.replace('#', '?'));
+    seriesId = hashParams.get('series');
+    epIdx = parseInt(hashParams.get('ep') || '0', 10);
+  }
+
+  if (cat) {
+    // Auto-filter category from URL
+    const targetCat = cat.toLowerCase();
+    const pill = document.querySelector(`.pill[data-cat="${cat}"]`) ||
+                 Array.from(document.querySelectorAll('.pill')).find(p => p.getAttribute('data-cat').toLowerCase() === targetCat);
+    if (pill) {
+      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+    }
+    filteredData = catalogData.filter(item => {
+      return (item.categories || []).some(c => c.toLowerCase().includes(targetCat));
+    });
+  } else {
+    filteredData = [...catalogData];
+  }
+
+  renderGrid();
+
+  if (seriesId) {
+    const sLower = seriesId.toLowerCase();
+    const item = catalogData.find(i => 
+      i.id.toLowerCase() === sLower || 
+      (i.title && cleanTextBranding(i.title).toLowerCase().replace(/[^a-z0-9]+/g, '-') === sLower)
+    );
+    if (item) {
+      openModal(item, epIdx, false);
     }
   } else {
-    if (playerModal.classList.contains('active')) {
+    if (playerModal && playerModal.classList.contains('active')) {
       closeModalAction(false);
     }
   }
@@ -266,6 +347,7 @@ function renderGrid() {
   });
 
   renderPagination(totalPages);
+  updatePageUrlState();
 }
 
 function renderPagination(totalPages) {
@@ -280,6 +362,7 @@ function renderPagination(totalPages) {
     if (currentPage > 1) {
       currentPage--;
       renderGrid();
+      updatePageUrlState(true);
       window.scrollTo({ top: catalogGrid.offsetTop - 100, behavior: 'smooth' });
     }
   };
@@ -299,6 +382,7 @@ function renderPagination(totalPages) {
     pageBtn.onclick = () => {
       currentPage = p;
       renderGrid();
+      updatePageUrlState(true);
       window.scrollTo({ top: catalogGrid.offsetTop - 100, behavior: 'smooth' });
     };
     paginationControls.appendChild(pageBtn);
@@ -312,6 +396,7 @@ function renderPagination(totalPages) {
     if (currentPage < totalPages) {
       currentPage++;
       renderGrid();
+      updatePageUrlState(true);
       window.scrollTo({ top: catalogGrid.offsetTop - 100, behavior: 'smooth' });
     }
   };
@@ -934,6 +1019,7 @@ categoryPills.addEventListener('click', (e) => {
   }
   currentPage = 1;
   renderGrid();
+  updatePageUrlState(true);
 });
 
 // Initialize Ad Monetization System (Social Bar active ONLY on PC/Tablet > 768px, disabled on Mobile)
