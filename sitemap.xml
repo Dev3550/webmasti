@@ -75,6 +75,33 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=pehredaar-s5</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S5.webp</image:loc>
+      <image:title>Pehredaar S5 Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S5.webp</video:thumbnail_loc>
+      <video:title>Pehredaar S5 Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Pehredaar S5 online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/PrimePlay/Pehredaar%20S5/Pehredaar%20S5%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260919T060632Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=bc9652e4be3977599bbca80d95c9426ce374cca4ea223189c4520b222cd3b8fb</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=pehredaar-s5</video:player_loc>
+      <video:publication_date>2026-09-19</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>PrimePlay</video:tag>
+      <video:tag>Anu Murya</video:tag>
+      <video:tag>Komal Ruthala</video:tag>
+      <video:tag>Neha Gupta</video:tag>
+      <video:tag>Priya Gamre</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=laila-s1</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
