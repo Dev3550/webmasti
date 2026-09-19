@@ -6,9 +6,10 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
-    // 1. High-Performance Thumbnail Image Proxy for Social Crawlers
+    // 1. High-Performance Thumbnail Image Proxy for Social Crawlers & Direct Image Downloading
     if (url.pathname === '/api/thumb') {
-      const seriesId = url.searchParams.get('series');
+      const seriesId = url.searchParams.get('series') || 'webmasti-cover';
+      const isDownload = url.searchParams.get('download') === '1' || url.searchParams.get('dl') === '1';
       let srcUrl = url.searchParams.get('src') || '';
 
       // Direct lookup from bundled seoMap
@@ -28,13 +29,18 @@ export default {
           if (imgRes.ok) {
             const buffer = await imgRes.arrayBuffer();
             const mimeType = imgRes.headers.get('content-type') || 'image/jpeg';
+            const ext = mimeType.includes('webp') ? 'webp' : (mimeType.includes('png') ? 'png' : 'jpg');
+            const resHeaders = {
+              'Content-Type': mimeType,
+              'Cache-Control': 'public, max-age=604800, s-maxage=604800',
+              'Access-Control-Allow-Origin': '*'
+            };
+            if (isDownload) {
+              resHeaders['Content-Disposition'] = `attachment; filename="${seriesId}-cover.${ext}"`;
+            }
             return new Response(buffer, {
               status: 200,
-              headers: {
-                'Content-Type': mimeType,
-                'Cache-Control': 'public, max-age=604800, s-maxage=604800',
-                'Access-Control-Allow-Origin': '*'
-              }
+              headers: resHeaders
             });
           }
         } catch (err) {}
@@ -43,7 +49,13 @@ export default {
       // Fallback: serve local webmasti-banner.jpg
       try {
         const fallbackUrl = new URL('/webmasti-banner.jpg', url.origin);
-        return await env.ASSETS.fetch(new Request(fallbackUrl));
+        const res = await env.ASSETS.fetch(new Request(fallbackUrl));
+        if (isDownload) {
+          const headers = new Headers(res.headers);
+          headers.set('Content-Disposition', `attachment; filename="${seriesId}-cover.jpg"`);
+          return new Response(res.body, { status: 200, headers });
+        }
+        return res;
       } catch (e) {
         return new Response('Not found', { status: 404 });
       }
