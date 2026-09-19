@@ -95,13 +95,13 @@ export default {
 
   <!-- Open Graph / Facebook / WhatsApp Preview with Exact Series Thumbnail -->
   <meta property="og:site_name" content="WebMasti">
-  <meta property="og:type" content="video.other">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta property="og:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
-  <meta property="og:image" content="${proxyCover}">
-  <meta property="og:image:secure_url" content="${proxyCover}">
   <meta property="og:image" content="${seriesCover}">
   <meta property="og:image:secure_url" content="${seriesCover}">
+  <meta property="og:image" content="${proxyCover}">
+  <meta property="og:image:secure_url" content="${proxyCover}">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="600">
   <meta property="og:image:height" content="338">
@@ -110,7 +110,8 @@ export default {
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${pageTitle.replace(/"/g, '&quot;')}">
   <meta name="twitter:description" content="${seriesDesc.replace(/"/g, '&quot;')}">
-  <meta name="twitter:image" content="${proxyCover}">
+  <meta name="twitter:image" content="${seriesCover}">
+  <meta name="twitter:image:src" content="${seriesCover}">
 
   <!-- Google VideoObject Structured Data -->
   <script type="application/ld+json">

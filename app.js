@@ -572,7 +572,7 @@ function handleNativeShare(item) {
   if (item.title) shareParams.set('title', item.title);
   if (item.cover_image) shareParams.set('img', item.cover_image);
 
-  const shareUrl = `${baseUrl}/watch?${shareParams.toString()}`;
+  const shareUrl = `${baseUrl}/?${shareParams.toString()}`;
   const shareTitle = `${item.title} - Watch Full HD Web Series on WebMasti`;
   const shareText = `🔥 Watch *${item.title}* Full Episodes Free in HD on WebMasti!\n${shareUrl}`;
 
