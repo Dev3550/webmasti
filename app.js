@@ -566,9 +566,15 @@ function updateEngagementBar(item) {
 
 function handleNativeShare(item) {
   if (!item) return;
-  const shareUrl = window.location.origin + window.location.pathname + `#series=${encodeURIComponent(item.id)}`;
-  const shareTitle = `${item.title} - Watch Full Web Series HD | WebMasti`;
-  const shareText = `🔥 Watch ${item.title} full web series episodes in HD quality on WebMasti! Direct video streaming.`;
+  const baseUrl = window.location.origin;
+  const shareParams = new URLSearchParams();
+  shareParams.set('series', item.id);
+  if (item.title) shareParams.set('title', item.title);
+  if (item.cover_image) shareParams.set('img', item.cover_image);
+
+  const shareUrl = `${baseUrl}/watch?${shareParams.toString()}`;
+  const shareTitle = `${item.title} - Watch Full HD Web Series on WebMasti`;
+  const shareText = `🔥 Watch *${item.title}* Full Episodes Free in HD on WebMasti!\n${shareUrl}`;
 
   if (navigator.share) {
     navigator.share({
@@ -579,23 +585,26 @@ function handleNativeShare(item) {
       setPlayerStatus('🔗 Shared successfully!', 2500);
     }).catch(e => {
       console.log('Native share canceled/fallback:', e);
-      fallbackCopy(shareUrl);
+      fallbackCopy(shareUrl, item);
     });
   } else {
-    fallbackCopy(shareUrl);
+    fallbackCopy(shareUrl, item);
   }
 }
 
-function fallbackCopy(shareUrl) {
+function fallbackCopy(shareUrl, item) {
+  const waText = encodeURIComponent(`🔥 Watch *${item ? item.title : 'Web Series'}* Full Episodes Free in HD on WebMasti!\n\n${shareUrl}`);
+  const waUrl = `https://api.whatsapp.com/send?text=${waText}`;
+
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(shareUrl).then(() => {
-      setPlayerStatus('📋 Link copied to clipboard!', 3000);
-      alert('✨ WebMasti episode link copied! Share it with your friends on WhatsApp or Telegram.');
+      setPlayerStatus('📋 Link copied! Opening WhatsApp...', 3000);
+      window.open(waUrl, '_blank');
     }).catch(() => {
-      prompt('Copy this WebMasti link to share:', shareUrl);
+      window.open(waUrl, '_blank');
     });
   } else {
-    prompt('Copy this WebMasti link to share:', shareUrl);
+    window.open(waUrl, '_blank');
   }
 }
 
