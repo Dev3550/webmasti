@@ -10,6 +10,9 @@ window.WEBMASTI_ADS = {
   // 3. Monetag Multitag Zone
   multitagZone: 282356,
 
+  // 4. Adsterra Social Bar Script
+  adsterraSocialBarScript: "https://pl31408331.profitableratecpmnetwork.com/19/23/ca/1923ca6bbf85eb75c786980bbedb3c57.js",
+
   // Enable/Disable Ads
   enabled: true
 };

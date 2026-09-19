@@ -1205,5 +1205,14 @@ html, body {
   }
 }
 
+/* Responsive Adsterra Social Bar Integration */
+div[id^="adsterra"], 
+div[class*="socialbar"], 
+iframe[src*="profitableratecpmnetwork"],
+iframe[src*="profitablerate"] {
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+}
+
 
 
