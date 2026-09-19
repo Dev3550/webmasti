@@ -13,6 +13,12 @@ window.WEBMASTI_ADS = {
   // 4. Adsterra Social Bar Script
   adsterraSocialBarScript: "https://pl31408331.profitableratecpmnetwork.com/19/23/ca/1923ca6bbf85eb75c786980bbedb3c57.js",
 
+  // 5. Adsterra Native Banner (2:1 Layout)
+  adsterraNativeBannerCode: `
+    <script async="async" data-cfasync="false" src="https://pl31408332.profitableratecpmnetwork.com/29a43131661c57ec0406d407a94ec47f/invoke.js"></script>
+    <div id="container-29a43131661c57ec0406d407a94ec47f"></div>
+  `,
+
   // Enable/Disable Ads
   enabled: true
 };
