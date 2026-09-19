@@ -616,6 +616,23 @@ function openModal(item, startEpIdx, updateHash) {
   currentEpisodeIndex = initEpIdx;
   epCount.innerText = currentEpisodesList.length;
 
+  const epSelect = document.getElementById('episodeSelect');
+  if (epSelect) {
+    epSelect.innerHTML = '';
+    currentEpisodesList.forEach((ep, idx) => {
+      const opt = document.createElement('option');
+      opt.value = idx;
+      opt.innerText = ep.title || `Episode ${idx + 1}`;
+      if (idx === initEpIdx) opt.selected = true;
+      epSelect.appendChild(opt);
+    });
+
+    epSelect.onchange = (e) => {
+      const selectedIdx = parseInt(e.target.value, 10);
+      playEpisodeAtIndex(selectedIdx, true);
+    };
+  }
+
   episodesGrid.innerHTML = '';
   
   if (currentEpisodesList.length === 0) {
@@ -713,6 +730,11 @@ function playEpisodeAtIndex(idx, isManualClick) {
 
   currentEpisodeIndex = idx;
   const ep = currentEpisodesList[idx];
+
+  const epSelect = document.getElementById('episodeSelect');
+  if (epSelect) {
+    epSelect.value = idx;
+  }
 
   document.querySelectorAll('.btn-ep').forEach((btn, bIdx) => {
     if (bIdx === idx) {
@@ -933,16 +955,26 @@ mainVideoPlayer.addEventListener('ended', () => {
   }
 });
 
-// Render Recommended Series Grid inside Modal
+// Render Recommended Series Grid inside Modal (Matching Categories, 2-Column Grid)
 function renderRecommendedSeries(currentItem) {
   const recGrid = document.getElementById('recommendedGrid');
   if (!recGrid) return;
   recGrid.innerHTML = '';
 
-  const pool = catalogData.filter(i => i.id !== currentItem.id);
-  const shuffled = [...pool].sort(() => 0.5 - Math.random()).slice(0, 12);
+  const currentCats = (currentItem.categories || []).map(c => c.toLowerCase());
+  let matching = catalogData.filter(i => 
+    i.id !== currentItem.id && 
+    (i.categories || []).some(c => currentCats.includes(c.toLowerCase()))
+  );
 
-  shuffled.forEach(item => {
+  if (matching.length < 8) {
+    const remaining = catalogData.filter(i => i.id !== currentItem.id && !matching.includes(i));
+    matching = [...matching, ...remaining];
+  }
+
+  const itemsToShow = matching.slice(0, 10);
+
+  itemsToShow.forEach(item => {
     const card = document.createElement('div');
     card.className = 'card';
     card.style.margin = '0';

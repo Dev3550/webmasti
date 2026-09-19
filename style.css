@@ -1154,17 +1154,28 @@ html, body {
     z-index: 1002;
   }
 
+  .modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+
   .player-container {
+    position: sticky;
     top: -10px;
+    z-index: 45;
+    background: #000;
     margin-bottom: 14px;
     border-radius: 10px;
   }
 
   .modal-card {
     padding: 10px 10px 80px 10px;
-    max-height: 96vh;
-    max-height: 96dvh;
+    max-height: 94vh;
+    max-height: 94dvh;
     border-radius: 16px;
+    width: 100%;
   }
 
   .btn-close {
@@ -1180,15 +1191,17 @@ html, body {
   }
 
   #recommendedGrid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 
 @media (max-width: 480px) {
   #recommendedGrid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+    gap: 10px;
   }
 }
 
