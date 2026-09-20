@@ -1,5 +1,39 @@
 [
   {
+    "id": "shaadi-ka-sauda",
+    "title": "Shaadi Ka Sauda",
+    "url": "https://uffmaal.com/shaadi-ka-sauda/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Shaadi-Ka-Sauda-Episode-1.webp",
+    "categories": [
+      "JUGNU"
+    ],
+    "description": "",
+    "total_episodes": 3,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/shaadi-ka-sauda-episode-1/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Shaadi%20Ka%20Sauda/Shaadi%20Ka%20Sauda%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T194111Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28efb4e11870915fc25b2639e5187ec98a5ca22618ee025880c920a62a414421"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/shaadi-ka-sauda-episode-2/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Shaadi%20Ka%20Sauda/Shaadi%20Ka%20Sauda%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T194111Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=15618e1d21a05d927ff18db7b68aa66ceb8113d8464e66b4ff7fe7ce629e7e99"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/shaadi-ka-sauda-episode-3/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Shaadi%20Ka%20Sauda/Shaadi%20Ka%20Sauda%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T194111Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=04f391f4821c91e77814fca1f81497ff15c95dddec2b097687013be1e9fec3c5"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/JUGNU/Shaadi%20Ka%20Sauda/Shaadi%20Ka%20Sauda%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T194111Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28efb4e11870915fc25b2639e5187ec98a5ca22618ee025880c920a62a414421",
+      "https://cdn.azmaal.com/JUGNU/Shaadi%20Ka%20Sauda/Shaadi%20Ka%20Sauda%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T194111Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=15618e1d21a05d927ff18db7b68aa66ceb8113d8464e66b4ff7fe7ce629e7e99",
+      "https://cdn.azmaal.com/JUGNU/Shaadi%20Ka%20Sauda/Shaadi%20Ka%20Sauda%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T194111Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=04f391f4821c91e77814fca1f81497ff15c95dddec2b097687013be1e9fec3c5"
+    ],
+    "scraped_at": "2026-09-20T20:22:03.743Z"
+  },
+  {
     "id": "planb",
     "title": "PlanB",
     "url": "https://uffmaal.com/planb/",
