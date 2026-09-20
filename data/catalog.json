@@ -1,5 +1,29 @@
 [
   {
+    "id": "latke-pe-jhatka",
+    "title": "Latke Pe Jhatka",
+    "url": "https://uffmaal.com/latke-pe-jhatka/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Latke-Pe-Jhatka-Episode-1.webp",
+    "categories": [
+      "WOOW",
+      "Pallabi Thakur",
+      "Simmi Arora"
+    ],
+    "description": "",
+    "total_episodes": 1,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/latke-pe-jhatka-episode-1/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Latke%20Pe%20Jhatka/Latke%20Pe%20Jhatka%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T092837Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4cb9010221d83428a5f7d0954f55b10c4db6a60a77fe3a23617952f98c1c95f6"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/WOOW/Latke%20Pe%20Jhatka/Latke%20Pe%20Jhatka%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T092837Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4cb9010221d83428a5f7d0954f55b10c4db6a60a77fe3a23617952f98c1c95f6"
+    ],
+    "scraped_at": "2026-09-20T09:59:10.247Z"
+  },
+  {
     "id": "raddi-wala",
     "title": "Raddi Wala",
     "url": "https://uffmaal.com/raddi-wala/",
@@ -32562,29 +32586,6 @@
       "https://cdn.azmaal.com/VOOVI/Mona%2069/Mona%2069%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260915%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260915T204249Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1d5f40477547446a38e59ac5d02b7ce40a6844dcf6b177eed5bba2f66c2d6370",
       "https://cdn.azmaal.com/VOOVI/Mona%2069/Mona%2069%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260915%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260915T204244Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=253467b4fd161aad00c24a0fb5b85b09f97f5eb74a047637718a9324493b6d0f",
       "https://cdn.azmaal.com/VOOVI/Mona%2069/Mona%2069%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260915%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260915T204244Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7746a71ada0f934121cdabfb922188d5190ad8cafe6ffc6d2bde6666982ffab1"
-    ]
-  },
-  {
-    "id": "latke-pe-jhatka",
-    "title": "Latke Pe Jhatka",
-    "url": "https://uffmaal.com/latke-pe-jhatka/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Latke-Pe-Jhatka-Episode-1.webp",
-    "categories": [
-      "WOOW",
-      "Pallabi Thakur",
-      "Simmi Arora"
-    ],
-    "description": "",
-    "total_episodes": 1,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/latke-pe-jhatka-episode-1/",
-        "video_url": "https://cdn.azmaal.com/WOOW/Latke%20Pe%20Jhatka/Latke%20Pe%20Jhatka%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260915%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260915T084319Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5e34651e72c30f0aca205c7cd17f8559706df5b12a5c996c4249f01476630b16"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/WOOW/Latke%20Pe%20Jhatka/Latke%20Pe%20Jhatka%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260915%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260915T084319Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5e34651e72c30f0aca205c7cd17f8559706df5b12a5c996c4249f01476630b16"
     ]
   }
 ]
