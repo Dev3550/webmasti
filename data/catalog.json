@@ -1,5 +1,60 @@
 [
   {
+    "id": "rasgulla",
+    "title": "Rasgulla",
+    "url": "https://uffmaal.com/rasgulla/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Rasgulla-Episode-6.webp",
+    "categories": [
+      "VOOVI",
+      "Hiral Radadiya",
+      "Malvika Tomar",
+      "Shweta Ghosh"
+    ],
+    "description": "",
+    "total_episodes": 6,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-1/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=345ccd9d282670db970e3df6db71d2b85f172cc57e855c5fd72bfa7664e46e83"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-2/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=facf39a0c06989f57ad4950b1fc30a73eb782d0626ac2d5d29f3910366fa2f52"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-3/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=43340cc103596a4523e072ead3e0095d6fe4860767a980ff364a36f3b2a733ed"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-4/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052424Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e5ef6a5b92965c5d69cd1375029c3a1295130bf8f176000e1e2f407f813e6ff"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-5/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f02838aafbdb9373586044025f20ee2b632e78c1973fe899d50c7e8b3c80e696"
+      },
+      {
+        "title": "Episode 6",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-6/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9acf75aac5c6045a137ca9329255487cac80ce1bd261ee848a46f077ba5fdbf7"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=345ccd9d282670db970e3df6db71d2b85f172cc57e855c5fd72bfa7664e46e83",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=facf39a0c06989f57ad4950b1fc30a73eb782d0626ac2d5d29f3910366fa2f52",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=43340cc103596a4523e072ead3e0095d6fe4860767a980ff364a36f3b2a733ed",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052424Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e5ef6a5b92965c5d69cd1375029c3a1295130bf8f176000e1e2f407f813e6ff",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f02838aafbdb9373586044025f20ee2b632e78c1973fe899d50c7e8b3c80e696",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9acf75aac5c6045a137ca9329255487cac80ce1bd261ee848a46f077ba5fdbf7"
+    ],
+    "scraped_at": "2026-09-21T05:55:40.198Z"
+  },
+  {
     "id": "mona-69",
     "title": "Mona 69",
     "url": "https://uffmaal.com/mona-69/",
