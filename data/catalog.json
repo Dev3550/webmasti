@@ -1,5 +1,48 @@
 [
   {
+    "id": "my-first-time",
+    "title": "My First Time",
+    "url": "https://uffmaal.com/my-first-time/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/My-First-Time-Episode-2.webp",
+    "categories": [
+      "JUGNU",
+      "Komal Sharma",
+      "Smita Paul",
+      "Sohail Sheikh"
+    ],
+    "description": "",
+    "total_episodes": 4,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/my-first-time-episode-1/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T112511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5ab99bd671a15209c827762e7f1166898c1cb373ed3269e89610ab71bcca5fe3"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/my-first-time-episode-2/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T112511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a177776ffd39d8eb397eebf116000c3c4d5098ca0264287606dd26cdc26ccc27"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/my-first-time-episode-3/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T112511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09e1c25eba19c4a1af62ff93d56fa63d69cb3ec1d8e2f451655bf83c51d70f19"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/my-first-time-episode-4/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T112511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ef3ffffabc153b7a56e78315dbed0d4c1984de29a09886e192d2c457ed3518cf"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T112511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5ab99bd671a15209c827762e7f1166898c1cb373ed3269e89610ab71bcca5fe3",
+      "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T112511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a177776ffd39d8eb397eebf116000c3c4d5098ca0264287606dd26cdc26ccc27",
+      "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T112511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09e1c25eba19c4a1af62ff93d56fa63d69cb3ec1d8e2f451655bf83c51d70f19",
+      "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T112511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ef3ffffabc153b7a56e78315dbed0d4c1984de29a09886e192d2c457ed3518cf"
+    ],
+    "scraped_at": "2026-09-21T12:06:02.926Z"
+  },
+  {
     "id": "rasgulla",
     "title": "Rasgulla",
     "url": "https://uffmaal.com/rasgulla/",
@@ -32676,48 +32719,6 @@
       "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d5df5fd134fe2167894651ea6f824199186c115ef15d674931cdc9dc2c2fbef0",
       "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ab539e962aa9735aff1268cdc38941d4f73a1a3af5fb31d04361f40f7469a58b",
       "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=457d80ef06435331f233a87263071700b6401c9cd6fef209353614e2215ab300"
-    ]
-  },
-  {
-    "id": "my-first-time",
-    "title": "My First Time",
-    "url": "https://uffmaal.com/my-first-time/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/My-First-Time-Episode-2.webp",
-    "categories": [
-      "JUGNU",
-      "Komal Sharma",
-      "Smita Paul",
-      "Sohail Sheikh"
-    ],
-    "description": "",
-    "total_episodes": 4,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/my-first-time-episode-1/",
-        "video_url": "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T094032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6e7a42c903c088d1f30d539fc01800c2ce0c12f77b3969b3f57e1e0e1c04dc95"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/my-first-time-episode-2/",
-        "video_url": "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T094032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5ab9f431709fe3f08a99a1630d18fcc10f85c45de9047156c0a67f364223c908"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/my-first-time-episode-3/",
-        "video_url": "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T094032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=891ceaba73723c2214245e7d12fd3eb9005fff9e13d1f9a44ae7af17cc9d3dd7"
-      },
-      {
-        "title": "Episode 4",
-        "url": "https://uffmaal.com/episode/my-first-time-episode-4/",
-        "video_url": "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T094032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=39291661d77b0b6db9bbe1cbd2bcbfdb628c077632c3336f13d9b17fcaffbfa4"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T094032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6e7a42c903c088d1f30d539fc01800c2ce0c12f77b3969b3f57e1e0e1c04dc95",
-      "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T094032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5ab9f431709fe3f08a99a1630d18fcc10f85c45de9047156c0a67f364223c908",
-      "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T094032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=891ceaba73723c2214245e7d12fd3eb9005fff9e13d1f9a44ae7af17cc9d3dd7",
-      "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260916%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260916T094032Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=39291661d77b0b6db9bbe1cbd2bcbfdb628c077632c3336f13d9b17fcaffbfa4"
     ]
   }
 ]

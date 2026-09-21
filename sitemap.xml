@@ -75,6 +75,32 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=my-first-time</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/My-First-Time-Episode-2.webp</image:loc>
+      <image:title>My First Time Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/My-First-Time-Episode-2.webp</video:thumbnail_loc>
+      <video:title>My First Time Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of My First Time online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260921T112511Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=5ab99bd671a15209c827762e7f1166898c1cb373ed3269e89610ab71bcca5fe3</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=my-first-time</video:player_loc>
+      <video:publication_date>2026-09-21</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>JUGNU</video:tag>
+      <video:tag>Komal Sharma</video:tag>
+      <video:tag>Smita Paul</video:tag>
+      <video:tag>Sohail Sheikh</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=rasgulla</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -16878,32 +16904,6 @@
       <video:tag>PrimePlay</video:tag>
       <video:tag>Sharanya Jit Kaur</video:tag>
       <video:tag>Shyna Khatri</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=my-first-time</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/My-First-Time-Episode-2.webp</image:loc>
-      <image:title>My First Time Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/My-First-Time-Episode-2.webp</video:thumbnail_loc>
-      <video:title>My First Time Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of My First Time online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260916%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260916T094032Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6e7a42c903c088d1f30d539fc01800c2ce0c12f77b3969b3f57e1e0e1c04dc95</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=my-first-time</video:player_loc>
-      <video:publication_date>2026-09-21</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>JUGNU</video:tag>
-      <video:tag>Komal Sharma</video:tag>
-      <video:tag>Smita Paul</video:tag>
-      <video:tag>Sohail Sheikh</video:tag>
     </video:video>
   </url>
 </urlset>
