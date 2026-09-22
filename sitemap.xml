@@ -75,6 +75,56 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=pehredaar-s2</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S2.webp</image:loc>
+      <image:title>Pehredaar S2 Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S2.webp</video:thumbnail_loc>
+      <video:title>Pehredaar S2 Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Pehredaar S2 online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260922T115716Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=3ce00b8776d45603a65d2d2d7cf302ee834c4e5b4ffc142ef49b69ec698de758</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=pehredaar-s2</video:player_loc>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>PrimePlay</video:tag>
+      <video:tag>Sharanya Jit Kaur</video:tag>
+      <video:tag>Shyna Khatri</video:tag>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://webmastihot.in/?series=sheila-ka-pyar</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Sheila-Ka-Pyar-Episode-3.webp</image:loc>
+      <image:title>Sheila Ka Pyar Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Sheila-Ka-Pyar-Episode-3.webp</video:thumbnail_loc>
+      <video:title>Sheila Ka Pyar Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Sheila Ka Pyar online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/JUGNU/Sheila%20Ka%20Pyar/Sheila%20Ka%20Pyar%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260922T115705Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9e6051f93496f3202c9fefb90f6fba89d059cee1b32ea69148a729ecdfdb73b0</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=sheila-ka-pyar</video:player_loc>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>JUGNU</video:tag>
+      <video:tag>Leena Singh</video:tag>
+      <video:tag>Lovepreet Kaur</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=my-first-time</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -16878,31 +16928,6 @@
       <video:category>Indian Web Series</video:category>
       <video:tag>PrimePlay</video:tag>
       <video:tag>Jayshree Gaikwad</video:tag>
-      <video:tag>Shyna Khatri</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=pehredaar-s2</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S2.webp</image:loc>
-      <image:title>Pehredaar S2 Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S2.webp</video:thumbnail_loc>
-      <video:title>Pehredaar S2 Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Pehredaar S2 online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260917T100304Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=2d5083ecf198dfdd18bb080ccdd081060b0894374d68d826c47c10c1b18bea22</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=pehredaar-s2</video:player_loc>
-      <video:publication_date>2026-09-22</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>PrimePlay</video:tag>
-      <video:tag>Sharanya Jit Kaur</video:tag>
       <video:tag>Shyna Khatri</video:tag>
     </video:video>
   </url>

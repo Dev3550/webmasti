@@ -1,5 +1,95 @@
 [
   {
+    "id": "pehredaar-s2",
+    "title": "Pehredaar S2",
+    "url": "https://uffmaal.com/pehredaar-s2/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S2.webp",
+    "categories": [
+      "PrimePlay",
+      "Sharanya Jit Kaur",
+      "Shyna Khatri"
+    ],
+    "description": "",
+    "total_episodes": 5,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-1/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115716Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3ce00b8776d45603a65d2d2d7cf302ee834c4e5b4ffc142ef49b69ec698de758"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-2/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115751Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b2ba7cb51ede13e5645e4a9f47e4d58d1350d9378e653a1e4bfd56e712f5d70a"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-3/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115716Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3dddee42113d1fd540851cdcba9e06b47a205f665359a44520e3388589ca9721"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-4/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115751Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1f921f48759d49a020de7df8f853042e9b5fcd10df51e09531cffb9f06604b46"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-5/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115721Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8e7e9c30bba652f1d7456c1335c93560644d4c4c519533ce216f4614bc66fb54"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115716Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3ce00b8776d45603a65d2d2d7cf302ee834c4e5b4ffc142ef49b69ec698de758",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115751Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b2ba7cb51ede13e5645e4a9f47e4d58d1350d9378e653a1e4bfd56e712f5d70a",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115716Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3dddee42113d1fd540851cdcba9e06b47a205f665359a44520e3388589ca9721",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115751Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1f921f48759d49a020de7df8f853042e9b5fcd10df51e09531cffb9f06604b46",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115721Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8e7e9c30bba652f1d7456c1335c93560644d4c4c519533ce216f4614bc66fb54"
+    ],
+    "scraped_at": "2026-09-22T12:23:06.329Z"
+  },
+  {
+    "id": "sheila-ka-pyar",
+    "title": "Sheila Ka Pyar",
+    "url": "https://uffmaal.com/sheila-ka-pyar/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Sheila-Ka-Pyar-Episode-3.webp",
+    "categories": [
+      "JUGNU",
+      "Leena Singh",
+      "Lovepreet Kaur"
+    ],
+    "description": "",
+    "total_episodes": 4,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/sheila-ka-pyar-episode-1/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Sheila%20Ka%20Pyar/Sheila%20Ka%20Pyar%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115705Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e6051f93496f3202c9fefb90f6fba89d059cee1b32ea69148a729ecdfdb73b0"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/sheila-ka-pyar-episode-2/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Sheila%20Ka%20Pyar/Sheila%20Ka%20Pyar%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115705Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e36de7185ec306a2e9186e6c1a4dcef3bd83f27a6e87665ff5a316c312339e83"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/sheila-ka-pyar-episode-3/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Sheila%20Ka%20Pyar/Sheila%20Ka%20Pyar%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115705Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c28b5f4c9b2a27175525f3e41428104b80b1d45759aad7e440ffbe527a266ec8"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/sheila-ka-pyar-episode-4/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Sheila%20Ka%20Pyar/Sheila%20Ka%20Pyar%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115705Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=80639b297f4d40c09c24e599810777ab517a756772749495c12c2231babf5731"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/JUGNU/Sheila%20Ka%20Pyar/Sheila%20Ka%20Pyar%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115705Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e6051f93496f3202c9fefb90f6fba89d059cee1b32ea69148a729ecdfdb73b0",
+      "https://cdn.azmaal.com/JUGNU/Sheila%20Ka%20Pyar/Sheila%20Ka%20Pyar%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115705Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e36de7185ec306a2e9186e6c1a4dcef3bd83f27a6e87665ff5a316c312339e83",
+      "https://cdn.azmaal.com/JUGNU/Sheila%20Ka%20Pyar/Sheila%20Ka%20Pyar%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115705Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c28b5f4c9b2a27175525f3e41428104b80b1d45759aad7e440ffbe527a266ec8",
+      "https://cdn.azmaal.com/JUGNU/Sheila%20Ka%20Pyar/Sheila%20Ka%20Pyar%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260922T115705Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=80639b297f4d40c09c24e599810777ab517a756772749495c12c2231babf5731"
+    ],
+    "scraped_at": "2026-09-22T12:22:17.686Z"
+  },
+  {
     "id": "my-first-time",
     "title": "My First Time",
     "url": "https://uffmaal.com/my-first-time/",
@@ -32672,53 +32762,6 @@
       "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S1/Pehredaar%20S1%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T145453Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=15ea7146d0158ec39a3b83b800931bdc4c088796a76e68c92eac6579e3d48163",
       "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S1/Pehredaar%20S1%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T145453Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=df94ab97de54f5f4091a9c3642d80a246963b0f0b595fb8b7513c35399a75ce0",
       "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S1/Pehredaar%20S1%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T145453Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0a6f33b01c416274641c0f11bc009581d6c4f21011c4ac9648c0a1446817ef73"
-    ]
-  },
-  {
-    "id": "pehredaar-s2",
-    "title": "Pehredaar S2",
-    "url": "https://uffmaal.com/pehredaar-s2/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S2.webp",
-    "categories": [
-      "PrimePlay",
-      "Sharanya Jit Kaur",
-      "Shyna Khatri"
-    ],
-    "description": "",
-    "total_episodes": 5,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-1/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2d5083ecf198dfdd18bb080ccdd081060b0894374d68d826c47c10c1b18bea22"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-2/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b0af20b1b951db0314b46db65423288a0e1185b77755facf073a572851ebd70c"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-3/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d5df5fd134fe2167894651ea6f824199186c115ef15d674931cdc9dc2c2fbef0"
-      },
-      {
-        "title": "Episode 4",
-        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-4/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ab539e962aa9735aff1268cdc38941d4f73a1a3af5fb31d04361f40f7469a58b"
-      },
-      {
-        "title": "Episode 5",
-        "url": "https://uffmaal.com/episode/pehredaar-s2-episode-5/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=457d80ef06435331f233a87263071700b6401c9cd6fef209353614e2215ab300"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2d5083ecf198dfdd18bb080ccdd081060b0894374d68d826c47c10c1b18bea22",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b0af20b1b951db0314b46db65423288a0e1185b77755facf073a572851ebd70c",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d5df5fd134fe2167894651ea6f824199186c115ef15d674931cdc9dc2c2fbef0",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ab539e962aa9735aff1268cdc38941d4f73a1a3af5fb31d04361f40f7469a58b",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S2/Pehredaar%20S2%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260917T100304Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=457d80ef06435331f233a87263071700b6401c9cd6fef209353614e2215ab300"
     ]
   }
 ]
