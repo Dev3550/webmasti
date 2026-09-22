@@ -75,6 +75,56 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=pehredaar-s1</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S1.webp</image:loc>
+      <image:title>Pehredaar S1 Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S1.webp</video:thumbnail_loc>
+      <video:title>Pehredaar S1 Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Pehredaar S1 online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/PrimePlay/Pehredaar%20S1/Pehredaar%20S1%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260922T165810Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=ffd49c51266d89ae0a385b8c8857b66515b2c782f12770c41726eacf0a6d2d3f</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=pehredaar-s1</video:player_loc>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>PrimePlay</video:tag>
+      <video:tag>Jayshree Gaikwad</video:tag>
+      <video:tag>Shyna Khatri</video:tag>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://webmastihot.in/?series=shaatir-haseenayen</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Shaatir-Haseenayen-Episode-1.webp</image:loc>
+      <image:title>Shaatir Haseenayen Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Shaatir-Haseenayen-Episode-1.webp</video:thumbnail_loc>
+      <video:title>Shaatir Haseenayen Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Shaatir Haseenayen online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/JUGNU/Shaatir%20Haseenayen/Shaatir%20Haseenayen%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260922T165800Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=195843a7f90fda59f0a361e08847151869296797c32998ed301db877357384f5</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=shaatir-haseenayen</video:player_loc>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>JUGNU</video:tag>
+      <video:tag>Bharti Jha</video:tag>
+      <video:tag>Ruks Khandagale</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=pehredaar-s2</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -16903,31 +16953,6 @@
       <video:tag>PrimePlay</video:tag>
       <video:tag>Jayshree Gaikwad</video:tag>
       <video:tag>Rani Pari</video:tag>
-      <video:tag>Shyna Khatri</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=pehredaar-s1</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S1.webp</image:loc>
-      <image:title>Pehredaar S1 Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S1.webp</video:thumbnail_loc>
-      <video:title>Pehredaar S1 Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Pehredaar S1 online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/PrimePlay/Pehredaar%20S1/Pehredaar%20S1%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260917T145453Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=06f51cddd3c43a64b6e2668cea8d9919fce3dfdc235ccf57b7480ae18b1cd2a7</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=pehredaar-s1</video:player_loc>
-      <video:publication_date>2026-09-22</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>PrimePlay</video:tag>
-      <video:tag>Jayshree Gaikwad</video:tag>
       <video:tag>Shyna Khatri</video:tag>
     </video:video>
   </url>
