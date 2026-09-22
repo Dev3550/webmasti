@@ -75,6 +75,32 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=pehredaar-s3</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S3.webp</image:loc>
+      <image:title>Pehredaar S3 Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S3.webp</video:thumbnail_loc>
+      <video:title>Pehredaar S3 Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Pehredaar S3 online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/PrimePlay/Pehredaar%20S3/Pehredaar%20S3%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260922%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260922T231015Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6fe805bba2cf566ff73d9a19055d3a61673e415caf7695a8c3b32785320d50b1</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=pehredaar-s3</video:player_loc>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>PrimePlay</video:tag>
+      <video:tag>Jayshree Gaikwad</video:tag>
+      <video:tag>Rani Pari</video:tag>
+      <video:tag>Shyna Khatri</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=pehredaar-s1</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -16928,32 +16954,6 @@
       <video:tag>Aayushi Jaiswal</video:tag>
       <video:tag>Monika Bisht</video:tag>
       <video:tag>Sapna Sharma</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=pehredaar-s3</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S3.webp</image:loc>
-      <image:title>Pehredaar S3 Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S3.webp</video:thumbnail_loc>
-      <video:title>Pehredaar S3 Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Pehredaar S3 online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/PrimePlay/Pehredaar%20S3/Pehredaar%20S3%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260917%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260917T215705Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=5fe27a4ef82290ef0edcd783bc9d6fe7ecd27f9eb8b52cac0341d10f6df2dd03</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=pehredaar-s3</video:player_loc>
-      <video:publication_date>2026-09-22</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>PrimePlay</video:tag>
-      <video:tag>Jayshree Gaikwad</video:tag>
-      <video:tag>Rani Pari</video:tag>
-      <video:tag>Shyna Khatri</video:tag>
     </video:video>
   </url>
 </urlset>
