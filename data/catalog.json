@@ -1,5 +1,35 @@
 [
   {
+    "id": "the-postman",
+    "title": "The Postman",
+    "url": "https://uffmaal.com/the-postman/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/The-Postman-Episode-1.webp",
+    "categories": [
+      "WOOW",
+      "Kritika",
+      "Payal"
+    ],
+    "description": "",
+    "total_episodes": 2,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/the-postman-episode-1/",
+        "video_url": "https://cdn.azmaal.com/WOOW/The%20Postman/The%20Postman%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T182121Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=52e61b116e884de4e7da643bd51c4df568218d7772491a86e199c496b11a7a1b"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/the-postman-episode-2/",
+        "video_url": "https://cdn.azmaal.com/WOOW/The%20Postman/The%20Postman%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T182121Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e7376c6061c5d8a29588fcf1f2a263083047ed599e52894a3f62fc8e2a282b84"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/WOOW/The%20Postman/The%20Postman%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T182121Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=52e61b116e884de4e7da643bd51c4df568218d7772491a86e199c496b11a7a1b",
+      "https://cdn.azmaal.com/WOOW/The%20Postman/The%20Postman%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T182121Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e7376c6061c5d8a29588fcf1f2a263083047ed599e52894a3f62fc8e2a282b84"
+    ],
+    "scraped_at": "2026-09-24T18:33:16.728Z"
+  },
+  {
     "id": "pehredaar-s6",
     "title": "Pehredaar S6",
     "url": "https://uffmaal.com/pehredaar-s6/",
