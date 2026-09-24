@@ -75,6 +75,31 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=pehredaar-s6</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S6.webp</image:loc>
+      <image:title>Pehredaar S6 Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S6.webp</video:thumbnail_loc>
+      <video:title>Pehredaar S6 Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Pehredaar S6 online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/PrimePlay/Pehredaar%20S6/Pehredaar%20S6%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260924T132434Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e96cc3400bafe18563692466e215d8e79b2053804c3f00d791c70a70241477b3</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=pehredaar-s6</video:player_loc>
+      <video:publication_date>2026-09-24</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>PrimePlay</video:tag>
+      <video:tag>Babita Dubey</video:tag>
+      <video:tag>Shyna Khatri</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=pehredaar-s5</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -17004,31 +17029,6 @@
       <video:tag>Babita Dubey</video:tag>
       <video:tag>Malvika Tomar</video:tag>
       <video:tag>Suhana Khan</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=pehredaar-s6</loc>
-    <lastmod>2026-09-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S6.webp</image:loc>
-      <image:title>Pehredaar S6 Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S6.webp</video:thumbnail_loc>
-      <video:title>Pehredaar S6 Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Pehredaar S6 online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/PrimePlay/Pehredaar%20S6/Pehredaar%20S6%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260919T105408Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0734ba989e0bdd2ce3ee0808257cb054bdbea16507a5f2b466ce5595fe3fcac1</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=pehredaar-s6</video:player_loc>
-      <video:publication_date>2026-09-24</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>PrimePlay</video:tag>
-      <video:tag>Babita Dubey</video:tag>
-      <video:tag>Shyna Khatri</video:tag>
     </video:video>
   </url>
 </urlset>
