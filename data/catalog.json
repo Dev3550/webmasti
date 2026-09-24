@@ -1,5 +1,42 @@
 [
   {
+    "id": "raddi-wala",
+    "title": "Raddi Wala",
+    "url": "https://uffmaal.com/raddi-wala/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Raddi-Wala-Episode-1.webp",
+    "categories": [
+      "JUGNU",
+      "Babita Dubey",
+      "Malvika Tomar",
+      "Suhana Khan"
+    ],
+    "description": "",
+    "total_episodes": 3,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/raddi-wala-episode-1/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T215451Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4d2c9c4bfb57572abfcc7198fa2c0fc367e305c42241f6b09fd9962af627e2af"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/raddi-wala-episode-2/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T215451Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=79777fb8851c5407b1f3b4861c45deb8c8301ce7991c75fb2e7c219b07048e88"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/raddi-wala-episode-3/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T215451Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d5c6a147a230e1f00517e63d21409e194bbb2bbd4d71c7ae540c4e62f0292a23"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T215451Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4d2c9c4bfb57572abfcc7198fa2c0fc367e305c42241f6b09fd9962af627e2af",
+      "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T215451Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=79777fb8851c5407b1f3b4861c45deb8c8301ce7991c75fb2e7c219b07048e88",
+      "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T215451Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d5c6a147a230e1f00517e63d21409e194bbb2bbd4d71c7ae540c4e62f0292a23"
+    ],
+    "scraped_at": "2026-09-24T21:59:25.080Z"
+  },
+  {
     "id": "the-postman",
     "title": "The Postman",
     "url": "https://uffmaal.com/the-postman/",
@@ -32944,42 +32981,5 @@
       "https://cdn.azmaal.com/WOOW/Latke%20Pe%20Jhatka/Latke%20Pe%20Jhatka%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T092837Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4cb9010221d83428a5f7d0954f55b10c4db6a60a77fe3a23617952f98c1c95f6"
     ],
     "scraped_at": "2026-09-20T09:59:10.247Z"
-  },
-  {
-    "id": "raddi-wala",
-    "title": "Raddi Wala",
-    "url": "https://uffmaal.com/raddi-wala/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Raddi-Wala-Episode-1.webp",
-    "categories": [
-      "JUGNU",
-      "Babita Dubey",
-      "Malvika Tomar",
-      "Suhana Khan"
-    ],
-    "description": "",
-    "total_episodes": 3,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/raddi-wala-episode-1/",
-        "video_url": "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T192609Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=10f69d804a9413ebbb7a8e0d54f4296cb29c805a813835a156de7c760e14d028"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/raddi-wala-episode-2/",
-        "video_url": "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T192609Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fa0b2dbd208ce3538618542834210c693131f594bcde5565956a1a74845d5844"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/raddi-wala-episode-3/",
-        "video_url": "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T192609Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e026b1102d316806d6f63ad20e7b229278ab3ebeaafdc4fd02fc7c353498fbb7"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T192609Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=10f69d804a9413ebbb7a8e0d54f4296cb29c805a813835a156de7c760e14d028",
-      "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T192609Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fa0b2dbd208ce3538618542834210c693131f594bcde5565956a1a74845d5844",
-      "https://cdn.azmaal.com/JUGNU/Raddi%20Wala/Raddi%20Wala%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T192609Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e026b1102d316806d6f63ad20e7b229278ab3ebeaafdc4fd02fc7c353498fbb7"
-    ],
-    "scraped_at": "2026-09-19T20:05:36.315Z"
   }
 ]
