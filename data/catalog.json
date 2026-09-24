@@ -1,5 +1,41 @@
 [
   {
+    "id": "laila-s1",
+    "title": "Laila S1",
+    "url": "https://uffmaal.com/laila-s1/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Laila-S1-Episode-3.webp",
+    "categories": [
+      "WOOW",
+      "Ekta More",
+      "Sharanya Jit Kaur"
+    ],
+    "description": "",
+    "total_episodes": 3,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/laila-s1-episode-1/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T030841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d83c8438d47d3d6f9e338ca7c121dceb20a2fa7e6d536a64365464b2368598cb"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/laila-s1-episode-2/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T030841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=37b37f606d3094b0b17d145a60a1a3fc5c0964244933ae50d585b840f6752554"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/laila-s1-episode-3/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T030841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1379b80e8260520c8e6da82c9a93f6823811b91a09af3f03b26e5b52879dffdc"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T030841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d83c8438d47d3d6f9e338ca7c121dceb20a2fa7e6d536a64365464b2368598cb",
+      "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T030841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=37b37f606d3094b0b17d145a60a1a3fc5c0964244933ae50d585b840f6752554",
+      "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T030841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1379b80e8260520c8e6da82c9a93f6823811b91a09af3f03b26e5b52879dffdc"
+    ],
+    "scraped_at": "2026-09-24T03:18:08.025Z"
+  },
+  {
     "id": "koi-jaye-toh-le-aaye",
     "title": "Koi Jaye Toh Le Aaye",
     "url": "https://uffmaal.com/koi-jaye-toh-le-aaye/",
@@ -32874,41 +32910,5 @@
       "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S5/Pehredaar%20S5%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T060632Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0c9ecda4c0d97b3cd192cc9337fb50786e284d562fee01f9986fcec1c993d9b3"
     ],
     "scraped_at": "2026-09-19T06:30:47.666Z"
-  },
-  {
-    "id": "laila-s1",
-    "title": "Laila S1",
-    "url": "https://uffmaal.com/laila-s1/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Laila-S1-Episode-3.webp",
-    "categories": [
-      "WOOW",
-      "Ekta More",
-      "Sharanya Jit Kaur"
-    ],
-    "description": "",
-    "total_episodes": 3,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/laila-s1-episode-1/",
-        "video_url": "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T012456Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=795793ee99ff09a2ef20841764bc499617acb52ce86a5c10570a860129234047"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/laila-s1-episode-2/",
-        "video_url": "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T012516Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2ac77ce8bbec44591a39e917b5aeb2dd60474141fa69bcbcf5e8182b59be06f5"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/laila-s1-episode-3/",
-        "video_url": "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T012516Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=932e2f57cadeb7b59c28c90d645f9c48d868ff04dad0f99b7c3658237c3813de"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T012456Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=795793ee99ff09a2ef20841764bc499617acb52ce86a5c10570a860129234047",
-      "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T012516Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2ac77ce8bbec44591a39e917b5aeb2dd60474141fa69bcbcf5e8182b59be06f5",
-      "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260919%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260919T012516Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=932e2f57cadeb7b59c28c90d645f9c48d868ff04dad0f99b7c3658237c3813de"
-    ],
-    "scraped_at": "2026-09-19T01:30:50.065Z"
   }
 ]
