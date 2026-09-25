@@ -1,5 +1,40 @@
 [
   {
+    "id": "upper-upper-se",
+    "title": "Upper Upper Se",
+    "url": "https://uffmaal.com/upper-upper-se/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Upper-Upper-Se-Episode-1.webp",
+    "categories": [
+      "WOOW",
+      "Anupama Prakash"
+    ],
+    "description": "",
+    "total_episodes": 3,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/upper-upper-se-episode-1/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Upper%20Upper%20Se/Upper%20Upper%20Se%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T192645Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2bdc77be457a7f4d1b1e01de6212e9edcb0b19739dc1e6807e23e4f00d7f312d"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/upper-upper-se-episode-2/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Upper%20Upper%20Se/Upper%20Upper%20Se%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T192647Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=14b096d044ed15d59e89fb813fbfa9cfa09c104abab2282d4dcb27b1eac817bf"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/upper-upper-se-episode-3/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Upper%20Upper%20Se/Upper%20Upper%20Se%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T192618Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=40c71c9ceefa5ed063230f3e20b9d6538018f105c2da453ebd8edd4c962458f1"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/WOOW/Upper%20Upper%20Se/Upper%20Upper%20Se%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T192645Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2bdc77be457a7f4d1b1e01de6212e9edcb0b19739dc1e6807e23e4f00d7f312d",
+      "https://cdn.azmaal.com/WOOW/Upper%20Upper%20Se/Upper%20Upper%20Se%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T192647Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=14b096d044ed15d59e89fb813fbfa9cfa09c104abab2282d4dcb27b1eac817bf",
+      "https://cdn.azmaal.com/WOOW/Upper%20Upper%20Se/Upper%20Upper%20Se%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T192618Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=40c71c9ceefa5ed063230f3e20b9d6538018f105c2da453ebd8edd4c962458f1"
+    ],
+    "scraped_at": "2026-09-25T19:26:48.217Z"
+  },
+  {
     "id": "planb",
     "title": "PlanB",
     "url": "https://uffmaal.com/planb/",
