@@ -1,5 +1,47 @@
 [
   {
+    "id": "planb",
+    "title": "PlanB",
+    "url": "https://uffmaal.com/planb/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/PlanB-Episode-1.webp",
+    "categories": [
+      "Rabbit",
+      "Aayushi Jaiswal",
+      "Sharanya Jit Kaur"
+    ],
+    "description": "",
+    "total_episodes": 4,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/planb-episode-1/",
+        "video_url": "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T151300Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cca488f4c547fbcfbbb71a6de9f58cf80a03e83611af88f464aff41c3e9e1504"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/planb-episode-2/",
+        "video_url": "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T151300Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=db366820db73928206d9be6cf0503c978848410226e469c57b4db713707218b1"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/planb-episode-3/",
+        "video_url": "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T151300Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e5016a0dca9a1264ce7802cd139cef3c7182732dcdd3166e3f1869fe289a90af"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/planb-episode-4/",
+        "video_url": "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T151300Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dffbbb1bb82ee6085c6d53ce66d82199a132b74385071fa60ca2c799fe01f9c1"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T151300Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cca488f4c547fbcfbbb71a6de9f58cf80a03e83611af88f464aff41c3e9e1504",
+      "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T151300Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=db366820db73928206d9be6cf0503c978848410226e469c57b4db713707218b1",
+      "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T151300Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e5016a0dca9a1264ce7802cd139cef3c7182732dcdd3166e3f1869fe289a90af",
+      "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T151300Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dffbbb1bb82ee6085c6d53ce66d82199a132b74385071fa60ca2c799fe01f9c1"
+    ],
+    "scraped_at": "2026-09-25T15:27:24.188Z"
+  },
+  {
     "id": "latke-pe-jhatka",
     "title": "Latke Pe Jhatka",
     "url": "https://uffmaal.com/latke-pe-jhatka/",
@@ -32962,47 +33004,5 @@
       "https://cdn.azmaal.com/JUGNU/Shaadi%20Ka%20Sauda/Shaadi%20Ka%20Sauda%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T194111Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=04f391f4821c91e77814fca1f81497ff15c95dddec2b097687013be1e9fec3c5"
     ],
     "scraped_at": "2026-09-20T20:22:03.743Z"
-  },
-  {
-    "id": "planb",
-    "title": "PlanB",
-    "url": "https://uffmaal.com/planb/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/PlanB-Episode-1.webp",
-    "categories": [
-      "Rabbit",
-      "Aayushi Jaiswal",
-      "Sharanya Jit Kaur"
-    ],
-    "description": "",
-    "total_episodes": 4,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/planb-episode-1/",
-        "video_url": "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T132423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c71198e2ffde4e009a96783e873684783adaf86f7dd89c8256f0828450d065ad"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/planb-episode-2/",
-        "video_url": "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T132423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=46ab3d6ab761b21415bd6b798498273979c41580709ccd49200eb9b780e90abb"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/planb-episode-3/",
-        "video_url": "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T132423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2fb66fa9a3581e90098f9dc132f3511968fbdf193bf3925142c7ea68c1647d41"
-      },
-      {
-        "title": "Episode 4",
-        "url": "https://uffmaal.com/episode/planb-episode-4/",
-        "video_url": "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T132423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=56784d17c8000233cbd5c58413cfe8d7c46d891b1a23ca48df48f40c01d3d3a6"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T132423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c71198e2ffde4e009a96783e873684783adaf86f7dd89c8256f0828450d065ad",
-      "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T132423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=46ab3d6ab761b21415bd6b798498273979c41580709ccd49200eb9b780e90abb",
-      "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T132423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2fb66fa9a3581e90098f9dc132f3511968fbdf193bf3925142c7ea68c1647d41",
-      "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T132423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=56784d17c8000233cbd5c58413cfe8d7c46d891b1a23ca48df48f40c01d3d3a6"
-    ],
-    "scraped_at": "2026-09-20T14:03:44.596Z"
   }
 ]
