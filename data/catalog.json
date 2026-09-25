@@ -1,5 +1,29 @@
 [
   {
+    "id": "latke-pe-jhatka",
+    "title": "Latke Pe Jhatka",
+    "url": "https://uffmaal.com/latke-pe-jhatka/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Latke-Pe-Jhatka-Episode-1.webp",
+    "categories": [
+      "WOOW",
+      "Pallabi Thakur",
+      "Simmi Arora"
+    ],
+    "description": "",
+    "total_episodes": 1,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/latke-pe-jhatka-episode-1/",
+        "video_url": "https://cdn.azmaal.com/WOOW/Latke%20Pe%20Jhatka/Latke%20Pe%20Jhatka%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T101323Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3b26507bc25a0eee52124a8eec6510f562a564893ab46c986125595ab129f75d"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/WOOW/Latke%20Pe%20Jhatka/Latke%20Pe%20Jhatka%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T101323Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3b26507bc25a0eee52124a8eec6510f562a564893ab46c986125595ab129f75d"
+    ],
+    "scraped_at": "2026-09-25T10:25:48.961Z"
+  },
+  {
     "id": "the-sales-man",
     "title": "The Sales Man",
     "url": "https://uffmaal.com/the-sales-man/",
@@ -32980,29 +33004,5 @@
       "https://cdn.azmaal.com/Rabbit/PlanB/PlanB%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T132423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=56784d17c8000233cbd5c58413cfe8d7c46d891b1a23ca48df48f40c01d3d3a6"
     ],
     "scraped_at": "2026-09-20T14:03:44.596Z"
-  },
-  {
-    "id": "latke-pe-jhatka",
-    "title": "Latke Pe Jhatka",
-    "url": "https://uffmaal.com/latke-pe-jhatka/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Latke-Pe-Jhatka-Episode-1.webp",
-    "categories": [
-      "WOOW",
-      "Pallabi Thakur",
-      "Simmi Arora"
-    ],
-    "description": "",
-    "total_episodes": 1,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/latke-pe-jhatka-episode-1/",
-        "video_url": "https://cdn.azmaal.com/WOOW/Latke%20Pe%20Jhatka/Latke%20Pe%20Jhatka%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T092837Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4cb9010221d83428a5f7d0954f55b10c4db6a60a77fe3a23617952f98c1c95f6"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/WOOW/Latke%20Pe%20Jhatka/Latke%20Pe%20Jhatka%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260920%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260920T092837Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4cb9010221d83428a5f7d0954f55b10c4db6a60a77fe3a23617952f98c1c95f6"
-    ],
-    "scraped_at": "2026-09-20T09:59:10.247Z"
   }
 ]
