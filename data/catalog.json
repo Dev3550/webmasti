@@ -1,5 +1,28 @@
 [
   {
+    "id": "the-sales-man",
+    "title": "The Sales Man",
+    "url": "https://uffmaal.com/the-sales-man/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/The-Sales-Man-Episode-1.webp",
+    "categories": [
+      "WOOW",
+      "Isha Sood"
+    ],
+    "description": "",
+    "total_episodes": 1,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/the-sales-man-episode-1/",
+        "video_url": "https://cdn.azmaal.com/WOOW/The%20Sales%20Man/The%20Sales%20Man%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T050121Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8c77f88a854b033a86927934554f0e3439f51842ebf697bb30ccb33fdb2dffaf"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/WOOW/The%20Sales%20Man/The%20Sales%20Man%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260925T050121Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8c77f88a854b033a86927934554f0e3439f51842ebf697bb30ccb33fdb2dffaf"
+    ],
+    "scraped_at": "2026-09-25T05:13:22.142Z"
+  },
+  {
     "id": "raddi-wala",
     "title": "Raddi Wala",
     "url": "https://uffmaal.com/raddi-wala/",

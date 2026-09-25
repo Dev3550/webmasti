@@ -75,6 +75,30 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=the-sales-man</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/The-Sales-Man-Episode-1.webp</image:loc>
+      <image:title>The Sales Man Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/The-Sales-Man-Episode-1.webp</video:thumbnail_loc>
+      <video:title>The Sales Man Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of The Sales Man online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/WOOW/The%20Sales%20Man/The%20Sales%20Man%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260925%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260925T050121Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=8c77f88a854b033a86927934554f0e3439f51842ebf697bb30ccb33fdb2dffaf</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=the-sales-man</video:player_loc>
+      <video:publication_date>2026-09-25</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>WOOW</video:tag>
+      <video:tag>Isha Sood</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=raddi-wala</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
