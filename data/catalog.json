@@ -1,5 +1,135 @@
 [
   {
+    "id": "rasgulla",
+    "title": "Rasgulla",
+    "url": "https://uffmaal.com/rasgulla/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Rasgulla-Episode-6.webp",
+    "categories": [
+      "VOOVI",
+      "Hiral Radadiya",
+      "Malvika Tomar",
+      "Shweta Ghosh"
+    ],
+    "description": "",
+    "total_episodes": 6,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-1/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=92ff21bc3fb69a10518554feba4f971ffcb4fa1fda9c77129e06d5965c6c0339"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-2/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4ead0752b933c214c342a6eae4e8c74b382265445ecf1a159fce8de7159ccab9"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-3/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9892fe481c5002783704ebd1e2c575727e070abb39eae4977b6b5486b1c8b96c"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-4/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6ab74555506fa272d05983090ce7f8e8a922393ebf45ec5ea466ceffd068c7ed"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-5/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9778db1bcf7429088e4b2cb919d364ac0ae1ca0ea327cffe6497c7e5be83bcd0"
+      },
+      {
+        "title": "Episode 6",
+        "url": "https://uffmaal.com/episode/rasgulla-episode-6/",
+        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3397bd9e0da649374a5a622dbca32cea10494fcd73555793d3b9abb4f5d6d70e"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=92ff21bc3fb69a10518554feba4f971ffcb4fa1fda9c77129e06d5965c6c0339",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4ead0752b933c214c342a6eae4e8c74b382265445ecf1a159fce8de7159ccab9",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9892fe481c5002783704ebd1e2c575727e070abb39eae4977b6b5486b1c8b96c",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6ab74555506fa272d05983090ce7f8e8a922393ebf45ec5ea466ceffd068c7ed",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9778db1bcf7429088e4b2cb919d364ac0ae1ca0ea327cffe6497c7e5be83bcd0",
+      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061343Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3397bd9e0da649374a5a622dbca32cea10494fcd73555793d3b9abb4f5d6d70e"
+    ],
+    "scraped_at": "2026-09-26T06:26:06.594Z"
+  },
+  {
+    "id": "haveli-ki-dulhan",
+    "title": "Haveli Ki Dulhan",
+    "url": "https://uffmaal.com/haveli-ki-dulhan/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Haveli-Ki-Dulhan-Episode-6.webp",
+    "categories": [
+      "JUGNU",
+      "Malvika Tomar",
+      "Muskaan Agarwal",
+      "Pooja Poddar",
+      "Ritu Pandey",
+      "Shyna Khatri"
+    ],
+    "description": "",
+    "total_episodes": 9,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/haveli-ki-dulhan-episode-1/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061303Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4f2ab8afef2c45a2c6ef6cf4f4a125b5b9a5edf29ef1736d5f4cbf30f56f8987"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/haveli-ki-dulhan-episode-2/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a0278ba2503cd6767ccddc376a8ad7a104a83b1cc0e5b1bec6f8fe768d01f94c"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/haveli-ki-dulhan-episode-3/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=470a6f30c931b2e2e8fb051202afc400b5b19574c2a078bc26601bb98375bf46"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/haveli-ki-dulhan-episode-4/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5b3fe6c93b758a0fe968ee2918adca48a95ad089d691eba25df563039a5b16e4"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/haveli-ki-dulhan-episode-5/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3786f31ab1bb9008c3aa81dbfd196d4817a92abc7f1eb711ef73557084158804"
+      },
+      {
+        "title": "Episode 6",
+        "url": "https://uffmaal.com/episode/haveli-ki-dulhan-episode-6/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=74c5088ca83650a971ea22c115d2c4db7c78cb168a7d258371eb2c19b9ddb2fd"
+      },
+      {
+        "title": "Episode 7",
+        "url": "https://uffmaal.com/episode/haveli-ki-dulhan-episode-7/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5138662116e34759e3dd85d48fb0793476c6c76db00458c2caeda987855fb2c2"
+      },
+      {
+        "title": "Episode 8",
+        "url": "https://uffmaal.com/episode/haveli-ki-dulhan-episode-8/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=af4055d410b298e009ed576e8f74129477543ee3a11cc05c7d744c17d3d2c9d5"
+      },
+      {
+        "title": "Episode 9",
+        "url": "https://uffmaal.com/episode/haveli-ki-dulhan-episode-9/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c21edd15b2ce2766148063252eb28d3992b263ce3a4c54700aee5bb89b1cc96d"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061303Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4f2ab8afef2c45a2c6ef6cf4f4a125b5b9a5edf29ef1736d5f4cbf30f56f8987",
+      "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a0278ba2503cd6767ccddc376a8ad7a104a83b1cc0e5b1bec6f8fe768d01f94c",
+      "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=470a6f30c931b2e2e8fb051202afc400b5b19574c2a078bc26601bb98375bf46",
+      "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5b3fe6c93b758a0fe968ee2918adca48a95ad089d691eba25df563039a5b16e4",
+      "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3786f31ab1bb9008c3aa81dbfd196d4817a92abc7f1eb711ef73557084158804",
+      "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=74c5088ca83650a971ea22c115d2c4db7c78cb168a7d258371eb2c19b9ddb2fd",
+      "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5138662116e34759e3dd85d48fb0793476c6c76db00458c2caeda987855fb2c2",
+      "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=af4055d410b298e009ed576e8f74129477543ee3a11cc05c7d744c17d3d2c9d5",
+      "https://cdn.azmaal.com/JUGNU/Haveli%20Ki%20Dulhan/Haveli%20Ki%20Dulhan%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260926%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260926T061308Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c21edd15b2ce2766148063252eb28d3992b263ce3a4c54700aee5bb89b1cc96d"
+    ],
+    "scraped_at": "2026-09-26T06:25:30.298Z"
+  },
+  {
     "id": "mona-69",
     "title": "Mona 69",
     "url": "https://uffmaal.com/mona-69/",
@@ -32984,60 +33114,5 @@
       "https://cdn.azmaal.com/JUGNU/My%20First%20Time/My%20First%20Time%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T112511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ef3ffffabc153b7a56e78315dbed0d4c1984de29a09886e192d2c457ed3518cf"
     ],
     "scraped_at": "2026-09-21T12:06:02.926Z"
-  },
-  {
-    "id": "rasgulla",
-    "title": "Rasgulla",
-    "url": "https://uffmaal.com/rasgulla/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Rasgulla-Episode-6.webp",
-    "categories": [
-      "VOOVI",
-      "Hiral Radadiya",
-      "Malvika Tomar",
-      "Shweta Ghosh"
-    ],
-    "description": "",
-    "total_episodes": 6,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/rasgulla-episode-1/",
-        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=345ccd9d282670db970e3df6db71d2b85f172cc57e855c5fd72bfa7664e46e83"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/rasgulla-episode-2/",
-        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=facf39a0c06989f57ad4950b1fc30a73eb782d0626ac2d5d29f3910366fa2f52"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/rasgulla-episode-3/",
-        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=43340cc103596a4523e072ead3e0095d6fe4860767a980ff364a36f3b2a733ed"
-      },
-      {
-        "title": "Episode 4",
-        "url": "https://uffmaal.com/episode/rasgulla-episode-4/",
-        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052424Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e5ef6a5b92965c5d69cd1375029c3a1295130bf8f176000e1e2f407f813e6ff"
-      },
-      {
-        "title": "Episode 5",
-        "url": "https://uffmaal.com/episode/rasgulla-episode-5/",
-        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f02838aafbdb9373586044025f20ee2b632e78c1973fe899d50c7e8b3c80e696"
-      },
-      {
-        "title": "Episode 6",
-        "url": "https://uffmaal.com/episode/rasgulla-episode-6/",
-        "video_url": "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9acf75aac5c6045a137ca9329255487cac80ce1bd261ee848a46f077ba5fdbf7"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=345ccd9d282670db970e3df6db71d2b85f172cc57e855c5fd72bfa7664e46e83",
-      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=facf39a0c06989f57ad4950b1fc30a73eb782d0626ac2d5d29f3910366fa2f52",
-      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=43340cc103596a4523e072ead3e0095d6fe4860767a980ff364a36f3b2a733ed",
-      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052424Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9e5ef6a5b92965c5d69cd1375029c3a1295130bf8f176000e1e2f407f813e6ff",
-      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f02838aafbdb9373586044025f20ee2b632e78c1973fe899d50c7e8b3c80e696",
-      "https://cdn.azmaal.com/VOOVI/Rasgulla/Rasgulla%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260921%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260921T052425Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9acf75aac5c6045a137ca9329255487cac80ce1bd261ee848a46f077ba5fdbf7"
-    ],
-    "scraped_at": "2026-09-21T05:55:40.198Z"
   }
 ]
