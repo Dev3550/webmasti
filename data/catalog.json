@@ -1,5 +1,53 @@
 [
   {
+    "id": "hello-jaanu",
+    "title": "Hello Jaanu",
+    "url": "https://uffmaal.com/hello-jaanu/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Hello-Jaanu-Episode-4.webp",
+    "categories": [
+      "JUGNU",
+      "Manvi Chugh",
+      "Neha Gupta"
+    ],
+    "description": "",
+    "total_episodes": 5,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/hello-jaanu-episode-1/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201121Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cffc7e7bc5c8c53001e91b70390583f598096667cac58d4e940ba41aa40cb777"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/hello-jaanu-episode-2/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201131Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d90f129f52f5c43d8116ebc6e71c8d53fc4054007c92bb76132e8c8b06e72756"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/hello-jaanu-episode-3/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201131Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=009fbfd6c46ae48ba4a134218deb8d9790cb8deb8cc498ea9e94015a3d6216f4"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/hello-jaanu-episode-4/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201131Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=813b19ec3e463015d69c55a125f50f068133196dc74ee75b0742d4af1470a218"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/hello-jaanu-episode-5/",
+        "video_url": "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201111Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8ec73562fb5d58c9b20be06c8f5fe57b4d7c7a0a6f09a3a89e92b06c3f8b4b9d"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201121Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cffc7e7bc5c8c53001e91b70390583f598096667cac58d4e940ba41aa40cb777",
+      "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201131Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d90f129f52f5c43d8116ebc6e71c8d53fc4054007c92bb76132e8c8b06e72756",
+      "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201131Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=009fbfd6c46ae48ba4a134218deb8d9790cb8deb8cc498ea9e94015a3d6216f4",
+      "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201131Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=813b19ec3e463015d69c55a125f50f068133196dc74ee75b0742d4af1470a218",
+      "https://cdn.azmaal.com/JUGNU/Hello%20Jaanu/Hello%20Jaanu%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260927%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260927T201111Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8ec73562fb5d58c9b20be06c8f5fe57b4d7c7a0a6f09a3a89e92b06c3f8b4b9d"
+    ],
+    "scraped_at": "2026-09-27T20:17:57.672Z"
+  },
+  {
     "id": "pehredaar-s1",
     "title": "Pehredaar S1",
     "url": "https://uffmaal.com/pehredaar-s1/",
