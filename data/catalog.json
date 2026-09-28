@@ -1,9 +1,226 @@
 [
   {
-    "id": "aatma-akku",
+    "id": "koi-jaye-toh-le-aaye",
+    "title": "Koi Jaye Toh Le Aaye",
+    "url": "https://uffmaal.com/koi-jaye-toh-le-aaye/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Koi-Jaye-Toh-Le-Aaye-Episode-1.webp",
+    "categories": [
+      "Atrangii",
+      "Heena Panchal",
+      "Sherleen Dutt"
+    ],
+    "description": "",
+    "total_episodes": 13,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-1/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=81b90c007e3e7527af1c4a85cdbdf516041d3424b98e0e8b31232c0bf57a41f4"
+      },
+      {
+        "title": "Episode 10",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-10/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2010.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=331384ccdfd77c0fe7f7ebcb5ea05705225b41d0985b2ca85945e39c2c544f2b"
+      },
+      {
+        "title": "Episode 11",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-11/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2011.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02cba85be6320c81e017ea391f4f368b9c5b39f9c692a5c5df9b397fe314b31c"
+      },
+      {
+        "title": "Episode 12",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-12/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2012.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c79a397236ea74cc36d5716764026342bab0269bab9f5a6c2164ec5d2a5551c8"
+      },
+      {
+        "title": "Episode 13",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-13/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2013.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e198e5d2c666953bb8f0a4174c316120ab9f3d3665ba3874ab9e3e26201f08fe"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-2/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1ff70305c6f5d658d6c1b2da05637e6f732bf28b2e0fc7cc666b1b633ffc1b35"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-3/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=57035663736ec97652f55af66d2a40fca846bc6e5929ac1eaad4c2f1825e0255"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-4/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02c68bae0007c0e48a65cd3e3428eba08c7430dc2ba0106966c4409dee2b601a"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-5/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ae119034931e7c34584eb025fa056b854013ffa5253b69f22a7dc599201f6249"
+      },
+      {
+        "title": "Episode 6",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-6/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=16e6c0cb9398df2f977e1f8558c681dee1a19c07432343911b6e1ebff8db6b78"
+      },
+      {
+        "title": "Episode 7",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-7/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=82f5459171fd6aa453c12507e97bd802df16cff212d47488d6ad6d8764d2b44c"
+      },
+      {
+        "title": "Episode 8",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-8/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ca7b5fd1e914724f39aaa66084c174a5a5c1eee269167867e9b8b8f29df76e9d"
+      },
+      {
+        "title": "Episode 9",
+        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-9/",
+        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=86338e170078f6ac6d11e8a09c0718e8847825ed5190eedaa47eae9104d8b2a3"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=81b90c007e3e7527af1c4a85cdbdf516041d3424b98e0e8b31232c0bf57a41f4",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2010.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=331384ccdfd77c0fe7f7ebcb5ea05705225b41d0985b2ca85945e39c2c544f2b",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2011.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02cba85be6320c81e017ea391f4f368b9c5b39f9c692a5c5df9b397fe314b31c",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2012.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c79a397236ea74cc36d5716764026342bab0269bab9f5a6c2164ec5d2a5551c8",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2013.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e198e5d2c666953bb8f0a4174c316120ab9f3d3665ba3874ab9e3e26201f08fe",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1ff70305c6f5d658d6c1b2da05637e6f732bf28b2e0fc7cc666b1b633ffc1b35",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=57035663736ec97652f55af66d2a40fca846bc6e5929ac1eaad4c2f1825e0255",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02c68bae0007c0e48a65cd3e3428eba08c7430dc2ba0106966c4409dee2b601a",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ae119034931e7c34584eb025fa056b854013ffa5253b69f22a7dc599201f6249",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=16e6c0cb9398df2f977e1f8558c681dee1a19c07432343911b6e1ebff8db6b78",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=82f5459171fd6aa453c12507e97bd802df16cff212d47488d6ad6d8764d2b44c",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ca7b5fd1e914724f39aaa66084c174a5a5c1eee269167867e9b8b8f29df76e9d",
+      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222224Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=86338e170078f6ac6d11e8a09c0718e8847825ed5190eedaa47eae9104d8b2a3"
+    ],
+    "scraped_at": "2026-09-28T22:25:33.869Z"
+  },
+  {
+    "id": "pehredaar-s4",
+    "title": "Pehredaar S4",
+    "url": "https://uffmaal.com/pehredaar-s4/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S4.webp",
+    "categories": [
+      "PrimePlay",
+      "Kamana Newar",
+      "Rani Pari",
+      "Shyna Khatri"
+    ],
+    "description": "",
+    "total_episodes": 8,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-1/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222254Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fb5d27e6443e693faff32a89917b794872b0e45c56d4510a4d9b5a9f0f938545"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-2/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222009Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=05c56af317ed4ce06fcb7e10b1bab625a1b7b632115fec012d5acf462d40f429"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-3/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222254Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=af196b1ab89ae908374c2b43b23e4a611bf74628fe5a11c86d74a7ff3332e989"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-4/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222014Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=30c3e458f8ecfdd922409993baec3b69d91a1cd71b0f6089064e2fb347c39386"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-5/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222254Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cb0e63d90d1292f07693eff6e24e4f31ac82382f366678e7234d0c028cfd3146"
+      },
+      {
+        "title": "Episode 6",
+        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-6/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222016Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ed7ae7ca1b4770f9112303584f952a52f5e7a2a98391599a8880c082fb637510"
+      },
+      {
+        "title": "Episode 7",
+        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-7/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222016Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4aee236b683d77ee21ed42e874cce960788fbd9033e0b730840ac65ca95291d3"
+      },
+      {
+        "title": "Episode 8",
+        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-8/",
+        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222254Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d5677dd23e72f5a5225f80b148822612f98ec1236b24b0b600e48852f401848c"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222254Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fb5d27e6443e693faff32a89917b794872b0e45c56d4510a4d9b5a9f0f938545",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222009Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=05c56af317ed4ce06fcb7e10b1bab625a1b7b632115fec012d5acf462d40f429",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222254Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=af196b1ab89ae908374c2b43b23e4a611bf74628fe5a11c86d74a7ff3332e989",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222014Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=30c3e458f8ecfdd922409993baec3b69d91a1cd71b0f6089064e2fb347c39386",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222254Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cb0e63d90d1292f07693eff6e24e4f31ac82382f366678e7234d0c028cfd3146",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222016Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ed7ae7ca1b4770f9112303584f952a52f5e7a2a98391599a8880c082fb637510",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222016Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4aee236b683d77ee21ed42e874cce960788fbd9033e0b730840ac65ca95291d3",
+      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222254Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d5677dd23e72f5a5225f80b148822612f98ec1236b24b0b600e48852f401848c"
+    ],
+    "scraped_at": "2026-09-28T22:25:32.206Z"
+  },
+  {
+    "id": "siskiyaan-s2",
+    "title": "Siskiyaan S2",
+    "url": "https://uffmaal.com/siskiyaan-s2/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Siskiyaan-S2-Episode-1.webp",
+    "categories": [
+      "ULLU",
+      "Hiral Radadiya",
+      "Noor Malabika"
+    ],
+    "description": "",
+    "total_episodes": 6,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-1/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=41277c24888055cef8ffba2f29e42ff131bb153b703d1038f5a8336ab5d1b205"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-2/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=21b56a14ff62b9ed8e41c55c09d04cbb72ea88a5769612e879fdbd82fa014c65"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-3/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=117afc129f0bec5e5482a2323fec6ac340cdbab2bfeab72476a476ed15805ea9"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-4/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9708d5600ab83623a10da7b49529e06d3b0ddfd520feedf8de179e43219ed84b"
+      },
+      {
+        "title": "Episode 5",
+        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-5/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=10d401f5849a7078b15aa594554fe799bbacef6e1b5fcd6a57208afba0467529"
+      },
+      {
+        "title": "Episode 6",
+        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-6/",
+        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c6e64d38203ab7bd5e26dce0d3594b086ed8e63205550a445cdd828cf56ad652"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=41277c24888055cef8ffba2f29e42ff131bb153b703d1038f5a8336ab5d1b205",
+      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=21b56a14ff62b9ed8e41c55c09d04cbb72ea88a5769612e879fdbd82fa014c65",
+      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=117afc129f0bec5e5482a2323fec6ac340cdbab2bfeab72476a476ed15805ea9",
+      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9708d5600ab83623a10da7b49529e06d3b0ddfd520feedf8de179e43219ed84b",
+      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=10d401f5849a7078b15aa594554fe799bbacef6e1b5fcd6a57208afba0467529",
+      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222007Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c6e64d38203ab7bd5e26dce0d3594b086ed8e63205550a445cdd828cf56ad652"
+    ],
+    "scraped_at": "2026-09-28T22:25:30.580Z"
+  },
+  {
+    "id": "aatma",
     "title": "Aatma",
-    "url": "https://uffmaal.com/aatma-akku/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/02/Aatma-Episode-2.webp",
+    "url": "https://uffmaal.com/aatma/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/02/Aatma.webp",
     "categories": [
       "AKKU",
       "Pallavi Debnath"
@@ -13,26 +230,69 @@
     "episodes": [
       {
         "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/aatma-episode-1-2/",
-        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T163217Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5095b171f9771e81275f0485e41ed1c656f67d0ba6c0c9f6a994517cfba4f036"
+        "url": "https://uffmaal.com/episode/aatma-episode-1/",
+        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222042Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5b8dbe23459590e03345197472691a7963f48e1db920a605c6c906ea7b52f142"
       },
       {
         "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/aatma-episode-2-2/",
-        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T163217Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dc89241e397e45cab29c3d3c9c9ac0b71c3d8c9f66c8af39b70c7368e97994bf"
+        "url": "https://uffmaal.com/episode/aatma-episode-2/",
+        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222042Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bce59f5bff50f5afa4a55dc4f1287b55646218b2cd6adc64b798962a522af6dc"
       },
       {
         "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/aatma-episode-3-2/",
-        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T163217Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9d2feaf55d519306039a8e1a61c51a6f7fc6076b586f523f72f10e1dd73bcda7"
+        "url": "https://uffmaal.com/episode/aatma-episode-3/",
+        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222042Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3224dd0095087b0410ff454b959cc83ec3f2cd3f15c6fe514e18e771093b24e1"
       }
     ],
     "video_urls": [
-      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T163217Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5095b171f9771e81275f0485e41ed1c656f67d0ba6c0c9f6a994517cfba4f036",
-      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T163217Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dc89241e397e45cab29c3d3c9c9ac0b71c3d8c9f66c8af39b70c7368e97994bf",
-      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T163217Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9d2feaf55d519306039a8e1a61c51a6f7fc6076b586f523f72f10e1dd73bcda7"
+      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222042Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5b8dbe23459590e03345197472691a7963f48e1db920a605c6c906ea7b52f142",
+      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222042Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bce59f5bff50f5afa4a55dc4f1287b55646218b2cd6adc64b798962a522af6dc",
+      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222042Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3224dd0095087b0410ff454b959cc83ec3f2cd3f15c6fe514e18e771093b24e1"
     ],
-    "scraped_at": "2026-09-28T16:53:56.157Z"
+    "scraped_at": "2026-09-28T22:24:56.163Z"
+  },
+  {
+    "id": "besharam-makhan",
+    "title": "Besharam",
+    "url": "https://uffmaal.com/besharam-makhan/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Besharam-Episode-1-Makkhan.webp",
+    "categories": [
+      "Makhan",
+      "Jinnie Jaaz",
+      "Khushi Dalguch",
+      "Shyna Khatri"
+    ],
+    "description": "",
+    "total_episodes": 4,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/besharam-episode-1/",
+        "video_url": "https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222106Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c71403c1fadd14f0ee0c3ecfc1b72062f66baa7efc72f3d67b3504d356ec8643"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/besharam-episode-2/",
+        "video_url": "https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222106Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=59bde443a3c5b6e6296f1282342ffbb70dd44041c5705bd861f31689c69786ff"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/besharam-episode-3/",
+        "video_url": "https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222106Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f6212e45fa306d61e5ecb5e6deab94289ab257528ce2978e188c5d0f8294559b"
+      },
+      {
+        "title": "Episode 4",
+        "url": "https://uffmaal.com/episode/besharam-episode-4/",
+        "video_url": "https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222106Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c7384ae68daa70f747a2c4801e8f3f0e086d8e38a1cd4181346c3256a095406d"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222106Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c71403c1fadd14f0ee0c3ecfc1b72062f66baa7efc72f3d67b3504d356ec8643",
+      "https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222106Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=59bde443a3c5b6e6296f1282342ffbb70dd44041c5705bd861f31689c69786ff",
+      "https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222106Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f6212e45fa306d61e5ecb5e6deab94289ab257528ce2978e188c5d0f8294559b",
+      "https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T222106Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c7384ae68daa70f747a2c4801e8f3f0e086d8e38a1cd4181346c3256a095406d"
+    ],
+    "scraped_at": "2026-09-28T22:24:54.409Z"
   },
   {
     "id": "chuski-d1",
@@ -1896,67 +2156,6 @@
       "https://cdn.pmaal.com/ULLU/Gore%20Gore%20Gaal%20D1/Gore%20Gore%20Gaal%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081717Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b93b97cf4f87e89c5f1560bf4f347d169d99830d4e37d0e496853beab616899b"
     ],
     "scraped_at": "2026-09-28T08:17:56.213Z"
-  },
-  {
-    "id": "besharam-d1",
-    "title": "Besharam",
-    "url": "https://uffmaal.com/besharam-d1/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2025/07/Besharam-Part-2.webp",
-    "categories": [
-      "ULLU",
-      "Muskan Chauhan",
-      "Ridhima Tiwari",
-      "Sarika Salunkhe"
-    ],
-    "description": "",
-    "total_episodes": 7,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/besharam-episode-1-d1/",
-        "video_url": "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=257a79e0817b8195cd3226447da53c2a3e8ed7a7c33c99f830a97360a13cf75e"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/besharam-episode-2-d1/",
-        "video_url": "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02671e69718a7a932acca6dcd9fcc032cf42e39ac1c4bde30aa44a65a5d56af4"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/besharam-episode-3-d1/",
-        "video_url": "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fa5e90399411f8b812c7236f6f00c2a47d8ade46e68a9aa696f897ad625a1a18"
-      },
-      {
-        "title": "Episode 4",
-        "url": "https://uffmaal.com/episode/besharam-episode-4-d1/",
-        "video_url": "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d065a9e542046125a84715087e792e0fcebe5faee84e927bb04ea2e437dd9c55"
-      },
-      {
-        "title": "Episode 5",
-        "url": "https://uffmaal.com/episode/besharam-episode-5-d1/",
-        "video_url": "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aed6d2d2c7a5e4d6a4b0779d1093e15a38aac484ace6063d9d9167cdc0a4fc5e"
-      },
-      {
-        "title": "Episode 6",
-        "url": "https://uffmaal.com/episode/besharam-episode-6-d1/",
-        "video_url": "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081717Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0a021b54e9393084f1b7c368e3e668332d0972250f16b1015dbc84e9011b1263"
-      },
-      {
-        "title": "Episode 7",
-        "url": "https://uffmaal.com/episode/besharam-episode-7-d1/",
-        "video_url": "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081717Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f66208ecd52d5908be5ae46aa6b5729493f529ec778012b64ee471b73571d889"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=257a79e0817b8195cd3226447da53c2a3e8ed7a7c33c99f830a97360a13cf75e",
-      "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02671e69718a7a932acca6dcd9fcc032cf42e39ac1c4bde30aa44a65a5d56af4",
-      "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fa5e90399411f8b812c7236f6f00c2a47d8ade46e68a9aa696f897ad625a1a18",
-      "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d065a9e542046125a84715087e792e0fcebe5faee84e927bb04ea2e437dd9c55",
-      "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081740Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aed6d2d2c7a5e4d6a4b0779d1093e15a38aac484ace6063d9d9167cdc0a4fc5e",
-      "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081717Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0a021b54e9393084f1b7c368e3e668332d0972250f16b1015dbc84e9011b1263",
-      "https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T081717Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f66208ecd52d5908be5ae46aa6b5729493f529ec778012b64ee471b73571d889"
-    ],
-    "scraped_at": "2026-09-28T08:17:55.590Z"
   },
   {
     "id": "haseena-maan-jayegi-d1",
@@ -32945,222 +33144,5 @@
       "https://cdn.azmaal.com/WOOW/Laila%20S1/Laila%20S1%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260924T030841Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1379b80e8260520c8e6da82c9a93f6823811b91a09af3f03b26e5b52879dffdc"
     ],
     "scraped_at": "2026-09-24T03:18:08.025Z"
-  },
-  {
-    "id": "koi-jaye-toh-le-aaye",
-    "title": "Koi Jaye Toh Le Aaye",
-    "url": "https://uffmaal.com/koi-jaye-toh-le-aaye/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Koi-Jaye-Toh-Le-Aaye-Episode-1.webp",
-    "categories": [
-      "Atrangii",
-      "Heena Panchal",
-      "Sherleen Dutt"
-    ],
-    "description": "",
-    "total_episodes": 13,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-1/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a73610a14d79f30d2029e577ef30fdc956d4116f541ee415a46b888c9123fd3a"
-      },
-      {
-        "title": "Episode 10",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-10/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2010.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205113Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f5d32fdaeb76ee3047b5ec084314b8665411f84a8f6839ab6dbf51f596441b9a"
-      },
-      {
-        "title": "Episode 11",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-11/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2011.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=36d45e80960cca13ebf7576b49836bdcc8d0926679bb8c112f32424a47d60a5a"
-      },
-      {
-        "title": "Episode 12",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-12/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2012.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205115Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a3063253033567e97acb82dd4884df78b5741bfaefa0eb0a5469d150aee0b5ff"
-      },
-      {
-        "title": "Episode 13",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-13/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2013.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d196ef1c4cdb434ebe376f9977042e9193cd2b25efc93106e91cbd62931b87dd"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-2/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d9e6c4ddf64c3cff2bc6f64564d02f0a8f91e61af91d1b68520bf98664473195"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-3/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205116Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=049b7d315aa7a43cca6a91ab5a561b1e13e66d40bb2853df04ce923869b9f633"
-      },
-      {
-        "title": "Episode 4",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-4/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8237066dbca9c1d9ad8237e9fba8cdccf9088691c3700bdc662e1cf72d6e0d87"
-      },
-      {
-        "title": "Episode 5",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-5/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d70f2c53c2606c72007b59c1e94c73b6c52c18158165822bc38fdce855a65484"
-      },
-      {
-        "title": "Episode 6",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-6/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=be152f8c6855c086c27262a7118e79ddeb06568e2e974b71fe9eed833bac56e4"
-      },
-      {
-        "title": "Episode 7",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-7/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d0dcfdc8230efbb6902f4f3fc37e14df78c7e25707bc8d1635893820dc1e7964"
-      },
-      {
-        "title": "Episode 8",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-8/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=359c79ba7f25afea60773ac94d2ee90463bb7132a3cda2e292db7c56cb277786"
-      },
-      {
-        "title": "Episode 9",
-        "url": "https://uffmaal.com/episode/koi-jaye-toh-le-aaye-episode-9/",
-        "video_url": "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f7cb1118d822e58006919a81cbdec4fd8db970db34e823ebb465853598c54fae"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a73610a14d79f30d2029e577ef30fdc956d4116f541ee415a46b888c9123fd3a",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2010.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205113Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f5d32fdaeb76ee3047b5ec084314b8665411f84a8f6839ab6dbf51f596441b9a",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2011.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=36d45e80960cca13ebf7576b49836bdcc8d0926679bb8c112f32424a47d60a5a",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2012.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205115Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a3063253033567e97acb82dd4884df78b5741bfaefa0eb0a5469d150aee0b5ff",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%2013.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d196ef1c4cdb434ebe376f9977042e9193cd2b25efc93106e91cbd62931b87dd",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d9e6c4ddf64c3cff2bc6f64564d02f0a8f91e61af91d1b68520bf98664473195",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205116Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=049b7d315aa7a43cca6a91ab5a561b1e13e66d40bb2853df04ce923869b9f633",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8237066dbca9c1d9ad8237e9fba8cdccf9088691c3700bdc662e1cf72d6e0d87",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d70f2c53c2606c72007b59c1e94c73b6c52c18158165822bc38fdce855a65484",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=be152f8c6855c086c27262a7118e79ddeb06568e2e974b71fe9eed833bac56e4",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d0dcfdc8230efbb6902f4f3fc37e14df78c7e25707bc8d1635893820dc1e7964",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=359c79ba7f25afea60773ac94d2ee90463bb7132a3cda2e292db7c56cb277786",
-      "https://cdn.azmaal.com/Atrangii/Koi%20Jaye%20Toh%20Le%20Aaye/Koi%20Jaye%20Toh%20Le%20Aaye%20Episode%209.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205117Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f7cb1118d822e58006919a81cbdec4fd8db970db34e823ebb465853598c54fae"
-    ],
-    "scraped_at": "2026-09-23T21:08:26.927Z"
-  },
-  {
-    "id": "pehredaar-s4",
-    "title": "Pehredaar S4",
-    "url": "https://uffmaal.com/pehredaar-s4/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Pehredar-S4.webp",
-    "categories": [
-      "PrimePlay",
-      "Kamana Newar",
-      "Rani Pari",
-      "Shyna Khatri"
-    ],
-    "description": "",
-    "total_episodes": 8,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-1/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2e5460d4dd8bd91fe3d727938c2ae3253464986c8dd5337bd0e8cece02fde0f8"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-2/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=751dd1f3a4213f38f984a61e100c538188844bd45d97f86da223c141053422d7"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-3/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02b02f4bc028a666b1a898866135e562706eb9be32c2e47b72097054fb9f1340"
-      },
-      {
-        "title": "Episode 4",
-        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-4/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=661643d381681ca2148281a222b4babebd83745bc9c60c3bd69be627fcf0e267"
-      },
-      {
-        "title": "Episode 5",
-        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-5/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dcbe8dcab1fc37091d019127d4b4cfaa4da90fd3b4e9d6164745097f07eda0d2"
-      },
-      {
-        "title": "Episode 6",
-        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-6/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6031efe8a0e87db21a81c2b733a5d98aae5d0d71d2c859df85871bfb932df689"
-      },
-      {
-        "title": "Episode 7",
-        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-7/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f1b64cc584c25030687ef8238bf691e4d75344ef9ec167c497817250efe31821"
-      },
-      {
-        "title": "Episode 8",
-        "url": "https://uffmaal.com/episode/pehredaar-s4-episode-8/",
-        "video_url": "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205133Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4e39d5df486da569ca4042bcff432dc8473ebda4e81c8d4ff3c56d48405d2ea2"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2e5460d4dd8bd91fe3d727938c2ae3253464986c8dd5337bd0e8cece02fde0f8",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=751dd1f3a4213f38f984a61e100c538188844bd45d97f86da223c141053422d7",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02b02f4bc028a666b1a898866135e562706eb9be32c2e47b72097054fb9f1340",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=661643d381681ca2148281a222b4babebd83745bc9c60c3bd69be627fcf0e267",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dcbe8dcab1fc37091d019127d4b4cfaa4da90fd3b4e9d6164745097f07eda0d2",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6031efe8a0e87db21a81c2b733a5d98aae5d0d71d2c859df85871bfb932df689",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205118Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f1b64cc584c25030687ef8238bf691e4d75344ef9ec167c497817250efe31821",
-      "https://cdn.azmaal.com/PrimePlay/Pehredaar%20S4/Pehredaar%20S4%20Episode%208.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T205133Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4e39d5df486da569ca4042bcff432dc8473ebda4e81c8d4ff3c56d48405d2ea2"
-    ],
-    "scraped_at": "2026-09-23T21:08:22.641Z"
-  },
-  {
-    "id": "siskiyaan-s2",
-    "title": "Siskiyaan S2",
-    "url": "https://uffmaal.com/siskiyaan-s2/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/05/Siskiyaan-S2-Episode-1.webp",
-    "categories": [
-      "ULLU",
-      "Hiral Radadiya",
-      "Noor Malabika"
-    ],
-    "description": "",
-    "total_episodes": 6,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-1/",
-        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173500Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=709a50b03653cfefe83cf9cc0128e22fbddef3bc1fd2d0ec3759de2761590cc4"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-2/",
-        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173527Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=67ace00e919ff6ef609d4c803f1579129fcbb7f2b214eac419a73f554770befd"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-3/",
-        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173527Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a35bfc1aa1203bdb7264a096446dde2614c410778176c0a203b555246b7443cb"
-      },
-      {
-        "title": "Episode 4",
-        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-4/",
-        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173526Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=319cd9e90d6037b38a703488c4c8e2c99427f40d2c52dc2a7bcc99301e489c66"
-      },
-      {
-        "title": "Episode 5",
-        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-5/",
-        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173527Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=414c10f37f904e623b16f77074d9fee1fa2ec8262d5e24c74f04804bac879e88"
-      },
-      {
-        "title": "Episode 6",
-        "url": "https://uffmaal.com/episode/siskiyaan-s2-episode-6/",
-        "video_url": "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173527Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d349aaa9c1b08ccca8f062f8e9ead4588b8b93f651b0b19609f20481ceaba4af"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173500Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=709a50b03653cfefe83cf9cc0128e22fbddef3bc1fd2d0ec3759de2761590cc4",
-      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173527Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=67ace00e919ff6ef609d4c803f1579129fcbb7f2b214eac419a73f554770befd",
-      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173527Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a35bfc1aa1203bdb7264a096446dde2614c410778176c0a203b555246b7443cb",
-      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173526Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=319cd9e90d6037b38a703488c4c8e2c99427f40d2c52dc2a7bcc99301e489c66",
-      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%205.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173527Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=414c10f37f904e623b16f77074d9fee1fa2ec8262d5e24c74f04804bac879e88",
-      "https://cdn.azmaal.com/ULLU/Siskiyaan%20S2/Siskiyaan%20S2%20Episode%206.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T173527Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d349aaa9c1b08ccca8f062f8e9ead4588b8b93f651b0b19609f20481ceaba4af"
-    ],
-    "scraped_at": "2026-09-23T17:43:23.624Z"
   }
 ]
