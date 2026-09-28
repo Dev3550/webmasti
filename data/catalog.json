@@ -1,5 +1,40 @@
 [
   {
+    "id": "aatma-akku",
+    "title": "Aatma",
+    "url": "https://uffmaal.com/aatma-akku/",
+    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/02/Aatma-Episode-2.webp",
+    "categories": [
+      "AKKU",
+      "Pallavi Debnath"
+    ],
+    "description": "",
+    "total_episodes": 3,
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "url": "https://uffmaal.com/episode/aatma-episode-1-2/",
+        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T014301Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cbade847a69fa951d32fe8b383b34dace0e7004438c8c78d1aa342271dd5fe23"
+      },
+      {
+        "title": "Episode 2",
+        "url": "https://uffmaal.com/episode/aatma-episode-2-2/",
+        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T014301Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=69a7519583578cadad7b7f484d46769ea98b49758b9a38bf0b09c83c25aa2ddf"
+      },
+      {
+        "title": "Episode 3",
+        "url": "https://uffmaal.com/episode/aatma-episode-3-2/",
+        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T014301Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6ba1cf3c5b6d7e32eabf5d4813b61c23909c96a824b6208f755b03fe42667e45"
+      }
+    ],
+    "video_urls": [
+      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T014301Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cbade847a69fa951d32fe8b383b34dace0e7004438c8c78d1aa342271dd5fe23",
+      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T014301Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=69a7519583578cadad7b7f484d46769ea98b49758b9a38bf0b09c83c25aa2ddf",
+      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260928T014301Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6ba1cf3c5b6d7e32eabf5d4813b61c23909c96a824b6208f755b03fe42667e45"
+    ],
+    "scraped_at": "2026-09-28T01:51:52.572Z"
+  },
+  {
     "id": "pehredaar-s3",
     "title": "Pehredaar S3",
     "url": "https://uffmaal.com/pehredaar-s3/",
@@ -3827,41 +3862,6 @@
       "https://cdn.pmaal.com/ULLU/Happy%20Ending%20D1/Happy%20Ending%20Episode%204.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T064119Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ad9c016db7e2963b81987ed5cddafe92b2123782e361133363cfc4e519fd50bf"
     ],
     "scraped_at": "2026-09-23T07:25:31.354Z"
-  },
-  {
-    "id": "aatma",
-    "title": "Aatma",
-    "url": "https://uffmaal.com/aatma/",
-    "cover_image": "https://uffmaal.com/wp-content/uploads/2026/02/Aatma.webp",
-    "categories": [
-      "AKKU",
-      "Pallavi Debnath"
-    ],
-    "description": "",
-    "total_episodes": 3,
-    "episodes": [
-      {
-        "title": "Episode 1",
-        "url": "https://uffmaal.com/episode/aatma-episode-1/",
-        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T064115Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a47c71d859fe69f5de15839d2f1ba692e79519597a79b5ccb56278e7e026c87c"
-      },
-      {
-        "title": "Episode 2",
-        "url": "https://uffmaal.com/episode/aatma-episode-2/",
-        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T064115Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2e54f05d581bd4474b43dfd89c24d0b2d9350be9edf3b24023d0f96aca5b3887"
-      },
-      {
-        "title": "Episode 3",
-        "url": "https://uffmaal.com/episode/aatma-episode-3/",
-        "video_url": "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T064124Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5a65f24c18017c70bfe30e38613d757909e58763a2e8dced00a4c04afeed3e00"
-      }
-    ],
-    "video_urls": [
-      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T064115Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a47c71d859fe69f5de15839d2f1ba692e79519597a79b5ccb56278e7e026c87c",
-      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%202.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T064115Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2e54f05d581bd4474b43dfd89c24d0b2d9350be9edf3b24023d0f96aca5b3887",
-      "https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%203.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260923%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260923T064124Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5a65f24c18017c70bfe30e38613d757909e58763a2e8dced00a4c04afeed3e00"
-    ],
-    "scraped_at": "2026-09-23T07:25:30.652Z"
   },
   {
     "id": "bhool-chook-maaf",
