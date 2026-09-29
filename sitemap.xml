@@ -75,6 +75,130 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://webmastihot.in/?series=the-postman</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/The-Postman-Episode-1.webp</image:loc>
+      <image:title>The Postman Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/The-Postman-Episode-1.webp</video:thumbnail_loc>
+      <video:title>The Postman Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of The Postman online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/WOOW/The%20Postman/The%20Postman%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260929%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260929T194908Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=683c181bf0a140c9e0a56eddb7bbdeaab550185973b5a2c2d363982da7150fae</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=the-postman</video:player_loc>
+      <video:publication_date>2026-09-29</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>WOOW</video:tag>
+      <video:tag>Kritika</video:tag>
+      <video:tag>Payal</video:tag>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://webmastihot.in/?series=blackmail</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/02/Blackmail.webp</image:loc>
+      <image:title>Blackmail Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/02/Blackmail.webp</video:thumbnail_loc>
+      <video:title>Blackmail Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Blackmail online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/AKKU/Blackmail/Blackmail%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260929%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260929T195336Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9bfee6a2c53ed5ac352d5152f5fa0d45e2b7cc222a01877c07c969918b92391e</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=blackmail</video:player_loc>
+      <video:publication_date>2026-09-29</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>AKKU</video:tag>
+      <video:tag>Poonam Verma</video:tag>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://webmastihot.in/?series=aatma</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/02/Aatma.webp</image:loc>
+      <image:title>Aatma Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/02/Aatma.webp</video:thumbnail_loc>
+      <video:title>Aatma Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Aatma online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260929%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260929T195215Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=b2b3c31e1f94f50ca3eaa733e126d3709773a5b806be24661112cbaa829b9de2</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=aatma</video:player_loc>
+      <video:publication_date>2026-09-29</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>AKKU</video:tag>
+      <video:tag>Pallavi Debnath</video:tag>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://webmastihot.in/?series=do-haseena-jugnu</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Do-Haseena.webp</image:loc>
+      <image:title>Do Haseena Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Do-Haseena.webp</video:thumbnail_loc>
+      <video:title>Do Haseena Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Do Haseena online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/JUGNU/Do%20Haseena/Do%20Haseena%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260929%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260929T194907Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a449cd7536043c69c3a65b9f1518ca6a39f816179f6e2648624ac58af0578690</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=do-haseena-jugnu</video:player_loc>
+      <video:publication_date>2026-09-29</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>JUGNU</video:tag>
+      <video:tag>Bharti Jha</video:tag>
+      <video:tag>Ruks Khandagale</video:tag>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://webmastihot.in/?series=besharam-makhan</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Besharam-Episode-1-Makkhan.webp</image:loc>
+      <image:title>Besharam Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Besharam-Episode-1-Makkhan.webp</video:thumbnail_loc>
+      <video:title>Besharam Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Besharam online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260929%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260929T194915Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=2fdc081eb46d9e9e318e6c012c2107b8cd273774831bcc9cd10ccc648faa4710</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=besharam-makhan</video:player_loc>
+      <video:publication_date>2026-09-29</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>Makhan</video:tag>
+      <video:tag>Jinnie Jaaz</video:tag>
+      <video:tag>Khushi Dalguch</video:tag>
+      <video:tag>Shyna Khatri</video:tag>
+    </video:video>
+  </url>
+  <url>
     <loc>https://webmastihot.in/?series=pehredaar-s6</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -97,80 +221,6 @@
       <video:tag>PrimePlay</video:tag>
       <video:tag>Babita Dubey</video:tag>
       <video:tag>Shyna Khatri</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=besharam-d1</loc>
-    <lastmod>2026-09-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2025/07/Besharam-Part-2.webp</image:loc>
-      <image:title>Besharam Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2025/07/Besharam-Part-2.webp</video:thumbnail_loc>
-      <video:title>Besharam Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Besharam online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20260929%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260929T144953Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=8c1f0fd30dfbc6c57b4b6c26cc11eeca344e406f5e3e4ec25d7579fc7d715ae5</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=besharam-d1</video:player_loc>
-      <video:publication_date>2026-09-29</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>ULLU</video:tag>
-      <video:tag>Muskan Chauhan</video:tag>
-      <video:tag>Ridhima Tiwari</video:tag>
-      <video:tag>Sarika Salunkhe</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=blackmail-akku</loc>
-    <lastmod>2026-09-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/04/Blackmail-Episode-1.webp</image:loc>
-      <image:title>Blackmail Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/04/Blackmail-Episode-1.webp</video:thumbnail_loc>
-      <video:title>Blackmail Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Blackmail online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/AKKU/Blackmail/Blackmail%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260929%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260929T145146Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=eedc07afbe0cf4f378a3d2d7a38947269fb3c3ae6d8163a6b10476f767b65d9e</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=blackmail-akku</video:player_loc>
-      <video:publication_date>2026-09-29</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>AKKU</video:tag>
-      <video:tag>Poonam Verma</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=aatma-akku</loc>
-    <lastmod>2026-09-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/02/Aatma-Episode-2.webp</image:loc>
-      <image:title>Aatma Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/02/Aatma-Episode-2.webp</video:thumbnail_loc>
-      <video:title>Aatma Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Aatma online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260929%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260929T145055Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c02848f9089698aa80a1b44388bd61e64adc7634f5fc9136e0e3e71f19acd31b</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=aatma-akku</video:player_loc>
-      <video:publication_date>2026-09-29</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>AKKU</video:tag>
-      <video:tag>Pallavi Debnath</video:tag>
     </video:video>
   </url>
   <url>
@@ -7387,31 +7437,6 @@
       <video:tag>ULLU</video:tag>
       <video:tag>Alisha Sharma</video:tag>
       <video:tag>Sneha Paul</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=do-haseena</loc>
-    <lastmod>2026-09-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Do-Haseena-1.webp</image:loc>
-      <image:title>Do Haseena Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Do-Haseena-1.webp</video:thumbnail_loc>
-      <video:title>Do Haseena Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Do Haseena online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/Makhan/Do%20Haseena/Do%20Haseena%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260928%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260928T081701Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=acef0fd056ca049744ecd37dfde0800c0fd49333a7887e23d32666dfc3afebde</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=do-haseena</video:player_loc>
-      <video:publication_date>2026-09-29</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>Makhan</video:tag>
-      <video:tag>Bharti Jha</video:tag>
-      <video:tag>Ruks Khandagale</video:tag>
     </video:video>
   </url>
   <url>
@@ -17129,31 +17154,6 @@
       <video:tag>Babita Dubey</video:tag>
       <video:tag>Malvika Tomar</video:tag>
       <video:tag>Suhana Khan</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=the-postman</loc>
-    <lastmod>2026-09-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/The-Postman-Episode-1.webp</image:loc>
-      <image:title>The Postman Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/The-Postman-Episode-1.webp</video:thumbnail_loc>
-      <video:title>The Postman Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of The Postman online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/WOOW/The%20Postman/The%20Postman%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20260924%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20260924T182121Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=52e61b116e884de4e7da643bd51c4df568218d7772491a86e199c496b11a7a1b</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=the-postman</video:player_loc>
-      <video:publication_date>2026-09-29</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>WOOW</video:tag>
-      <video:tag>Kritika</video:tag>
-      <video:tag>Payal</video:tag>
     </video:video>
   </url>
 </urlset>
