@@ -60,7 +60,7 @@ export async function onRequest(context) {
     }
   }
 
-  // 2. Extract series ID from query or pathname
+  // 2. Extract series ID or category from query or pathname
   let seriesId = url.searchParams.get('series');
   if (!seriesId && url.pathname.startsWith('/series/')) {
     seriesId = decodeURIComponent(url.pathname.replace(/^\/series\//, '').replace(/\/$/, ''));
@@ -70,10 +70,15 @@ export async function onRequest(context) {
     seriesId = decodeURIComponent(url.pathname.replace(/^\/s\//, '').replace(/\/$/, ''));
   }
 
-  const category = url.searchParams.get('cat');
+  let category = url.searchParams.get('cat');
+  if (!category && url.pathname.startsWith('/category/')) {
+    category = decodeURIComponent(url.pathname.replace(/^\/category\//, '').replace(/\/$/, ''));
+  } else if (!category && url.pathname.startsWith('/cat/')) {
+    category = decodeURIComponent(url.pathname.replace(/^\/cat\//, '').replace(/\/$/, ''));
+  }
 
   // 3. Handle series deep link or category link with HTTP 200 OK
-  if (seriesId || category || url.pathname.startsWith('/watch') || url.pathname.startsWith('/series/')) {
+  if (seriesId || category || url.pathname.startsWith('/watch') || url.pathname.startsWith('/series/') || url.pathname.startsWith('/category/') || url.pathname.startsWith('/cat/')) {
     try {
       const indexReq = new Request(new URL('/index.html', url.origin));
       const response = await context.env.ASSETS.fetch(indexReq);
@@ -93,10 +98,13 @@ export async function onRequest(context) {
         }
         const seriesDesc = `Watch ${seriesTitle} uncut web series full episodes online in Full HD for free on WebMasti. Fast streaming playback.`;
 
-        const canonicalUrl = `https://webmastihot.in/?series=${encodeURIComponent(seriesId)}`;
+        const canonicalUrl = url.pathname.startsWith('/series/')
+          ? `${url.origin}/series/${encodeURIComponent(seriesId)}`
+          : `${url.origin}/?series=${encodeURIComponent(seriesId)}`;
+
         const pageTitle = `${seriesTitle} - Watch Full HD Web Series on WebMasti`;
         const proxyCover = `${url.origin}/api/thumb?series=${encodeURIComponent(seriesId)}&src=${encodeURIComponent(seriesCover)}`;
-        const playerEmbedUrl = `https://webmastihot.in/?series=${encodeURIComponent(seriesId)}`;
+        const playerEmbedUrl = `${url.origin}/?series=${encodeURIComponent(seriesId)}`;
 
         const dynamicTags = `
   <title>${pageTitle}</title>
@@ -168,7 +176,10 @@ export async function onRequest(context) {
           }
         });
       } else if (category) {
-        const canonicalUrl = `https://webmastihot.in/?cat=${encodeURIComponent(category)}`;
+        const canonicalUrl = url.pathname.startsWith('/category/')
+          ? `${url.origin}/category/${encodeURIComponent(category)}`
+          : `${url.origin}/?cat=${encodeURIComponent(category)}`;
+          
         const pageTitle = `${category} Web Series Watch Online Free HD - WebMasti`;
         const pageDesc = `Watch all latest ${category} 18+ uncut web series full episodes in HD online for free on WebMasti. Stream with fast buffering and direct playback.`;
 
@@ -176,7 +187,9 @@ export async function onRequest(context) {
   <title>${pageTitle}</title>
   <meta name="description" content="${pageDesc}">
   <link rel="canonical" href="${canonicalUrl}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1, max-snippet:-1">
   <meta property="og:site_name" content="WebMasti">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="${pageTitle}">
   <meta property="og:description" content="${pageDesc}">
   <meta property="og:url" content="${canonicalUrl}">

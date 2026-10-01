@@ -61,7 +61,7 @@ export default {
       }
     }
 
-    // 2. Determine Series ID or Category from pathname or query
+    // 2. Extract series ID or category from query or pathname
     let seriesId = url.searchParams.get('series');
     if (!seriesId && url.pathname.startsWith('/series/')) {
       seriesId = decodeURIComponent(url.pathname.replace(/^\/series\//, '').replace(/\/$/, ''));
@@ -71,10 +71,15 @@ export default {
       seriesId = decodeURIComponent(url.pathname.replace(/^\/s\//, '').replace(/\/$/, ''));
     }
 
-    const category = url.searchParams.get('cat');
+    let category = url.searchParams.get('cat');
+    if (!category && url.pathname.startsWith('/category/')) {
+      category = decodeURIComponent(url.pathname.replace(/^\/category\//, '').replace(/\/$/, ''));
+    } else if (!category && url.pathname.startsWith('/cat/')) {
+      category = decodeURIComponent(url.pathname.replace(/^\/cat\//, '').replace(/\/$/, ''));
+    }
 
-    // 3. Dynamic Meta Tag Injection for Series Deep Links
-    if (seriesId || category || url.pathname.startsWith('/watch') || url.pathname.startsWith('/series/')) {
+    // 3. Dynamic Meta Tag Injection for Series Deep Links & Categories
+    if (seriesId || category || url.pathname.startsWith('/watch') || url.pathname.startsWith('/series/') || url.pathname.startsWith('/category/') || url.pathname.startsWith('/cat/')) {
       try {
         const indexUrl = new URL('/index.html', url.origin);
         const response = await env.ASSETS.fetch(new Request(indexUrl));
@@ -94,10 +99,13 @@ export default {
           }
           const seriesDesc = `Watch ${seriesTitle} uncut web series full episodes online in Full HD for free on WebMasti. Fast streaming playback.`;
 
-          const canonicalUrl = `https://webmastihot.in/watch?series=${encodeURIComponent(seriesId)}`;
+          const canonicalUrl = url.pathname.startsWith('/series/')
+            ? `${url.origin}/series/${encodeURIComponent(seriesId)}`
+            : `${url.origin}/?series=${encodeURIComponent(seriesId)}`;
+
           const pageTitle = `${seriesTitle} - Watch Full HD Web Series on WebMasti`;
           const proxyCover = `${url.origin}/api/thumb?series=${encodeURIComponent(seriesId)}&src=${encodeURIComponent(seriesCover)}`;
-          const playerEmbedUrl = `https://webmastihot.in/player?series=${encodeURIComponent(seriesId)}`;
+          const playerEmbedUrl = `${url.origin}/?series=${encodeURIComponent(seriesId)}`;
 
           const dynamicTags = `
   <title>${pageTitle}</title>
@@ -132,7 +140,7 @@ export default {
     "@type": "VideoObject",
     "name": "${seriesTitle.replace(/"/g, '\\"')}",
     "description": "${seriesDesc.replace(/"/g, '\\"')}",
-    "thumbnailUrl": ["${proxyCover}", "${seriesCover}"],
+    "thumbnailUrl": ["${seriesCover}", "${proxyCover}"],
     "uploadDate": "2026-01-01T00:00:00+05:30",
     "embedUrl": "${playerEmbedUrl}",
     "contentUrl": "${(videoUrl || '').replace(/"/g, '\\"')}",
@@ -156,8 +164,45 @@ export default {
           html = html.replace(/<meta\s+property=["']og:url["'][^>]*>/gi, '');
           html = html.replace(/<meta\s+name=["']twitter:title["'][^>]*>/gi, '');
           html = html.replace(/<meta\s+name=["']twitter:description["'][^>]*>/gi, '');
-          html = html.replace(/<meta\s+name=["']twitter:image["'][^>]*>/gi, '');
+          html = html.replace(/<meta\s+name=["']twitter:image[^'"]*["'][^>]*>/gi, '');
           html = html.replace(/<meta\s+name=["']twitter:card["'][^>]*>/gi, '');
+          html = html.replace('<head>', `<head>${dynamicTags}`);
+
+          return new Response(html, {
+            status: 200,
+            headers: {
+              'content-type': 'text/html; charset=utf-8',
+              'cache-control': 'public, max-age=3600, s-maxage=86400',
+              'x-rendered-by': 'webmasti-worker'
+            }
+          });
+        } else if (category) {
+          const canonicalUrl = url.pathname.startsWith('/category/')
+            ? `${url.origin}/category/${encodeURIComponent(category)}`
+            : `${url.origin}/?cat=${encodeURIComponent(category)}`;
+
+          const pageTitle = `${category} Web Series Watch Online Free HD - WebMasti`;
+          const pageDesc = `Watch all latest ${category} 18+ uncut web series full episodes in HD online for free on WebMasti. Stream with fast buffering and direct playback.`;
+
+          const dynamicTags = `
+  <title>${pageTitle}</title>
+  <meta name="description" content="${pageDesc}">
+  <link rel="canonical" href="${canonicalUrl}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1, max-snippet:-1">
+  <meta property="og:site_name" content="WebMasti">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${pageTitle}">
+  <meta property="og:description" content="${pageDesc}">
+  <meta property="og:url" content="${canonicalUrl}">
+  <meta name="twitter:title" content="${pageTitle}">
+  <meta name="twitter:description" content="${pageDesc}">
+`;
+
+          html = html.replace(/<title>[\s\S]*?<\/title>/i, '');
+          html = html.replace(/<meta\s+name=["']description["'][^>]*>/gi, '');
+          html = html.replace(/<link\s+rel=["']canonical["'][^>]*>/gi, '');
+          html = html.replace(/<meta\s+property=["']og:title["'][^>]*>/gi, '');
+          html = html.replace(/<meta\s+property=["']og:description["'][^>]*>/gi, '');
           html = html.replace('<head>', `<head>${dynamicTags}`);
 
           return new Response(html, {

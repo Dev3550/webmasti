@@ -212,9 +212,25 @@ function updateUrlHash(item, epIdx) {
 
 function checkUrlRoute() {
   const searchParams = new URLSearchParams(window.location.search);
+  const pathname = window.location.pathname;
+
   let seriesId = searchParams.get('series');
+  if (!seriesId && pathname.startsWith('/series/')) {
+    seriesId = decodeURIComponent(pathname.replace(/^\/series\//, '').replace(/\/$/, ''));
+  } else if (!seriesId && pathname.startsWith('/watch')) {
+    seriesId = searchParams.get('series');
+  } else if (!seriesId && pathname.startsWith('/s/')) {
+    seriesId = decodeURIComponent(pathname.replace(/^\/s\//, '').replace(/\/$/, ''));
+  }
+
+  let cat = searchParams.get('cat');
+  if (!cat && pathname.startsWith('/category/')) {
+    cat = decodeURIComponent(pathname.replace(/^\/category\//, '').replace(/\/$/, ''));
+  } else if (!cat && pathname.startsWith('/cat/')) {
+    cat = decodeURIComponent(pathname.replace(/^\/cat\//, '').replace(/\/$/, ''));
+  }
+
   let epIdx = parseInt(searchParams.get('ep') || '0', 10);
-  const cat = searchParams.get('cat');
   const pageParam = parseInt(searchParams.get('page') || '1', 10);
 
   // Preserve exact page number on refresh across Desktop, Mobile, and Tablet
