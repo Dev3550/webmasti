@@ -75,109 +75,55 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://webmastihot.in/?series=besharam-d1</loc>
+    <loc>https://webmastihot.in/?series=blackmail</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2025/07/Besharam-Part-2.webp</image:loc>
-      <image:title>Besharam Full HD Poster</image:title>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/02/Blackmail.webp</image:loc>
+      <image:title>Blackmail Full HD Poster</image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2025/07/Besharam-Part-2.webp</video:thumbnail_loc>
-      <video:title>Besharam Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Besharam online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.pmaal.com/ULLU/Besharam/Besharam%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=fc6b055d91149af74bdb2e92c80939a2%2F20261001%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261001T230855Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=aea7a4cbb2d7faa760619c47a883690647aa5ce4dcfdfa1a426fac5914e502c8</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=besharam-d1</video:player_loc>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/02/Blackmail.webp</video:thumbnail_loc>
+      <video:title>Blackmail Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Blackmail online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/AKKU/Blackmail/Blackmail%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261002%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261002T035318Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=488d204cb367223ccf2b30c088d497747e0f1e8a87e9a830323595896d67a6d7</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=blackmail</video:player_loc>
       <video:publication_date>2026-10-02</video:publication_date>
       <video:family_friendly>no</video:family_friendly>
       <video:requires_subscription>no</video:requires_subscription>
       <video:live>no</video:live>
       <video:category>Indian Web Series</video:category>
-      <video:tag>ULLU</video:tag>
-      <video:tag>Muskan Chauhan</video:tag>
-      <video:tag>Ridhima Tiwari</video:tag>
-      <video:tag>Sarika Salunkhe</video:tag>
+      <video:tag>AKKU</video:tag>
+      <video:tag>Poonam Verma</video:tag>
     </video:video>
   </url>
   <url>
-    <loc>https://webmastihot.in/?series=do-haseena</loc>
+    <loc>https://webmastihot.in/?series=aatma</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Do-Haseena-1.webp</image:loc>
-      <image:title>Do Haseena Full HD Poster</image:title>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/02/Aatma.webp</image:loc>
+      <image:title>Aatma Full HD Poster</image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Do-Haseena-1.webp</video:thumbnail_loc>
-      <video:title>Do Haseena Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Do Haseena online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/Makhan/Do%20Haseena/Do%20Haseena%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261001%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261001T230815Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0632c16e61557a58d69816415977d73c799d8dd3cb6dac56425d6f9c5e86ff7f</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=do-haseena</video:player_loc>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/02/Aatma.webp</video:thumbnail_loc>
+      <video:title>Aatma Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Aatma online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261002%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261002T035336Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=590a8859cc632ebb75959f361115b03a21107eb6c59394a6044688f315af601a</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=aatma</video:player_loc>
       <video:publication_date>2026-10-02</video:publication_date>
       <video:family_friendly>no</video:family_friendly>
       <video:requires_subscription>no</video:requires_subscription>
       <video:live>no</video:live>
       <video:category>Indian Web Series</video:category>
-      <video:tag>Makhan</video:tag>
-      <video:tag>Bharti Jha</video:tag>
-      <video:tag>Ruks Khandagale</video:tag>
+      <video:tag>AKKU</video:tag>
+      <video:tag>Pallavi Debnath</video:tag>
     </video:video>
   </url>
   <url>
-    <loc>https://webmastihot.in/?series=raasleela</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Raasleela.webp</image:loc>
-      <image:title>Raasleela Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Raasleela.webp</video:thumbnail_loc>
-      <video:title>Raasleela Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Raasleela online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/Makhan/Raasleela/Raasleela%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261001%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261001T231002Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c99d15c9d977c4341238fdfce059fad868bd50f52665d944a20671c63dd280f4</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=raasleela</video:player_loc>
-      <video:publication_date>2026-10-02</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>Makhan</video:tag>
-      <video:tag>Aliya Naaz</video:tag>
-      <video:tag>Ayushi Bhowmick</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=taras</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Taras-1.webp</image:loc>
-      <image:title>Taras Full HD Poster</image:title>
-    </image:image>
-    <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Taras-1.webp</video:thumbnail_loc>
-      <video:title>Taras Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Taras online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/ULLU/Taras/Taras%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261001%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261001T230935Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=b6138d61311677c9c7d8f1b37ef99df2bcb4420bf07ea3ad6523a613b232e91c</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=taras</video:player_loc>
-      <video:publication_date>2026-10-02</video:publication_date>
-      <video:family_friendly>no</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:category>Indian Web Series</video:category>
-      <video:tag>ULLU</video:tag>
-      <video:tag>Sarika Salunkhe</video:tag>
-      <video:tag>Veena Vaidya</video:tag>
-      <video:tag>Zoya Rathore</video:tag>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://webmastihot.in/?series=paying-guest-jugnu</loc>
+    <loc>https://webmastihot.in/?series=paying-guest</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -189,64 +135,118 @@
       <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Paying-Guest.webp</video:thumbnail_loc>
       <video:title>Paying Guest Watch Online Free HD Episodes</video:title>
       <video:description>Watch all episodes of Paying Guest online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/JUGNU/Paying%20Guest/Paying%20Guest%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261001%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261001T230807Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=642a4f828b63b9acdcc9c165ff7948ac751961fa8994df9162bcc29c111825c2</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=paying-guest-jugnu</video:player_loc>
+      <video:content_loc>https://cdn.azmaal.com/Makhan/Paying%20Guest/Paying%20Guest%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261002%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261002T035543Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e05d072d508ddcba53a17e6b943d54f484b9e34ccf2d2db9d0373967c178f742</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=paying-guest</video:player_loc>
+      <video:publication_date>2026-10-02</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>Makhan</video:tag>
+      <video:tag>Mahi Kaur</video:tag>
+      <video:tag>Tanya Desai</video:tag>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://webmastihot.in/?series=taras-jugnu</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Taras.webp</image:loc>
+      <image:title>Taras Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Taras.webp</video:thumbnail_loc>
+      <video:title>Taras Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Taras online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/JUGNU/Taras/Taras%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261002%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261002T035122Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c48e92e4744e156f3fe7a03f9d029cfac4aa317a12c62527f1231673713d923a</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=taras-jugnu</video:player_loc>
       <video:publication_date>2026-10-02</video:publication_date>
       <video:family_friendly>no</video:family_friendly>
       <video:requires_subscription>no</video:requires_subscription>
       <video:live>no</video:live>
       <video:category>Indian Web Series</video:category>
       <video:tag>JUGNU</video:tag>
-      <video:tag>Komal Sharma</video:tag>
-      <video:tag>Pihu Jaiswal</video:tag>
+      <video:tag>Malvika Tomar</video:tag>
     </video:video>
   </url>
   <url>
-    <loc>https://webmastihot.in/?series=aatma-akku</loc>
+    <loc>https://webmastihot.in/?series=raasleela-jugnu</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/02/Aatma-Episode-2.webp</image:loc>
-      <image:title>Aatma Full HD Poster</image:title>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Raasleela.webp</image:loc>
+      <image:title>Raasleela Full HD Poster</image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/02/Aatma-Episode-2.webp</video:thumbnail_loc>
-      <video:title>Aatma Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Aatma online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/AKKU/Aatma/Aatma%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261001%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261001T230818Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=93188d34ba4a8f771f7f73dfbd8870b9b33f83b41cb4588bef6155a4b2438e48</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=aatma-akku</video:player_loc>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Raasleela.webp</video:thumbnail_loc>
+      <video:title>Raasleela Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Raasleela online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/JUGNU/Raasleela/Raasleela%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261002%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261002T035122Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fdc529af76084ff18fcaf6e14e0ecef3a2a887a30b79f6e6fbd74ecdbdddf0b6</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=raasleela-jugnu</video:player_loc>
       <video:publication_date>2026-10-02</video:publication_date>
       <video:family_friendly>no</video:family_friendly>
       <video:requires_subscription>no</video:requires_subscription>
       <video:live>no</video:live>
       <video:category>Indian Web Series</video:category>
-      <video:tag>AKKU</video:tag>
-      <video:tag>Pallavi Debnath</video:tag>
+      <video:tag>JUGNU</video:tag>
+      <video:tag>Aliya Naaz</video:tag>
+      <video:tag>Ayushi Bhowmick</video:tag>
+      <video:tag>Ritu Rai</video:tag>
+      <video:tag>Shyna Khatri</video:tag>
     </video:video>
   </url>
   <url>
-    <loc>https://webmastihot.in/?series=blackmail-akku</loc>
+    <loc>https://webmastihot.in/?series=besharam-makhan</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://uffmaal.com/wp-content/uploads/2026/04/Blackmail-Episode-1.webp</image:loc>
-      <image:title>Blackmail Full HD Poster</image:title>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Besharam-Episode-1-Makkhan.webp</image:loc>
+      <image:title>Besharam Full HD Poster</image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/04/Blackmail-Episode-1.webp</video:thumbnail_loc>
-      <video:title>Blackmail Watch Online Free HD Episodes</video:title>
-      <video:description>Watch all episodes of Blackmail online in HD quality for free on WebMasti</video:description>
-      <video:content_loc>https://cdn.azmaal.com/AKKU/Blackmail/Blackmail%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261001%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261001T231100Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4c2ded0aad454c9fd41140487dfb7d40536ed63ae6902326aad2721ddaaaeb2a</video:content_loc>
-      <video:player_loc>https://webmastihot.in/player.html?series=blackmail-akku</video:player_loc>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Besharam-Episode-1-Makkhan.webp</video:thumbnail_loc>
+      <video:title>Besharam Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Besharam online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/Makhan/Besharam/Besharam%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261002%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261002T035212Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=aaeb9040dcab19c0906245351a3f1438395e161fa8c6746c451c5871060de4e2</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=besharam-makhan</video:player_loc>
       <video:publication_date>2026-10-02</video:publication_date>
       <video:family_friendly>no</video:family_friendly>
       <video:requires_subscription>no</video:requires_subscription>
       <video:live>no</video:live>
       <video:category>Indian Web Series</video:category>
-      <video:tag>AKKU</video:tag>
-      <video:tag>Poonam Verma</video:tag>
+      <video:tag>Makhan</video:tag>
+      <video:tag>Jinnie Jaaz</video:tag>
+      <video:tag>Khushi Dalguch</video:tag>
+      <video:tag>Shyna Khatri</video:tag>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://webmastihot.in/?series=do-haseena-jugnu</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://uffmaal.com/wp-content/uploads/2026/05/Do-Haseena.webp</image:loc>
+      <image:title>Do Haseena Full HD Poster</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://uffmaal.com/wp-content/uploads/2026/05/Do-Haseena.webp</video:thumbnail_loc>
+      <video:title>Do Haseena Watch Online Free HD Episodes</video:title>
+      <video:description>Watch all episodes of Do Haseena online in HD quality for free on WebMasti</video:description>
+      <video:content_loc>https://cdn.azmaal.com/JUGNU/Do%20Haseena/Do%20Haseena%20Episode%201.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=25401e6608ddbca157a342e1d8c71cb3%2F20261002%2Fauto%2Fs3%2Faws4_request&amp;X-Amz-Date=20261002T035114Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=54a382ea679979adf86eb2cfc6be5d66ee7ed4ff57dd9ff736cd60ef7d4811ca</video:content_loc>
+      <video:player_loc>https://webmastihot.in/player.html?series=do-haseena-jugnu</video:player_loc>
+      <video:publication_date>2026-10-02</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:category>Indian Web Series</video:category>
+      <video:tag>JUGNU</video:tag>
+      <video:tag>Bharti Jha</video:tag>
+      <video:tag>Ruks Khandagale</video:tag>
     </video:video>
   </url>
   <url>
